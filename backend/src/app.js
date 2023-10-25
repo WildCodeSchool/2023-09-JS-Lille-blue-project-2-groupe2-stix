@@ -1,9 +1,23 @@
 // Load the express module to create a web application
-
 const express = require("express");
+const planets = require("./data.json");
 
 const app = express();
+const getPlanets = (req, res) => {
+  res.status(200).json(planets);
+};
+app.get("/planets", getPlanets);
 
+const getPlanetsByid = (req, res) => {
+  const wantedId = parseInt(req.params.id, 10);
+  const findYourPlanets = planets.find((planet) => planet.id === wantedId);
+  if (findYourPlanets) {
+    res.status(200).json(findYourPlanets);
+  } else {
+    res.status(404).send("Not found");
+  }
+};
+app.get("/planets/:id", getPlanetsByid);
 // Configure it
 
 /* ************************************************************************* */
