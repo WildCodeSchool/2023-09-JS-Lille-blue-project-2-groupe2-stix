@@ -8,18 +8,16 @@ const getPlanets = (req, res) => {
 };
 app.get("/planets", getPlanets);
 
-const getPlanetsByName = (req, res) => {
-  const findYourPlanets = planets.find(
-    (planet) => planet.name === req.params.name
-  );
+const getPlanetsByid = (req, res) => {
+  const wantedId = parseInt(req.params.id, 10);
+  const findYourPlanets = planets.find((planet) => planet.id === wantedId);
   if (findYourPlanets) {
     res.status(200).json(findYourPlanets);
   } else {
     res.status(404).send("Not found");
   }
 };
-
-app.get("/planets/:name", getPlanetsByName);
+app.get("/planets/:id", getPlanetsByid);
 // Configure it
 
 /* ************************************************************************* */
