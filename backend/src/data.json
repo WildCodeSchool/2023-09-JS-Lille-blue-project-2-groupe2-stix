@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "name": "sun",
     "soleil": {
       "Nom": {
         "français": "Soleil",
@@ -29,6 +30,7 @@
   },
   {
     "id": 2,
+    "name": "mercury",
     "mercure": {
       "nom": {
         "français": "Mercure",
@@ -57,6 +59,7 @@
   },
   {
     "id": 3,
+    "name": "venus",
     "venus": {
       "Nom": {
         "français": "Vénus",
@@ -85,6 +88,7 @@
   },
   {
     "id": 4,
+    "name": "earth",
     "terre": {
       "nom": {
         "français": "Terre",
@@ -113,6 +117,7 @@
   },
   {
     "id": 5,
+    "name": "mars",
     "mars": {
       "nom": {
         "français": "Mars",
@@ -141,6 +146,7 @@
   },
   {
     "id": 6,
+    "name": "jupiter",
     "jupiter": {
       "nom": {
         "français": "Jupiter",
@@ -169,6 +175,7 @@
   },
   {
     "id": 7,
+    "name": "saturn",
     "saturne": {
       "nom": {
         "français": "Saturne",
@@ -197,6 +204,7 @@
   },
   {
     "id": 8,
+    "name": "uranus",
     "uranus": {
       "nom": {
         "français": "Uranus",
@@ -225,6 +233,7 @@
   },
   {
     "id": 9,
+    "name": "neptune",
     "neptune": {
       "nom": {
         "français": "Neptune",
