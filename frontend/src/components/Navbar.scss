@@ -1,0 +1,107 @@
+body {
+  background-color: #2b2b2b;
+}
+.navbar {
+  background-color: rgba(227, 227, 227, 0.53);
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  background-color: #000000;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.navbar-item img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-item:hover img {
+  transform: scale(1.2);
+}
+
+.navbar-item {
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-item:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+.planete {
+  height: 5rem;
+}
+
+.saturne {
+  height: 4rem;
+}
+
+.soleil {
+  height: 5.1rem;
+}
+
+.neptune {
+  height: 4rem;
+}
+.jupiter {
+  height: 4rem;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-item h6 {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar-item:hover h6 {
+  display: block;
+  background: rgba(141, 142, 166, 0.4);
+}
+nav.navbar.carrousel {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-items {
+    display: flex;
+    justify-content: left;
+
+    overflow-x: auto;
+  }
+
+  .navbar-item {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  nav.navbar.navbar-items.navbar-item.carrousel {
+    height: 10%;
+  }
+}
