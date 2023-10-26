@@ -14,8 +14,8 @@
     "nombre_heures_journee": "N/A (rotation différentielle)",
     "vitesse_rotation_equateur": "Variable (environ 7.2 km/s)",
     "temperature_de_surface": {
-      "min": "Environ 5 500 °C",
-      "max": "Environ 15 600 000 °C",
+      "min": "Environ 5 500 °C (c'est chaud) ",
+      "max": "Environ 15 600 000 °C (C'est encore plus chaud ) ",
       "moyenne": "Environ 5 500 °C"
     },
     "type_de_planete": "Étoile",
