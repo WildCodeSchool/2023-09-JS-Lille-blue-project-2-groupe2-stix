@@ -1,10 +1,10 @@
-import SysthemeSolaire from "./components/systhemeSolaire";
-import "./components/SysthemeSolaire.scss";
+import SolarSystem from "./components/SolarSystem";
+import "./components/SolarSystem.scss";
 
 function App() {
   return (
     <div>
-      <SysthemeSolaire />
+      <SolarSystem />
     </div>
   );
 }
