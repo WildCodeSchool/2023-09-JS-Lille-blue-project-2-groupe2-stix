@@ -35,6 +35,6 @@
     "lint-staged": "^13.2.3"
   },
   "dependencies": {
-    "sass": "^1.69.4"
+    "sass": "^1.69.5"
   }
 }
