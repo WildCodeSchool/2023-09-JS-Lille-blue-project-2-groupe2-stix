@@ -1,6 +1,6 @@
 function SolarSystem() {
   return (
-    <div className="soleil">
+    <div>
       <img className="sun" src="./src/assets/soleil.png" alt="Soleil" />;
       <div className="imageSVG">
         <svg>
