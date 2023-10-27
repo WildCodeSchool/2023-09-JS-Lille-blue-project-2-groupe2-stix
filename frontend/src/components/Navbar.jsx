@@ -3,9 +3,9 @@ import "./Navbar.scss";
 
 function Navbar() {
   return (
-    <nav className="navbar carrousel">
-      <div className="navbar-items">
-        <div className="navbar-item">
+    <nav className="navbar">
+      <div className="cosmos">
+        <div className="orbite">
           <img
             className="soleil"
             src="../src/assets/image/1sun.png"
@@ -13,15 +13,15 @@ function Navbar() {
           />
           <h6>SOLEIL</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
-            className="planete mercure"
+            className="planete"
             src="../src/assets/image/2mercure.png"
             alt="Mercure"
           />
           <h6>MERCURE</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
             className="planete venus"
             src="../src/assets/image/3venus.png"
@@ -29,23 +29,23 @@ function Navbar() {
           />
           <h6>VENUS</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
-            className="planete terre"
+            className="planete"
             src="../src/assets/image/4earth.png"
             alt="Terre"
           />
           <h6>TERRE</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
-            className="planete mars"
+            className="planete"
             src="../src/assets/image/5mars.png"
             alt="Mars"
           />
           <h6>MARS</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
             className="jupiter"
             src="../src/assets/image/6jupiter.png"
@@ -53,7 +53,7 @@ function Navbar() {
           />
           <h6>JUPITER</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
             className="saturne"
             src="../src/assets/image/7saturne.png"
@@ -61,7 +61,7 @@ function Navbar() {
           />
           <h6>SATURNE</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
             className="planete uranus"
             src="../src/assets/image/8uranus.png"
@@ -69,7 +69,7 @@ function Navbar() {
           />
           <h6>URANUS</h6>
         </div>
-        <div className="navbar-item">
+        <div className="orbite">
           <img
             className="neptune"
             src="../src/assets/image/9neptune.png"
