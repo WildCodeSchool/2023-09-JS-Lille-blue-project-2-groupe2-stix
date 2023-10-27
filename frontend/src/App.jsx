@@ -1,6 +1,8 @@
 import { useState } from "react";
+
 import SolarSystem from "./components/SolarSystem";
 import "./components/SolarSystem.scss";
+import HomeText from "./components/homeText";
 
 function App() {
   const [planets, setPlanets] = useState();
@@ -12,6 +14,7 @@ function App() {
   return (
     <div>
       <SolarSystem planets={setPlanets} planet={planets} />
+      return <HomeText />;
     </div>
   );
 }
