@@ -1,8 +1,17 @@
 // Load the express module to create a web application
+const cors = require("cors");
 const express = require("express");
 const planets = require("./data.json");
 
 const app = express();
+app.use(
+  cors({
+    origin: [
+      process.env.FRONTEND_URL, // keep this one, after checking the value in `backend/.env`
+      "http://localhost:3310/planets",
+    ],
+  })
+);
 const getPlanets = (req, res) => {
   res.status(200).json(planets);
 };
@@ -38,20 +47,6 @@ app.get("/planets/:id", getPlanetsByid);
 // 3. Uncomment the section `app.use(cors({ origin: [...] }))`
 // 4. Be sure to only have URLs in the array with domains from which you want to allow requests.
 // For example: ["http://mysite.com", "http://another-domain.com"]
-
-/*
-const cors = require("cors");
-
-app.use(
-  cors({
-    origin: [
-      process.env.FRONTEND_URL, // keep this one, after checking the value in `backend/.env`
-      "http://mysite.com",
-      "http://another-domain.com",
-    ]
-  })
-);
-*/
 
 /* ************************************************************************* */
 

@@ -1,0 +1,46 @@
+.cursorPlanet {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 5vw;
+  align-items: center;
+
+  ul {
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.listPlanet {
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 81vw;
+}
+
+.textList {
+  height: 3vw;
+}
+
+.contour {
+  border: solid 3px orange;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .cursorPlanet {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 99vh;
+    align-items: flex-end;
+  }
+
+  li {
+    text-align: center;
+  }
+}
