@@ -12,12 +12,12 @@ body {
   text-align: center;
 }
 
-.planetes {
+.planets {
   display: flex;
   justify-content: center;
 }
 
-.planete {
+.planet {
   background-image: url(../assets/image/space.jpg);
   border-radius: 20px;
   color: #fff;
@@ -26,33 +26,30 @@ body {
   width: 100%;
   max-width: 300px;
   position: relative;
-}
-
-.planete img {
-  transition: transform 0.3s ease;
-}
-
-.planete:hover img {
-  transform: scale(1.2);
-}
-
-.planete {
   transition: box-shadow 0.3s ease;
 }
 
-.planete:hover {
+.planet img {
+  transition: transform 0.3s ease;
+}
+
+.planet:hover img {
+  transform: scale(1.2);
+}
+
+.planet:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255);
 }
 
-.planete-img {
+.planet-img {
   height: 5rem;
 }
 
-.saturne {
+.Saturn {
   height: 4rem;
 }
 
-.soleil {
+.sun {
   height: 5.1rem;
 }
 
@@ -63,11 +60,11 @@ body {
   height: 4rem;
 }
 
-.planete {
+.planet {
   position: relative;
 }
 
-.planete h6 {
+.planet h6 {
   display: none;
   position: absolute;
   bottom: 0;
@@ -81,7 +78,7 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.planete:hover h6 {
+.planet:hover h6 {
   display: block;
   background: rgba(141, 142, 166, 0.4);
 }
@@ -90,18 +87,17 @@ nav.navbar {
 }
 
 @media screen and (max-width: 1000px) {
-  .planetes {
+  .planets {
     display: flex;
     justify-content: left;
-
     overflow-x: auto;
   }
 
-  .planete {
+  .planet {
     width: 100%;
     flex-shrink: 0;
   }
-  nav.navbar.planetes.planete.carrousel {
+  nav.navbar.planets.planet.carrousel {
     height: 10%;
   }
 }

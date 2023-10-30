@@ -4,48 +4,48 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="planetes">
-        <div className="planete">
+      <div className="planets">
+        <div className="planet">
           <img
-            className="soleil"
+            className="sun"
             src="../src/assets/image/1sun.png"
             alt="Soleil"
           />
           <h6>SOLEIL</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="planete-img"
+            className="planet-img"
             src="../src/assets/image/2mercure.png"
             alt="Mercure"
           />
           <h6>MERCURE</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="planete-img"
+            className="planet-img"
             src="../src/assets/image/3venus.png"
             alt="Venus"
           />
           <h6>VENUS</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="planete-img"
+            className="planet-img"
             src="../src/assets/image/4earth.png"
             alt="Terre"
           />
           <h6>TERRE</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="planete-img"
+            className="planet-img"
             src="../src/assets/image/5mars.png"
             alt="Mars"
           />
           <h6>MARS</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
             className="jupiter"
             src="../src/assets/image/6jupiter.png"
@@ -53,23 +53,23 @@ function Navbar() {
           />
           <h6>JUPITER</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="saturne"
+            className="Saturn"
             src="../src/assets/image/7saturne.png"
             alt="Saturne"
           />
           <h6>SATURNE</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
-            className="planete-img"
+            className="planet-img"
             src="../src/assets/image/8uranus.png"
             alt="Uranus"
           />
           <h6>URANUS</h6>
         </div>
-        <div className="planete">
+        <div className="planet">
           <img
             className="neptune"
             src="../src/assets/image/9neptune.png"
