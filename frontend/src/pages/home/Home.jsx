@@ -4,6 +4,7 @@ import ListPlanet from "../../components/ListPlanet";
 
 function Home() {
   const [systeme, setSysteme] = useState();
+
   useEffect(() => {
     fetch("http://localhost:3310/planets")
       .then((response) => response.json())
