@@ -5,24 +5,23 @@ function HomeText() {
   return (
     <div className="homeText">
       <p className="resumGalaxy ">
-        Notre <span className="textColor">système Solaire</span> se trouve dans
-        un galaxie nommée <span className="textColor">Voie Lactée</span>
+        Notre <span className="textColor">système solaire</span> se trouve dans
+        une galaxie nommée <span className="textColor">Voie lactée</span>
       </p>
-      <p className="resumSS1 ">
+      <p className="resumSS1">
         Il est constitué d'une étoile (le soleil), de huit planètes (dont la
-        terre) ainsi que'une multitude de petit astre et météore.
+        Terre) ainsi que d'une multitude de petits astres et météores.
       </p>
-      <p className="resumSS2 ">
-        Chaque planètes
-        <span className="textColor"> gravitent autour du soleil</span> sur leurs
-        propres orbites.
+      <p className="resumSS2">
+        Chaque planète
+        <span className="textColor"> gravite autour du soleil</span> sur sa
+        propre orbite.
       </p>
       <p className="resumPlanet">
         Chaque planète possède
         <span className="textColor"> sa propre vitesse de déplacement </span>
         autour de l’étoile. Lorsque les planètes font un tour complet autour du
-        soleil, cela se nomme une <span className="textColor"> révolution</span>
-        .
+        soleil, cela se nomme une <span className="textColor">révolution</span>.
       </p>
     </div>
   );
