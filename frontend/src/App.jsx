@@ -1,15 +1,11 @@
-import "./App.css";
-import Card from "./components/Card";
-import SolarSystem from "./components/SolarSystem";
-import "./components/SolarSystem.scss";
-import HomeText from "./components/homeText";
+
+import Home from "./pages/Home";
+
 
 function App() {
   return (
     <div>
-      <SolarSystem />
-      <HomeText />
-       <Card />
+      <Home />
     </div>
   );
 }
