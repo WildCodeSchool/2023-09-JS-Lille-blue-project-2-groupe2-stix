@@ -1,10 +1,9 @@
 // Load the express module to create a web application
-const express = require("express");
 const cors = require("cors");
+const express = require("express");
 const planets = require("./data.json");
 
 const app = express();
-
 app.use(
   cors({
     origin: [
@@ -13,7 +12,6 @@ app.use(
     ],
   })
 );
-
 const getPlanets = (req, res) => {
   res.status(200).json(planets);
 };
