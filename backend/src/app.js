@@ -1,8 +1,20 @@
 // Load the express module to create a web application
 const express = require("express");
-const planets = require("./data.json");
+
+const cors = require("cors");
 
 const app = express();
+app.use(
+  cors({
+    origin: [
+      process.env.FRONTEND_URL, // keep this one, after checking the value in `backend/.env`
+      "http://localhost:3310/planets",
+    ],
+  })
+);
+
+const planets = require("./data.json");
+
 const getPlanets = (req, res) => {
   res.status(200).json(planets);
 };
