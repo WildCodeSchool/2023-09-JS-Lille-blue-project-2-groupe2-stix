@@ -4,8 +4,8 @@ body {
 }
 
 svg {
-  width: 200%;
-  height: 175%;
+  width: 100%;
+  height: 100vh;
   position: absolute;
   top: 1rem;
   path {
@@ -16,10 +16,10 @@ svg {
   }
 }
 .sun {
-  width: 53rem;
+  width: 50rem;
   position: absolute;
-  top: -6rem;
-  left: -13rem;
+  top: 0.5em;
+  left: -14rem;
 }
 
 .ligne {
