@@ -1,5 +1,6 @@
 import "./SolaireInteractif.scss";
 import PropTypes, { shape } from "prop-types";
+// import { useState } from "react";
 import sun from "../assets/image/1sun.png";
 import mercure from "../assets/image/2mercure.png";
 import venus from "../assets/image/3venus.png";
@@ -12,10 +13,22 @@ import neptune from "../assets/image/9neptune.png";
 
 // eslint-disable-next-line no-unused-vars
 function SolaireInteractif({ systeme }) {
+  // const [hover, setHover] = useState(false);
+
+  // function handleMove() {
+  //   setHover(!hover);
+  // }
+
   return (
     <div className="système">
       <div className="sun">
-        <img src={sun} alt="" />
+        <img
+          src={sun}
+          // onMouseOver={handleMove}
+          // onMouseLeave={handleMove}
+          alt=""
+          // className={hover ? "contour" : ""}
+        />
       </div>
       <div className="Mercure">
         <img src={mercure} alt="" />

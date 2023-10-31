@@ -243,6 +243,10 @@ body {
     margin-left: 72vw;
   }
 }
+.contour {
+  border: 4px solid orange;
+  border-radius: 50%;
+}
 
 @media screen and (max-width: 500px) {
   .body {
