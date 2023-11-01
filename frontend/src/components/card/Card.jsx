@@ -1,7 +1,7 @@
 import "./Card.scss";
 import PropTypes, { shape } from "prop-types";
 
-function Card({ systeme }) {
+function Card({ systeme, closeCard }) {
   return (
     <section id="card">
       <div className="card__body">
@@ -14,10 +14,18 @@ function Card({ systeme }) {
           <h1 className="card__description__h1">{systeme[0].french_name} </h1>
           <p className="card__description__p"> {systeme[0].description} </p>
         </div>
-        <button type="button">X</button>
-        <button type="button" className="card__button">
-          More Infos
-        </button>
+        <section className="card__button">
+          <button
+            type="button"
+            className="card__button__closed"
+            onClick={closeCard}
+          >
+            X
+          </button>
+          <button type="button" className="card__button__moreInfos">
+            More Infos
+          </button>
+        </section>
       </div>
     </section>
   );
@@ -34,5 +42,6 @@ Card.propTypes = {
       description: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
+  closeCard: PropTypes.func.isRequired,
 };
 export default Card;

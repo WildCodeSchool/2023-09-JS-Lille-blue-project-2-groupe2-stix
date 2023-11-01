@@ -20,7 +20,11 @@ function SolarSystem({ systeme }) {
         type="button"
         onClick={setShowCard}
       />
-      {showCard && createPortal(<Card systeme={systeme} />, document.body)}
+      {showCard &&
+        createPortal(
+          <Card systeme={systeme} closeCard={() => setShowCard(false)} />,
+          document.body
+        )}
       <div className="imageSVG">
         <svg>
           <path d="M -300,450 A 900 110 0 0 0 393,300" />
