@@ -14,6 +14,7 @@ function Card({ systeme }) {
           <h1 className="card__description__h1">{systeme[0].french_name} </h1>
           <p className="card__description__p"> {systeme[0].description} </p>
         </div>
+        <button type="button">X</button>
         <button type="button" className="card__button">
           More Infos
         </button>

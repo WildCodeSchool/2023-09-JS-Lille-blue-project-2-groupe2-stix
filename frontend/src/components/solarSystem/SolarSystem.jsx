@@ -1,14 +1,26 @@
 import "./SolarSystem.scss";
 import PropTypes, { shape } from "prop-types";
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import Card from "../card/Card";
 
 function SolarSystem({ systeme }) {
+  const [showCard, setShowCard] = useState(false);
   return (
     <div className="soleil">
       <img
+        id="sun"
         className="sun"
         src={`${import.meta.env.VITE_BACKEND_URL}${systeme[0].image}`}
         alt="Soleil"
       />
+      <button
+        aria-labelledby="sun"
+        className="button__img"
+        type="button"
+        onClick={setShowCard}
+      />
+      {showCard && createPortal(<Card systeme={systeme} />, document.body)}
       <div className="imageSVG">
         <svg>
           <path d="M -300,450 A 900 110 0 0 0 393,300" />

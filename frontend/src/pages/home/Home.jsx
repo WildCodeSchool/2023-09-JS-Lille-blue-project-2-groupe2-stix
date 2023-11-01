@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
 import HomeText from "../../components/homeText/homeText";
-import Card from "../../components/card/Card";
 
 export default function Home() {
   const [systeme, setSysteme] = useState();
@@ -15,7 +14,6 @@ export default function Home() {
     <div>
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
       <HomeText />
-      {systeme ? <Card systeme={systeme} /> : ""}
     </div>
   );
 }

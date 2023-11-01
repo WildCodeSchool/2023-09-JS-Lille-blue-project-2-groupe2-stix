@@ -15,11 +15,22 @@ svg {
     transform: rotate(-22deg);
   }
 }
+
 .sun {
   width: 50rem;
   position: absolute;
   top: 0.5em;
   left: -14rem;
+}
+.button__img {
+  height: 60em;
+  width: 50rem;
+  position: absolute;
+  top: 0.5em;
+  left: -14rem;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .ligne {
@@ -33,6 +44,7 @@ svg {
   position: absolute;
   top: 371px;
   left: 247px;
+  z-index: 2;
 }
 
 .venus {
@@ -40,6 +52,7 @@ svg {
   position: absolute;
   top: 368px;
   left: 300px;
+  z-index: 2;
 }
 
 .terre {
@@ -47,6 +60,7 @@ svg {
   position: absolute;
   top: 368px;
   left: 365px;
+  z-index: 2;
 }
 
 .mars {
@@ -54,6 +68,7 @@ svg {
   position: absolute;
   top: 370px;
   left: 420px;
+  z-index: 2;
 }
 
 .jupiter {
@@ -61,6 +76,7 @@ svg {
   position: absolute;
   top: 260px;
   left: 480px;
+  z-index: 2;
 }
 
 .saturne {
@@ -68,6 +84,7 @@ svg {
   position: absolute;
   top: 260px;
   left: 650px;
+  z-index: 2;
 }
 
 .uranus {
@@ -75,6 +92,7 @@ svg {
   position: absolute;
   top: 305px;
   left: 990px;
+  z-index: 2;
 }
 
 .neptune {
@@ -82,4 +100,5 @@ svg {
   position: absolute;
   top: 305px;
   left: 1180px;
+  z-index: 2;
 }

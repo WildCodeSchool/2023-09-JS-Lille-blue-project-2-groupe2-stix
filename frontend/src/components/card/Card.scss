@@ -1,6 +1,8 @@
 #card {
   display: flex;
   justify-content: center;
+  background-color: black;
+  opacity: 0.7;
   .card__body {
     display: flex;
     border: solid 4px white;
