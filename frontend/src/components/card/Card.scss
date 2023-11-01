@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   background-color: black;
-  opacity: 0.7;
+  position: absolute;
+  bottom: 11em;
+  left: 3.5em;
+  z-index: 10;
+  border-radius: 50px;
   .card__body {
     display: flex;
     border: solid 4px white;
