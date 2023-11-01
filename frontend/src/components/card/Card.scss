@@ -1,54 +1,45 @@
-.planetDesc {
+#card {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.Description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  h1 {
-    font-size: 5vw;
-  }
-  p {
-    font-size: 3vw;
-  }
-}
-
-.earth {
-  height: 26vw;
-}
-
-.Card {
-  display: flex;
-  flex-direction: column;
-  border: solid 4px white;
-  color: white;
-  background-color: black;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
   justify-content: center;
-  border-radius: 16px;
-}
-
-.moreInfos {
-  text-align: right;
-  margin: 0vw 2vw 1vw 0vw;
-  height: 2vw;
-  button {
+  .card__body {
+    display: flex;
+    border: solid 4px white;
     color: white;
-    background-color: rgb(243, 166, 12);
-    border-radius: 10px;
-    width: 7vw;
-    position: absolute;
-    z-index: 1;
-    right: 8vw;
-    bottom: 3vw;
-    height: 3vw;
-    font-size: 1vw;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    width: 90vw;
+    justify-content: center;
+    border-radius: 16px;
+    .card__img {
+      height: 80%;
+      align-self: center;
+      margin: 10%;
+    }
+    .card__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      .card__description__h1 {
+        font-size: 5vw;
+      }
+      .card__description__p {
+        font-size: 2em;
+        text-align: left;
+      }
+    }
+    .card__button {
+      display: flex;
+      align-self: end;
+      margin: 10px;
+      color: white;
+      background-color: rgb(243, 166, 12);
+      border-radius: 10px;
+      width: 7vw;
+      height: 3vw;
+      font-size: 1vw;
+    }
   }
 }

@@ -13,9 +13,9 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div> {systeme ? <SolarSystem systeme={systeme} /> : ""} </div>
+      {systeme ? <SolarSystem systeme={systeme} /> : ""}
       <HomeText />
-      <Card />
+      {systeme ? <Card systeme={systeme} /> : ""}
     </div>
   );
 }
