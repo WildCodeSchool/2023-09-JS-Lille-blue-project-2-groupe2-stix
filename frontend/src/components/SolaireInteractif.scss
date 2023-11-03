@@ -80,8 +80,8 @@
 
 .système {
   position: absolute;
-  left: 24vw;
-  top: 14vw;
+  left: 36vw;
+  top: -22vw;
   scale: 0.3;
 }
 
@@ -90,12 +90,13 @@ body {
   color: white;
 }
 
-.sun {
+.Soleil {
   position: absolute;
   top: 22vw;
   left: 47vw;
 
   img {
+    position: absolute;
     height: 21vw;
   }
 }
@@ -118,7 +119,7 @@ body {
   }
 }
 
-.venus {
+.Vénus {
   position: absolute;
   border: 4px solid rgba(255, 255, 255, 0.2);
   width: 31vw;
@@ -136,7 +137,7 @@ body {
   }
 }
 
-.earth {
+.Terre {
   position: absolute;
   width: 41vw;
   height: 41vw;
@@ -154,7 +155,7 @@ body {
   }
 }
 
-.mars {
+.Mars {
   position: absolute;
   width: 53vw;
   height: 53vw;
@@ -172,7 +173,7 @@ body {
   }
 }
 
-.jupiter {
+.Jupiter {
   position: absolute;
   width: 75vw;
   height: 75vw;
@@ -190,7 +191,7 @@ body {
   }
 }
 
-.saturne {
+.Saturne {
   position: absolute;
   width: 95vw;
   height: 95vw;
@@ -208,7 +209,7 @@ body {
   }
 }
 
-.uranus {
+.Uranus {
   position: absolute;
   width: 122vw;
   height: 122vw;
@@ -226,7 +227,7 @@ body {
   }
 }
 
-.neptune {
+.Neptune {
   position: absolute;
   width: 149vw;
   height: 149vw;
@@ -246,6 +247,15 @@ body {
 .contour {
   border: 4px solid orange;
   border-radius: 50%;
+}
+
+.systèmeInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 4vw;
+  height: 47vw;
+  justify-content: center;
 }
 
 @media screen and (max-width: 500px) {

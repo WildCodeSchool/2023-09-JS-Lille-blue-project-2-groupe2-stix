@@ -1,34 +1,16 @@
-.cursorPlanet {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  height: 5vw;
-  align-items: center;
-
-  ul {
-    cursor: pointer;
-    list-style-type: none;
-    margin-right: 2vw;
-    display: flex;
-    flex-direction: column;
-  }
+.listName {
+  margin-left: 15vw;
+  font-size: 3vw;
+  margin-left: -94vw;
+  margin-bottom: -2vw;
 }
 
-.listPlanet {
-  height: 97vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 81vw;
+.text {
+  color: orange;
 }
 
-.textList {
-  height: 3vw;
-}
-
-.contour {
-  border: solid 3px orange;
-  border-radius: 50%;
+.boldList {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
