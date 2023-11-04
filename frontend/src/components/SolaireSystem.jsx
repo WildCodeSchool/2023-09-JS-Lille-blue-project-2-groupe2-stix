@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Text from "./Text";
+import Text from "./PlanetList";
 import "./SolaireSystem.scss";
-import Title from "./Title";
+import Title from "./PlanetTourne";
 
 function SolaireSystem() {
   const [system, setSystem] = useState([
