@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import SolaireInteractif from "../../components/SolaireInteractif";
+import SolaireSystem from "../../components/SolaireSystem";
 
 function Home() {
   const [systeme, setSysteme] = useState();
-  const [hover, setHover] = useState();
 
   useEffect(() => {
     fetch("http://localhost:3310/planets")
@@ -11,18 +10,6 @@ function Home() {
       .then((data) => setSysteme(data));
   }, []);
 
-  return (
-    <div>
-      {systeme ? (
-        <SolaireInteractif
-          systeme={systeme}
-          hover={hover}
-          setHover={setHover}
-        />
-      ) : (
-        ""
-      )}
-    </div>
-  );
+  return <div>{systeme ? <SolaireSystem /> : ""}</div>;
 }
 export default Home;

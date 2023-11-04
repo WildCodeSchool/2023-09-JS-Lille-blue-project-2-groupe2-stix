@@ -81,7 +81,7 @@
 .système {
   position: absolute;
   left: 36vw;
-  top: -22vw;
+  top: 13vw;
   scale: 0.3;
 }
 
@@ -98,6 +98,7 @@ body {
   img {
     position: absolute;
     height: 21vw;
+    z-index: 1;
   }
 }
 
@@ -256,6 +257,15 @@ body {
   margin-right: 4vw;
   height: 47vw;
   justify-content: center;
+}
+
+.text {
+  color: orange;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
