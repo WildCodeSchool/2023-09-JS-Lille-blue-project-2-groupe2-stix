@@ -1,18 +1,18 @@
 import "./Card.scss";
 import PropTypes, { shape } from "prop-types";
 
-function Card({ systeme, closeCard }) {
+function Card({ planet, closeCard }) {
   return (
     <section id="card">
       <div className="card__body">
         <img
           className="card__img"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[0].image}`}
-          alt={systeme[0].french_name}
+          src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
+          alt={planet.french_name}
         />
         <div className="card__description">
-          <h1 className="card__description__h1">{systeme[0].french_name} </h1>
-          <p className="card__description__p"> {systeme[0].description} </p>
+          <h1 className="card__description__h1">{planet.french_name} </h1>
+          <p className="card__description__p"> {planet.description} </p>
         </div>
         <section className="card__button">
           <button
@@ -32,7 +32,7 @@ function Card({ systeme, closeCard }) {
 }
 
 Card.propTypes = {
-  systeme: PropTypes.arrayOf(
+  planet: PropTypes.objectOf(
     shape({
       french_name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,

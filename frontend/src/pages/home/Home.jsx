@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
 import HomeText from "../../components/homeText/homeText";
 
-export default function Home() {
+function Home() {
   const [systeme, setSysteme] = useState();
 
   useEffect(() => {
@@ -13,7 +13,9 @@ export default function Home() {
   return (
     <div>
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
+
       <HomeText />
     </div>
   );
 }
+export default Home;

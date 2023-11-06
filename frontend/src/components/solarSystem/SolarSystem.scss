@@ -22,13 +22,13 @@ svg {
   top: 0.5em;
   left: -14rem;
 }
-.button__img {
+.button__img__sun {
   height: 60em;
   width: 50rem;
   position: absolute;
   top: 0.5em;
   left: -14rem;
-  z-index: 1;
+  z-index: 5;
   border-radius: 50%;
   opacity: 0;
 }
@@ -39,15 +39,25 @@ svg {
   top: 350px;
 }
 
-.mercure {
+.Mercure {
   width: 0.6rem;
   position: absolute;
   top: 371px;
   left: 247px;
   z-index: 2;
 }
+.button__img__Mercure {
+  height: 0.6em;
+  width: 0.6rem;
+  position: absolute;
+  top: 371px;
+  left: 247px;
+  z-index: 3;
+  border-radius: 50%;
+  opacity: 100;
+}
 
-.venus {
+.Venus {
   width: 1rem;
   position: absolute;
   top: 368px;
@@ -55,7 +65,7 @@ svg {
   z-index: 2;
 }
 
-.terre {
+.Terre {
   width: 1rem;
   position: absolute;
   top: 368px;
@@ -63,7 +73,7 @@ svg {
   z-index: 2;
 }
 
-.mars {
+.Mars {
   width: 0.8rem;
   position: absolute;
   top: 370px;
@@ -71,7 +81,7 @@ svg {
   z-index: 2;
 }
 
-.jupiter {
+.Jupiter {
   width: 13rem;
   position: absolute;
   top: 260px;
@@ -79,7 +89,7 @@ svg {
   z-index: 2;
 }
 
-.saturne {
+.Saturne {
   width: 25rem;
   position: absolute;
   top: 260px;
@@ -87,7 +97,7 @@ svg {
   z-index: 2;
 }
 
-.uranus {
+.Uranus {
   width: 9rem;
   position: absolute;
   top: 305px;
@@ -95,7 +105,7 @@ svg {
   z-index: 2;
 }
 
-.neptune {
+.Neptune {
   width: 9rem;
   position: absolute;
   top: 305px;
