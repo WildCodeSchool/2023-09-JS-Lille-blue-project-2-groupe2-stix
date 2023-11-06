@@ -5,13 +5,12 @@ function Title({ id, handleChange, planet }) {
   return (
     <div className={planet.french_name}>
       <img
+        src={soleil}
         className={planet.isHover ? "contour" : ""}
         onMouseLeave={() => handleChange(id)}
         onMouseOver={() => handleChange(id)}
         onFocus={() => handleChange(id)}
-        src={soleil}
         alt=""
-        style={{ zIndex: 1 }}
       />
     </div>
   );

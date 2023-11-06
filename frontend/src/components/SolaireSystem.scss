@@ -98,7 +98,7 @@ body {
   img {
     position: absolute;
     height: 21vw;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
@@ -243,6 +243,7 @@ body {
     animation: orbite_Neptune 1158s linear infinite;
     margin-top: 72vw;
     margin-left: 72vw;
+    z-index: 0;
   }
 }
 .contour {
@@ -262,10 +263,12 @@ body {
 .text {
   color: orange;
   font-weight: bold;
+  width: 5vw;
 }
 
 .bold {
   font-weight: bold;
+  width: 5vw;
 }
 
 @media screen and (max-width: 500px) {
