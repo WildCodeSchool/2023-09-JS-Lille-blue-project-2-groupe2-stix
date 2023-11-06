@@ -272,7 +272,7 @@ function SolaireSystem() {
       {system.length > 0 &&
         system.map((planet) => (
           <section key={planet.id}>
-            <div className="système">
+            <div className="système" id={planet.french_name}>
               <Title
                 id={planet.id}
                 handleChange={handleChange}

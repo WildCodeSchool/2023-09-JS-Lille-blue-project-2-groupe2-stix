@@ -127,7 +127,7 @@
   {
     "id": 6,
     "french_name": "Jupiter",
-    "english_name": "Jupiter",
+    "english_name": "jupiter",
     "image": "https://drive.google.com/file/d/1z8BOiM_rhVdFZTZtEYI2RXONMHpeKNGW/view?usp=drive_link",
     "nombre_de_satellites": "79 (confirmés, nombreux satellites non confirmés)",
     "masse": "1.899 * 10^27 kg",
@@ -177,7 +177,7 @@
   {
     "id": 8,
     "french_name": "Uranus",
-    "english_name": "Uranus",
+    "english_name": "uranus",
     "image": "https://drive.google.com/file/d/12jg0UzI5FRgaEdNFrAAOV6MzfC4mKfBA/view?usp=drive_link",
     "nombre_de_satellites": "27 (confirmés, nombreux satellites non confirmés)",
     "masse": "8.681 * 10^25 kg",
@@ -202,7 +202,7 @@
   {
     "id": 9,
     "french_name": "Neptune",
-    "english_name": "Neptune",
+    "english_name": "neptune",
     "image": "https://drive.google.com/file/d/1HTftsV0wqFckDYFXtGNZaG831X_pipdv/view?usp=drive_link",
     "nombre_de_satellites": "14 (confirmés, nombreux satellites non confirmés)",
     "masse": "1.024 * 10^26 kg",

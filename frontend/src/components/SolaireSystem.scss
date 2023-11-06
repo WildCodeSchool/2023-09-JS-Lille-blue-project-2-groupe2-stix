@@ -78,6 +78,40 @@
   }
 }
 
+#Soleil {
+  z-index: 8;
+}
+
+#Mercure {
+  z-index: 7;
+}
+
+#Vénus {
+  z-index: 6;
+}
+
+#Terre {
+  z-index: 5;
+}
+
+#Mars {
+  z-index: 4;
+}
+
+#Jupiter {
+  z-index: 3;
+}
+
+#Saturne {
+  z-index: 2;
+}
+#Uranus {
+  z-index: 1;
+}
+
+#Neptune {
+  z-index: 0;
+}
 .système {
   position: absolute;
   left: 36vw;
