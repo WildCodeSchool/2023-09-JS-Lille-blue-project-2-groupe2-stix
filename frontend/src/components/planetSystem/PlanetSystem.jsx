@@ -25,11 +25,6 @@ function PlanetSystem({ systeme }) {
 
   return (
     <div>
-      <div className="bg" />
-      <div className="star-field" />
-      <div className="layer" />
-      <div className="layer" />
-      <div className="layer" />
       {system &&
         system.map((planet) => (
           <article key={planet.id} className="solarlist">
