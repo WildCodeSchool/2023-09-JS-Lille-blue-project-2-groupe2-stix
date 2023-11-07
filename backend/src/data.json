@@ -27,7 +27,7 @@
     "id": 2,
     "french_name": "Mercure",
     "english_name": "Mercury",
-    "image": "../src/assets/image/2mercure.png",
+    "image": "/assets/image/2mercure.png",
     "nombre_de_satellites": 0,
     "masse": "3.3011 * 10^23 kg",
     "volume": "6.083 * 10^10 km³",
