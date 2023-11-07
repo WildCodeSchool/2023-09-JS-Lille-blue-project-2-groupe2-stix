@@ -15,11 +15,22 @@ svg {
     transform: rotate(-22deg);
   }
 }
+
 .sun {
   width: 50rem;
   position: absolute;
   top: 0.5em;
   left: -14rem;
+}
+.button__img__sun {
+  height: 60em;
+  width: 50rem;
+  position: absolute;
+  top: 0.5em;
+  left: -14rem;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .ligne {
@@ -28,58 +39,146 @@ svg {
   top: 350px;
 }
 
-.mercure {
+.Mercure {
   width: 0.6rem;
   position: absolute;
   top: 371px;
   left: 247px;
+  z-index: 2;
+}
+.button__img__Mercure {
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  top: 371px;
+  left: 247px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.venus {
+.Vénus {
   width: 1rem;
   position: absolute;
   top: 368px;
   left: 300px;
+  z-index: 2;
+}
+.button__img__Vénus {
+  height: 1.1rem;
+  width: 1.1rem;
+  position: absolute;
+  top: 368px;
+  left: 300px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.terre {
+.Terre {
   width: 1rem;
   position: absolute;
   top: 368px;
   left: 365px;
+  z-index: 2;
+}
+.button__img__Terre {
+  height: 1.1rem;
+  width: 1.1rem;
+  position: absolute;
+  top: 368px;
+  left: 365px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.mars {
+.Mars {
   width: 0.8rem;
   position: absolute;
   top: 370px;
   left: 420px;
+  z-index: 2;
+}
+.button__img__Mars {
+  height: 0.9rem;
+  width: 0.9rem;
+  position: absolute;
+  top: 370px;
+  left: 420px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.jupiter {
+.Jupiter {
   width: 13rem;
   position: absolute;
   top: 260px;
   left: 480px;
+  z-index: 2;
+}
+.button__img__Jupiter {
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  top: 260px;
+  left: 480px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.saturne {
+.Saturne {
   width: 25rem;
   position: absolute;
   top: 260px;
   left: 650px;
+  z-index: 2;
+}
+.button__img__Saturne {
+  height: 15em;
+  width: 15rem;
+  position: absolute;
+  top: 260px;
+  left: 713px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.uranus {
+.Uranus {
   width: 9rem;
   position: absolute;
   top: 305px;
   left: 990px;
+  z-index: 2;
+}
+.button__img__Uranus {
+  height: 9rem;
+  width: 9rem;
+  position: absolute;
+  top: 305px;
+  left: 990px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.neptune {
+.Neptune {
   width: 9rem;
   position: absolute;
   top: 305px;
   left: 1180px;
+  z-index: 2;
+}
+.button__img__Neptune {
+  height: 9rem;
+  width: 9rem;
+  position: absolute;
+  top: 305px;
+  left: 1180px;
+  z-index: 5;
+  border-radius: 50%;
+  opacity: 0;
 }
