@@ -7,36 +7,18 @@ import ButtonAndImg from "../buttonAndImg/buttonAndImg";
 
 function SolarSystem({ systeme }) {
   const [showCard, setShowCard] = useState(false);
-  const [indexPlanet, setIndexPlanet] = useState(0);
-  const planets = systeme.slice(1);
+  const [choosePlanet, setChoosePlanet] = useState();
 
   return (
-    <div className="soleil">
-      <img
-        id="0"
-        className="sun"
-        src={`${import.meta.env.VITE_BACKEND_URL}${systeme[0].image}`}
-        alt="Soleil"
-      />
-      <button
-        data-index="0"
-        aria-labelledby="sun"
-        className="button__img__sun"
-        type="button"
-        onClick={() => {
-          setIndexPlanet(systeme[0].id);
-          setShowCard(true);
-        }}
-      />
+    <div className="sun">
       {showCard &&
         createPortal(
           <Card
-            planet={systeme[indexPlanet]}
+            planet={systeme[choosePlanet]}
             closeCard={() => setShowCard(false)}
           />,
           document.body
-        )}{" "}
-      */
+        )}
       <div className="imageSVG">
         <svg>
           <path d="M -300,450 A 900 110 0 0 0 393,300" />
@@ -49,10 +31,10 @@ function SolarSystem({ systeme }) {
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
 
-        {planets.map((planet) => (
+        {systeme.map((planet) => (
           <ButtonAndImg
-            planets={planet}
-            setIndexPlanet={setIndexPlanet}
+            planet={planet}
+            setChoosePlanet={setChoosePlanet}
             setShowCard={setShowCard}
           />
         ))}

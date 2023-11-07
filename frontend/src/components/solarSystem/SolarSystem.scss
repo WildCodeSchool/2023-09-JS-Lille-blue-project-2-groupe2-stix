@@ -4,7 +4,7 @@ body {
 }
 
 svg {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   top: 1rem;
@@ -16,13 +16,7 @@ svg {
   }
 }
 
-.sun {
-  width: 50rem;
-  position: absolute;
-  top: 0.5em;
-  left: -14rem;
-}
-.button__img__sun {
+.button__img__Sun {
   height: 60em;
   width: 50rem;
   position: absolute;
@@ -32,6 +26,13 @@ svg {
   border-radius: 50%;
   opacity: 0;
 }
+.Sun {
+  width: 50rem;
+  position: absolute;
+  top: 0.5em;
+  left: -14rem;
+  z-index: -5;
+}
 
 .ligne {
   color: red;
@@ -39,14 +40,14 @@ svg {
   top: 350px;
 }
 
-.Mercure {
+.Mercury {
   width: 0.6rem;
   position: absolute;
   top: 371px;
   left: 247px;
   z-index: 2;
 }
-.button__img__Mercure {
+.button__img__Mercury {
   height: 0.7rem;
   width: 0.7rem;
   position: absolute;
@@ -57,14 +58,14 @@ svg {
   opacity: 0;
 }
 
-.Vénus {
+.Venus {
   width: 1rem;
   position: absolute;
   top: 368px;
   left: 300px;
   z-index: 2;
 }
-.button__img__Vénus {
+.button__img__Venus {
   height: 1.1rem;
   width: 1.1rem;
   position: absolute;
@@ -75,14 +76,14 @@ svg {
   opacity: 0;
 }
 
-.Terre {
+.Earth {
   width: 1rem;
   position: absolute;
   top: 368px;
   left: 365px;
   z-index: 2;
 }
-.button__img__Terre {
+.button__img__Earth {
   height: 1.1rem;
   width: 1.1rem;
   position: absolute;
@@ -129,14 +130,14 @@ svg {
   opacity: 0;
 }
 
-.Saturne {
+.Saturn {
   width: 25rem;
   position: absolute;
   top: 260px;
   left: 650px;
   z-index: 2;
 }
-.button__img__Saturne {
+.button__img__Saturn {
   height: 15em;
   width: 15rem;
   position: absolute;
