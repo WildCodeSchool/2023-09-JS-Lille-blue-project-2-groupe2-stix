@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Text from "./PlanetList";
-import "./SolaireSystem.scss";
-import Title from "./PlanetTourne";
+import PlanetList from "./PlanetList";
+import "./PlanetSystem.scss";
+import PlanetTurn from "./PlanetTurn";
 
 function PlanetSystem({ systeme }) {
   const [system, setSystem] = useState(systeme);
@@ -27,15 +27,19 @@ function PlanetSystem({ systeme }) {
     <div>
       {system &&
         system.map((planet) => (
-          <section key={planet.id}>
+          <section key={planet.id} className="solarList">
             <div className="système" id={planet.french_name}>
-              <Title
+              <PlanetTurn
                 id={planet.id}
                 handleChange={handleChange}
                 planet={planet}
               />
             </div>
-            <Text id={planet.id} handleChange={handleChange} planet={planet} />
+            <PlanetList
+              id={planet.id}
+              handleChange={handleChange}
+              planet={planet}
+            />
           </section>
         ))}
     </div>

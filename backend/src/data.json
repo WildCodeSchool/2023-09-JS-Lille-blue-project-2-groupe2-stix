@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "french_name": "Soleil",
     "english_name": "Sun",
     "image": "/assets/image/1soleil.png",
@@ -25,7 +25,7 @@
     "isHover": false
   },
   {
-    "id": 2,
+    "id": 1,
     "french_name": "Mercure",
     "english_name": "Mercury",
     "image": "/assets/image/2mercury.png",
@@ -50,9 +50,9 @@
     "isHover": false
   },
   {
-    "id": 3,
+    "id": 2,
     "french_name": "Vénus",
-    "english_names": "Venus",
+    "english_name": "Venus",
     "image": "/assets/image/3venus.png",
     "nombre_de_satellites": 0,
     "masse": "4.867 * 10^24 kg",
@@ -75,7 +75,7 @@
     "isHover": false
   },
   {
-    "id": 4,
+    "id": 3,
     "french_name": "Terre",
     "english_name": "Earth",
     "image": "/assets/image/4earth.png",
@@ -100,7 +100,7 @@
     "isHover": false
   },
   {
-    "id": 5,
+    "id": 4,
     "french_name": "Mars",
     "english_name": "Mars",
     "image": "/assets/image/5mars.png",
@@ -125,7 +125,7 @@
     "isHover": false
   },
   {
-    "id": 6,
+    "id": 5,
     "french_name": "Jupiter",
     "english_name": "Jupiter",
     "image": "/assets/image/6jupiter.png",
@@ -150,7 +150,7 @@
     "isHover": false
   },
   {
-    "id": 7,
+    "id": 6,
     "french_name": "Saturne",
     "english_name": "Saturn",
     "image": "/assets/image/7saturne.png",
@@ -175,7 +175,7 @@
     "isHover": false
   },
   {
-    "id": 8,
+    "id": 7,
     "french_name": "Uranus",
     "english_name": "Uranus",
     "image": "/assets/image/8uranus.png",
@@ -200,7 +200,7 @@
     "isHover": false
   },
   {
-    "id": 9,
+    "id": 8,
     "french_name": "Neptune",
     "english_name": "Neptune",
     "image": "/assets/image/9neptune.png",
