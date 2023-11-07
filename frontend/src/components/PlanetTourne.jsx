@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import soleil from "../assets/image/1sun.png";
 
-function Title({ id, handleChange, planet }) {
+function PlanetTourne({ id, handleChange, planet }) {
   return (
     <div className={planet.french_name}>
       <img
@@ -16,7 +16,7 @@ function Title({ id, handleChange, planet }) {
   );
 }
 
-Title.propTypes = {
+PlanetTourne.propTypes = {
   planet: PropTypes.shape({
     french_name: PropTypes.string.isRequired,
     isHover: PropTypes.bool.isRequired,
@@ -27,4 +27,4 @@ Title.propTypes = {
   handleChange: PropTypes.func.isRequired,
 };
 
-export default Title;
+export default PlanetTourne;

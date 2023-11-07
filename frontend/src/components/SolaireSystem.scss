@@ -114,8 +114,8 @@
 }
 .système {
   position: absolute;
-  left: 36vw;
-  top: 13vw;
+  left: 26vw;
+  top: 14vw;
   scale: 0.3;
 }
 
@@ -132,7 +132,6 @@ body {
   img {
     position: absolute;
     height: 21vw;
-    z-index: 2;
   }
 }
 
@@ -285,6 +284,11 @@ body {
   border-radius: 50%;
 }
 
+.List {
+  margin-left: 78vw;
+  line-height: 1.4vw;
+}
+
 .systèmeInfos {
   display: flex;
   flex-direction: column;
@@ -296,13 +300,7 @@ body {
 
 .text {
   color: orange;
-  font-weight: bold;
-  width: 5vw;
-}
-
-.bold {
-  font-weight: bold;
-  width: 5vw;
+  width: 20vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -315,7 +313,13 @@ body {
   .système {
     position: absolute;
     left: 15vw;
-    top: 67vw;
+    top: 145vw;
     scale: 0.6;
+  }
+  .bold {
+    margin-left: -2vw;
+    width: 56vw;
+    text-align: center;
+    line-height: 3vw;
   }
 }

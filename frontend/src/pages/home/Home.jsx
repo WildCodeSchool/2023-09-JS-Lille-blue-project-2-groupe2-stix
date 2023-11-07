@@ -10,6 +10,6 @@ function Home() {
       .then((data) => setSysteme(data));
   }, []);
 
-  return <div>{systeme ? <SolaireSystem /> : ""}</div>;
+  return <div>{systeme ? <SolaireSystem systeme={systeme} /> : ""}</div>;
 }
 export default Home;

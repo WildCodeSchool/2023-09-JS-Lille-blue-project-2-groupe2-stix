@@ -1,25 +1,25 @@
 import PropTypes from "prop-types";
 
-function Text({ id, handleChange, planet }) {
+function PlanetList({ id, handleChange, planet }) {
   return (
-    <div>
+    <div className="List">
       <p
         onMouseLeave={() => handleChange(id)}
         onMouseOver={() => handleChange(id)}
         onFocus={() => handleChange(id)}
-        className={planet.isHover ? "text" : "bold"}
+        className={planet.isHover ? "text" : null}
       >
         {" "}
-        {planet.french_name} :
-      </p>
-      <p>
-        {planet.periode_de_revolution} / {planet.vitesse_rotation_equateur}
+        <strong>{planet.french_name} : </strong> <br />
+        Periode de révolution : {planet.periode_de_revolution}
+        <br />
+        vitesse de rotation à l'équateur : {planet.vitesse_rotation_equateur}
       </p>
     </div>
   );
 }
 
-Text.propTypes = {
+PlanetList.propTypes = {
   planet: PropTypes.shape({
     french_name: PropTypes.string.isRequired,
     isHover: PropTypes.bool.isRequired,
@@ -31,4 +31,4 @@ Text.propTypes = {
   handleChange: PropTypes.func.isRequired,
 };
 
-export default Text;
+export default PlanetList;
