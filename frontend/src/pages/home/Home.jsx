@@ -3,7 +3,7 @@ import SolarSystem from "../../components/solarSystem/SolarSystem";
 import HomeText from "../../components/homeText/homeText";
 import Card from "../../components/card/Card";
 import Navbar from "../../components/navbar/Navbar";
-import Logo from "../../components/navbar/logo";
+import Logo from "../../components/logo/logo";
 
 export default function Home() {
   const [systeme, setSysteme] = useState();
