@@ -11,8 +11,6 @@ function PlanetList({ id, handleChange, planet }) {
       >
         {" "}
         <strong className="namePlanet">{planet.french_name} : </strong> <br />
-      </p>
-      <p className="infosList">
         Periode de révolution : {planet.periode_de_revolution}
         <br />
         vitesse de rotation à l'équateur : {planet.vitesse_rotation_equateur}
