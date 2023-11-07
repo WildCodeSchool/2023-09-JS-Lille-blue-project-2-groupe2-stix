@@ -7,10 +7,12 @@ function PlanetList({ id, handleChange, planet }) {
         onMouseLeave={() => handleChange(id)}
         onMouseOver={() => handleChange(id)}
         onFocus={() => handleChange(id)}
-        className={planet.isHover ? "text" : null}
+        className={planet.isHover ? "text listPlacement" : "listPlacement"}
       >
         {" "}
-        <strong>{planet.french_name} : </strong> <br />
+        <strong className="namePlanet">{planet.french_name} : </strong> <br />
+      </p>
+      <p className="infosList">
         Periode de révolution : {planet.periode_de_revolution}
         <br />
         vitesse de rotation à l'équateur : {planet.vitesse_rotation_equateur}

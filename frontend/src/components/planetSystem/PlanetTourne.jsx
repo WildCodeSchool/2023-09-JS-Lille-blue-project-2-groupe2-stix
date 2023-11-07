@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
-import soleil from "../assets/image/1sun.png";
 
 function PlanetTourne({ id, handleChange, planet }) {
   return (
     <div className={planet.french_name}>
       <img
-        src={soleil}
+        src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
         className={planet.isHover ? "contour" : ""}
         onMouseLeave={() => handleChange(id)}
         onMouseOver={() => handleChange(id)}

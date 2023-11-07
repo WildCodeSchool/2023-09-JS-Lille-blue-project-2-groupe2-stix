@@ -115,8 +115,9 @@
 .système {
   position: absolute;
   left: 26vw;
-  top: 14vw;
-  scale: 0.3;
+  top: -1vw;
+  scale: 0.32;
+  margin-top: 111vw;
 }
 
 body {
@@ -126,12 +127,12 @@ body {
 
 .Soleil {
   position: absolute;
-  top: 22vw;
-  left: 47vw;
+  top: 24.3vw;
+  left: 49.3vw;
 
   img {
     position: absolute;
-    height: 21vw;
+    height: 17vw;
   }
 }
 
@@ -285,8 +286,22 @@ body {
 }
 
 .List {
-  margin-left: 78vw;
-  line-height: 1.4vw;
+  margin-left: 70vw;
+  line-height: 1vw;
+}
+
+.infosList {
+  margin-left: 8vw;
+  text-align: justify;
+}
+
+.namePlanet {
+  margin-right: 1vw;
+}
+
+.listPlacement {
+  text-align: justify;
+  margin-left: 8vw;
 }
 
 .systèmeInfos {

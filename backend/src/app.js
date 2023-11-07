@@ -27,6 +27,8 @@ const getPlanetsByid = (req, res) => {
   }
 };
 app.get("/planets/:id", getPlanetsByid);
+
+app.use(express.static("./public"));
 // Configure it
 
 /* ************************************************************************* */

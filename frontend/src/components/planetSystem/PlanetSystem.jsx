@@ -4,7 +4,7 @@ import Text from "./PlanetList";
 import "./SolaireSystem.scss";
 import Title from "./PlanetTourne";
 
-function SolaireSystem({ systeme }) {
+function PlanetSystem({ systeme }) {
   const [system, setSystem] = useState(systeme);
 
   const handleChange = (id) => {
@@ -42,8 +42,8 @@ function SolaireSystem({ systeme }) {
   );
 }
 
-SolaireSystem.propTypes = {
+PlanetSystem.propTypes = {
   systeme: PropTypes.arrayOf().isRequired,
 };
 
-export default SolaireSystem;
+export default PlanetSystem;

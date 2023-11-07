@@ -1,0 +1,85 @@
+body {
+  background-color: #171821;
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 1rem;
+  path {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    transform: rotate(-22deg);
+  }
+}
+.sun {
+  width: 50rem;
+  position: absolute;
+  top: 0.5em;
+  left: -14rem;
+}
+
+.ligne {
+  color: red;
+  position: absolute;
+  top: 350px;
+}
+
+.mercure {
+  width: 0.6rem;
+  position: absolute;
+  top: 371px;
+  left: 247px;
+}
+
+.venus {
+  width: 1rem;
+  position: absolute;
+  top: 368px;
+  left: 300px;
+}
+
+.terre {
+  width: 1rem;
+  position: absolute;
+  top: 368px;
+  left: 365px;
+}
+
+.mars {
+  width: 0.8rem;
+  position: absolute;
+  top: 370px;
+  left: 420px;
+}
+
+.jupiter {
+  width: 13rem;
+  position: absolute;
+  top: 260px;
+  left: 480px;
+}
+
+.saturne {
+  width: 25rem;
+  position: absolute;
+  top: 260px;
+  left: 650px;
+}
+
+.uranus {
+  width: 9rem;
+  position: absolute;
+  top: 305px;
+  left: 990px;
+}
+
+.neptune {
+  width: 9rem;
+  position: absolute;
+  top: 305px;
+  left: 1180px;
+}
