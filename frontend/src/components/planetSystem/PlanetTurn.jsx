@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function PlanetTurn({ id, handleChange, planet }) {
   return (
-    <div className="planetTurn">
+    <div className="planetturn">
       <div className={planet.french_name}>
         <img
           src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}

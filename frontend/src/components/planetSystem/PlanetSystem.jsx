@@ -25,22 +25,27 @@ function PlanetSystem({ systeme }) {
 
   return (
     <div>
+      <div className="bg" />
+      <div className="star-field" />
+      <div className="layer" />
+      <div className="layer" />
+      <div className="layer" />
       {system &&
         system.map((planet) => (
-          <section key={planet.id} className="solarList">
-            <div className="système" id={planet.french_name}>
+          <article key={planet.id} className="solarlist">
+            <section className="système" id={planet.french_name}>
               <PlanetTurn
                 id={planet.id}
                 handleChange={handleChange}
                 planet={planet}
               />
-            </div>
+            </section>
             <PlanetList
               id={planet.id}
               handleChange={handleChange}
               planet={planet}
             />
-          </section>
+          </article>
         ))}
     </div>
   );
