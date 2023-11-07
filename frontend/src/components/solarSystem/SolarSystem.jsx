@@ -1,14 +1,42 @@
 import "./SolarSystem.scss";
 import PropTypes, { shape } from "prop-types";
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import Card from "../card/Card";
+import ButtonAndImg from "../buttonAndImg/buttonAndImg";
 
 function SolarSystem({ systeme }) {
+  const [showCard, setShowCard] = useState(false);
+  const [indexPlanet, setIndexPlanet] = useState(0);
+  const planets = systeme.slice(1);
+
   return (
     <div className="soleil">
       <img
+        id="0"
         className="sun"
         src={`${import.meta.env.VITE_BACKEND_URL}${systeme[0].image}`}
         alt="Soleil"
       />
+      <button
+        data-index="0"
+        aria-labelledby="sun"
+        className="button__img__sun"
+        type="button"
+        onClick={() => {
+          setIndexPlanet(systeme[0].id);
+          setShowCard(true);
+        }}
+      />
+      {showCard &&
+        createPortal(
+          <Card
+            planet={systeme[indexPlanet]}
+            closeCard={() => setShowCard(false)}
+          />,
+          document.body
+        )}{" "}
+      */
       <div className="imageSVG">
         <svg>
           <path d="M -300,450 A 900 110 0 0 0 393,300" />
@@ -20,46 +48,14 @@ function SolarSystem({ systeme }) {
           <path d="M -400,850 A 785 240 0 0 0 385,275" />
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
-        <img
-          className="mercure"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[1].image}`}
-          alt="Mercure"
-        />
-        <img
-          className="venus"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[2].image}`}
-          alt="Venus"
-        />
-        <img
-          className="terre"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[3].image}`}
-          alt="Terre"
-        />
-        <img
-          className="mars"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[4].image}`}
-          alt="Mars"
-        />
-        <img
-          className="jupiter"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[5].image}`}
-          alt="Jupiter"
-        />
-        <img
-          className="saturne"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[6].image}`}
-          alt="Saturne"
-        />
-        <img
-          className="uranus"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[7].image}`}
-          alt="Uranus"
-        />
-        <img
-          className="neptune"
-          src={`${import.meta.env.VITE_BACKEND_URL}${systeme[8].image}`}
-          alt="Neptune"
-        />
+
+        {planets.map((planet) => (
+          <ButtonAndImg
+            planets={planet}
+            setIndexPlanet={setIndexPlanet}
+            setShowCard={setShowCard}
+          />
+        ))}
       </div>
     </div>
   );
