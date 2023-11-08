@@ -20,103 +20,105 @@ body {
   background-image: url("https://img2.wallspic.com/previews/6/7/2/3/4/143276/143276-espace_exterieur-nuit-voie_lactee-ciel-objet_astronomique-x750.jpg");
 }
 
-.Soleil {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 50vh;
-  animation: planete 10s linear;
-  z-index: 2;
-  opacity: 0;
-}
+.accueilplanet {
+  .Soleil {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 50vh;
+    animation: planete 10s linear;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Mercure {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 9s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Mercure {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 9s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Vénus {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 18s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Vénus {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 18s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Terre {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 27s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Terre {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 27s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Mars {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 36s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Mars {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 36s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Saturne {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 45s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Saturne {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 45s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Jupiter {
-  height: 40vh;
-  position: absolute;
-  opacity: 0;
-  top: 28vh;
-  left: 2vw;
-  animation: planete 10s linear;
-  animation-delay: 54s;
-  z-index: 1;
-  opacity: 0;
-}
+  .Jupiter {
+    height: 40vh;
+    position: absolute;
+    opacity: 0;
+    top: 28vh;
+    left: 2vw;
+    animation: planete 10s linear;
+    animation-delay: 54s;
+    z-index: 1;
+    opacity: 0;
+  }
 
-.Uranus {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 63s;
-  z-index: 2;
-  opacity: 0;
-}
+  .Uranus {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 63s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.Neptune {
-  position: absolute;
-  top: 28vh;
-  left: 2vw;
-  height: 40vh;
-  animation: planete 10s linear;
-  animation-delay: 72s;
-  z-index: 2;
-  opacity: 0;
+  .Neptune {
+    position: absolute;
+    top: 28vh;
+    left: 2vw;
+    height: 40vh;
+    animation: planete 10s linear;
+    animation-delay: 72s;
+    z-index: 2;
+    opacity: 0;
+  }
 }
 
 .textaccueil {
