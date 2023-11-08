@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "./Accueil.scss";
+import "./Welcome.scss";
 import { useState, useEffect } from "react";
 
-function Accueil() {
+function Welcome() {
   const [systeme, setSysteme] = useState();
 
   useEffect(() => {
@@ -11,12 +11,12 @@ function Accueil() {
       .then((data) => setSysteme(data));
   }, []);
   return (
-    <div className="accueilbackground">
-      <section className="accueil">
+    <div className="welcomebackground">
+      <section className="welcome">
         {systeme ? (
           <>
             <h1>STYX</h1>
-            <div className="accueilplanet">
+            <div className="welcomeplanet">
               {systeme.map((planet) => {
                 return (
                   <img
@@ -28,7 +28,7 @@ function Accueil() {
               })}
             </div>
             <section className="presentation">
-              <p className="textaccueil">
+              <p className="textwelcome">
                 Bienvenue sur "STYX" ! Notre site est votre passerelle vers les
                 merveilles insondables de l'univers, en mettant en lumière le
                 joyau de notre coin de cosmos : le système solaire. Que vous
@@ -37,7 +37,7 @@ function Accueil() {
                 plateforme est conçue pour satisfaire votre soif de découvertes
                 cosmiques.
               </p>
-              <p className="textaccueil">
+              <p className="textwelcome">
                 Que vous soyez passionné par les cosmique tempêtes sur Jupiter,
                 les lunes glacées d'Encelade, les mystères de Mars, ou les
                 dernières découvertes sur les exoplanètes, "STYX" vous offre une
@@ -46,7 +46,7 @@ function Accueil() {
                 spatiale, et émerveillez-vous devant la beauté et la grandeur de
                 notre système solaire.
               </p>
-              <p className="textaccueil">
+              <p className="textwelcome">
                 Rejoignez-nous dans cette aventure et partons ensemble à la
                 découverte des merveilles du système solaire. Vous êtes invités
                 à explorer, apprendre, partager et participer à cette quête
@@ -57,7 +57,7 @@ function Accueil() {
             </section>
 
             <h2>Envie d'en apprendre plus ?</h2>
-            <Link to="/home" className="linkaccueil">
+            <Link to="/home" className="linkwelcome">
               {" "}
               Clique ici pour découvrir{" "}
             </Link>
@@ -68,4 +68,4 @@ function Accueil() {
   );
 }
 
-export default Accueil;
+export default Welcome;

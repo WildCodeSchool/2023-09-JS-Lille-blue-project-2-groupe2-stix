@@ -20,7 +20,7 @@ body {
   background-image: url("https://img2.wallspic.com/previews/6/7/2/3/4/143276/143276-espace_exterieur-nuit-voie_lactee-ciel-objet_astronomique-x750.jpg");
 }
 
-.accueilplanet {
+.welcomeplanet {
   .Soleil {
     position: absolute;
     top: 28vh;
@@ -121,7 +121,7 @@ body {
   }
 }
 
-.textaccueil {
+.textwelcome {
   text-align: center;
 }
 .presentation {
@@ -140,7 +140,7 @@ h1 {
   font-size: 2rem;
 }
 
-.accueil {
+.welcome {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +152,7 @@ h2 {
   top: 83vh;
 }
 
-.linkaccueil {
+.linkwelcome {
   text-decoration: none;
   color: white;
   position: absolute;
