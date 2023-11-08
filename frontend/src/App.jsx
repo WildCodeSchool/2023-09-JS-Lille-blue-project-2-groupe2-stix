@@ -1,11 +1,15 @@
-import Home from "./pages/home/Home";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div id="toto">
-      <Home />
-    </div>
+    <>
+      <nav>
+        <Link to="/Home">Home</Link>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 }
-
 export default App;

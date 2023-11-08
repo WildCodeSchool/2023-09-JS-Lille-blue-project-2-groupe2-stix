@@ -4,8 +4,8 @@ body {
 }
 
 svg {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 170%;
   position: absolute;
   top: 1rem;
   path {
@@ -16,170 +16,172 @@ svg {
   }
 }
 
-.button__img__Sun {
-  height: 60em;
-  width: 50rem;
-  position: absolute;
-  top: 0.5em;
-  left: -14rem;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
-.Sun {
-  width: 50rem;
-  position: absolute;
-  top: 0.5em;
-  left: -14rem;
-  z-index: -5;
-}
+.sun {
+  .button__img__Sun {
+    height: 60em;
+    width: 50rem;
+    position: absolute;
+    top: 0.5em;
+    left: -14rem;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  .Sun {
+    width: 50rem;
+    position: absolute;
+    top: 0.5em;
+    left: -14rem;
+    z-index: -5;
+  }
 
-.ligne {
-  color: red;
-  position: absolute;
-  top: 350px;
-}
+  .ligne {
+    color: red;
+    position: absolute;
+    top: 350px;
+  }
 
-.Mercury {
-  width: 0.6rem;
-  position: absolute;
-  top: 371px;
-  left: 247px;
-  z-index: 2;
-}
-.button__img__Mercury {
-  height: 0.7rem;
-  width: 0.7rem;
-  position: absolute;
-  top: 371px;
-  left: 247px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Mercury {
+    width: 0.6rem;
+    position: absolute;
+    top: 371px;
+    left: 247px;
+    z-index: 2;
+  }
+  .button__img__Mercury {
+    height: 0.7rem;
+    width: 0.7rem;
+    position: absolute;
+    top: 371px;
+    left: 247px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Venus {
-  width: 1rem;
-  position: absolute;
-  top: 368px;
-  left: 300px;
-  z-index: 2;
-}
-.button__img__Venus {
-  height: 1.1rem;
-  width: 1.1rem;
-  position: absolute;
-  top: 368px;
-  left: 300px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Venus {
+    width: 1rem;
+    position: absolute;
+    top: 368px;
+    left: 300px;
+    z-index: 2;
+  }
+  .button__img__Venus {
+    height: 1.1rem;
+    width: 1.1rem;
+    position: absolute;
+    top: 368px;
+    left: 300px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Earth {
-  width: 1rem;
-  position: absolute;
-  top: 368px;
-  left: 365px;
-  z-index: 2;
-}
-.button__img__Earth {
-  height: 1.1rem;
-  width: 1.1rem;
-  position: absolute;
-  top: 368px;
-  left: 365px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Earth {
+    width: 1rem;
+    position: absolute;
+    top: 368px;
+    left: 365px;
+    z-index: 2;
+  }
+  .button__img__Earth {
+    height: 1.1rem;
+    width: 1.1rem;
+    position: absolute;
+    top: 368px;
+    left: 365px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Mars {
-  width: 0.8rem;
-  position: absolute;
-  top: 370px;
-  left: 420px;
-  z-index: 2;
-}
-.button__img__Mars {
-  height: 0.9rem;
-  width: 0.9rem;
-  position: absolute;
-  top: 370px;
-  left: 420px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Mars {
+    width: 0.8rem;
+    position: absolute;
+    top: 370px;
+    left: 420px;
+    z-index: 2;
+  }
+  .button__img__Mars {
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    top: 370px;
+    left: 420px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Jupiter {
-  width: 13rem;
-  position: absolute;
-  top: 260px;
-  left: 480px;
-  z-index: 2;
-}
-.button__img__Jupiter {
-  height: 13rem;
-  width: 13rem;
-  position: absolute;
-  top: 260px;
-  left: 480px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Jupiter {
+    width: 13rem;
+    position: absolute;
+    top: 260px;
+    left: 480px;
+    z-index: 2;
+  }
+  .button__img__Jupiter {
+    height: 13rem;
+    width: 13rem;
+    position: absolute;
+    top: 260px;
+    left: 480px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Saturn {
-  width: 25rem;
-  position: absolute;
-  top: 260px;
-  left: 650px;
-  z-index: 2;
-}
-.button__img__Saturn {
-  height: 15em;
-  width: 15rem;
-  position: absolute;
-  top: 260px;
-  left: 713px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Saturn {
+    width: 25rem;
+    position: absolute;
+    top: 260px;
+    left: 650px;
+    z-index: 2;
+  }
+  .button__img__Saturn {
+    height: 15em;
+    width: 15rem;
+    position: absolute;
+    top: 260px;
+    left: 713px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Uranus {
-  width: 9rem;
-  position: absolute;
-  top: 305px;
-  left: 990px;
-  z-index: 2;
-}
-.button__img__Uranus {
-  height: 9rem;
-  width: 9rem;
-  position: absolute;
-  top: 305px;
-  left: 990px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
-}
+  .Uranus {
+    width: 9rem;
+    position: absolute;
+    top: 305px;
+    left: 990px;
+    z-index: 2;
+  }
+  .button__img__Uranus {
+    height: 9rem;
+    width: 9rem;
+    position: absolute;
+    top: 305px;
+    left: 990px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 
-.Neptune {
-  width: 9rem;
-  position: absolute;
-  top: 305px;
-  left: 1180px;
-  z-index: 2;
-}
-.button__img__Neptune {
-  height: 9rem;
-  width: 9rem;
-  position: absolute;
-  top: 305px;
-  left: 1180px;
-  z-index: 5;
-  border-radius: 50%;
-  opacity: 0;
+  .Neptune {
+    width: 9rem;
+    position: absolute;
+    top: 305px;
+    left: 1180px;
+    z-index: 2;
+  }
+  .button__img__Neptune {
+    height: 9rem;
+    width: 9rem;
+    position: absolute;
+    top: 305px;
+    left: 1180px;
+    z-index: 5;
+    border-radius: 50%;
+    opacity: 0;
+  }
 }

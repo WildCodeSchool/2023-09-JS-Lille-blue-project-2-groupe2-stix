@@ -4,6 +4,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
+import Navbar from "../navbar/Navbar";
 
 function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
   const [showCard, setShowCard] = useState(false);
@@ -37,6 +38,11 @@ function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
       </div>
+      <Navbar
+        systeme={systeme}
+        setIndexPlanet={foundPlanet}
+        setShowCard={setShowCard}
+      />
     </div>
   );
 }
