@@ -1,0 +1,45 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+.terre {
+  position: absolute;
+  top: 25vh;
+  left: 2vw;
+  height: 40vh;
+}
+
+.jupiter {
+  height: 40vh;
+  position: absolute;
+  top: 25vh;
+  right: 2vw;
+}
+
+.textaccueil {
+  text-align: center;
+}
+.presentation {
+  border: solid 4px white;
+  width: 42vw;
+  line-height: 2vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5vw;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkaccueil {
+  text-decoration: none;
+  color: white;
+}

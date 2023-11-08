@@ -13,9 +13,9 @@ function Home() {
   }, []);
   return (
     <div>
-      <Navbar systeme={systeme} />
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
       <HomeText />
+      <Navbar systeme={systeme} />
     </div>
   );
 }
