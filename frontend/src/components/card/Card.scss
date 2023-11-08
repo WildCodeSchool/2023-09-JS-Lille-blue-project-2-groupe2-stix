@@ -1,6 +1,6 @@
 #card {
   position: absolute;
-  bottom: 8em;
+  bottom: 11em;
   left: 3.5em;
   z-index: 10;
   .card__body {
@@ -8,7 +8,7 @@
     border: solid 4px white;
     color: white;
     background-color: black;
-    height: 80vh;
+    height: 70vh;
     width: 90vw;
     justify-content: space-between;
     border-radius: 16px;
