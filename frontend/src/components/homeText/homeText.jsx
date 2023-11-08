@@ -35,7 +35,7 @@ function HomeText() {
           transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
         }}
       >
-        Les planète
+        Les planètes
         <span className="textColor"> gravite autour du soleil</span> sur son
         propre orbite.
       </p>
