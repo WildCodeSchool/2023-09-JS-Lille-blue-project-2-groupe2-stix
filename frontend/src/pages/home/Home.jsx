@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
 import HomeText from "../../components/homeText/homeText";
-import Navbar from "../../components/navbar/Navbar";
 
 function Home() {
   const [systeme, setSysteme] = useState();
@@ -13,7 +12,6 @@ function Home() {
   }, []);
   return (
     <div>
-      <Navbar systeme={systeme} />
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
       <HomeText />
     </div>
