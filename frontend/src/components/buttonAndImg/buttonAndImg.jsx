@@ -1,29 +1,31 @@
 import PropTypes, { shape } from "prop-types";
 
-function ButtonAndImg({ planets, setIndexPlanet, setShowCard }) {
+function ButtonAndImg({ planet, setShowCard, foundPlanet }) {
   return (
-    <div key={planets.french_name}>
+    <div key={planet.id}>
       <img
-        id={planets.french_name}
-        className={planets.french_name}
-        src={`${import.meta.env.VITE_BACKEND_URL}${planets.image}`}
-        alt={planets.french_name}
+        id={planet.english_name}
+        className={planet.english_name}
+        src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
+        alt={planet.english_name}
       />
       <button
-        aria-labelledby={planets.french_name}
-        className={`button__img__${planets.french_name}`}
+        id={planet.id}
+        className={`button__img__${planet.english_name}`}
         type="button"
         onClick={() => {
-          setIndexPlanet(planets.id);
+          foundPlanet(planet.id);
           setShowCard(true);
         }}
-      />
+      >
+        {planet.french_name}
+      </button>
     </div>
   );
 }
 
 ButtonAndImg.propTypes = {
-  planets: PropTypes.arrayOf(
+  planet: PropTypes.arrayOf(
     shape({
       french_name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
@@ -33,7 +35,7 @@ ButtonAndImg.propTypes = {
     }).isRequired
   ).isRequired,
   setShowCard: PropTypes.func.isRequired,
-  setIndexPlanet: PropTypes.func.isRequired,
+  foundPlanet: PropTypes.func.isRequired,
 };
 
 export default ButtonAndImg;

@@ -6,6 +6,15 @@ import Navbar from "../../components/navbar/Navbar";
 
 function Home() {
   const [systeme, setSysteme] = useState();
+  const [choosePlanet, setChoosePlanet] = useState();
+  const foundPlanet = (id) => {
+    systeme.map((element) => {
+      if (element.id === id) {
+        setChoosePlanet(element);
+      }
+      return setChoosePlanet;
+    });
+  };
 
   useEffect(() => {
     fetch("http://localhost:3310/planets")
@@ -14,7 +23,15 @@ function Home() {
   }, []);
   return (
     <div>
-      {systeme ? <SolarSystem systeme={systeme} /> : ""}
+      {systeme ? (
+        <SolarSystem
+          systeme={systeme}
+          choosePlanet={choosePlanet}
+          foundPlanet={foundPlanet}
+        />
+      ) : (
+        ""
+      )}
       {systeme ? <HomeText /> : ""}
       {systeme ? <PlanetSystem systeme={systeme} /> : ""}
       <Navbar systeme={systeme} />

@@ -1,7 +1,7 @@
 import PropTypes, { shape } from "prop-types";
 import "./Navbar.scss";
 
-function Navbar({ systeme, setIndexPlanet, setShowCard }) {
+function Navbar({ systeme, foundPlanet, setShowCard }) {
   return (
     <nav className="navbar">
       <div className="planets">
@@ -11,7 +11,7 @@ function Navbar({ systeme, setIndexPlanet, setShowCard }) {
               <button
                 type="button"
                 onClick={() => {
-                  setIndexPlanet(planet.id);
+                  foundPlanet(planet.id);
                   setShowCard(true);
                 }}
                 className="planet"
@@ -41,7 +41,7 @@ Navbar.propTypes = {
       type_de_planete: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
-  setIndexPlanet: PropTypes.func.isRequired,
+  foundPlanet: PropTypes.func.isRequired,
   setShowCard: PropTypes.func.isRequired,
 };
 
