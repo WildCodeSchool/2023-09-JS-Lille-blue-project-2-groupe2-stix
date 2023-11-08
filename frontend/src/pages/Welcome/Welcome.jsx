@@ -15,7 +15,7 @@ function Welcome() {
       <section className="welcome">
         {systeme ? (
           <>
-            <h1>STYX</h1>
+            <h1 className="welcometitle">STYX</h1>
             <div className="welcomeplanet">
               {systeme.map((planet) => {
                 return (
@@ -38,7 +38,7 @@ function Welcome() {
                 cosmiques.
               </p>
               <p className="textwelcome">
-                Que vous soyez passionné par les cosmique tempêtes sur Jupiter,
+                Que vous soyez passionné par les tempêtes cosmique sur Jupiter,
                 les lunes glacées d'Encelade, les mystères de Mars, ou les
                 dernières découvertes sur les exoplanètes, "STYX" vous offre une
                 fenêtre unique sur le monde de l'astronomie. Explorez avec nous
@@ -56,10 +56,8 @@ function Welcome() {
               </p>
             </section>
 
-            <h2>Envie d'en apprendre plus ?</h2>
             <Link to="/home" className="linkwelcome">
-              {" "}
-              Clique ici pour découvrir{" "}
+              🢡 Clique ici pour en découvrir plus 🢠
             </Link>
           </>
         ) : null}

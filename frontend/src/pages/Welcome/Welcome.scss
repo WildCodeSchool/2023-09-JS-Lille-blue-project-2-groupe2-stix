@@ -125,7 +125,6 @@ body {
   text-align: center;
 }
 .presentation {
-  border: solid 4px white;
   width: 42vw;
   line-height: 2vw;
   text-align: center;
@@ -136,7 +135,7 @@ body {
   z-index: 15;
 }
 
-h1 {
+.welcometitle {
   font-size: 2rem;
 }
 
@@ -154,8 +153,9 @@ h2 {
 
 .linkwelcome {
   text-decoration: none;
-  color: white;
+  color: #5b4dda;
   position: absolute;
   z-index: 16;
   top: 91vh;
+  font-size: 2rem;
 }
