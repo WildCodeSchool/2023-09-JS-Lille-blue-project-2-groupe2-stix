@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
-      <HomeText />
+      {systeme ? <HomeText /> : ""}
       {systeme ? <PlanetSystem systeme={systeme} /> : ""}
     </div>
   );

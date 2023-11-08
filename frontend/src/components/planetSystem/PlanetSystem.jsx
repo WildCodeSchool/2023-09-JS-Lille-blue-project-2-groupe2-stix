@@ -13,11 +13,8 @@ function PlanetSystem({ systeme }) {
         if (planet.id === id) {
           // eslint-disable-next-line no-param-reassign
           planet.isHover = !planet.isHover;
-          console.info(planet.french_name, planet.isHover, id);
-
           return planet;
         }
-
         return planet;
       })
     );
