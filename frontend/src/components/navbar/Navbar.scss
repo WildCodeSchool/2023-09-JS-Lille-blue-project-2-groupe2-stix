@@ -2,11 +2,12 @@
   background-color: rgba(227, 227, 227, 0.53);
   color: #fff;
   padding: 5px;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  position: absolute;
   text-align: center;
+  z-index: 10;
 }
 
 .planets {
@@ -77,9 +78,6 @@
 .planet:hover p {
   display: block;
   background: rgba(141, 142, 166, 0.4);
-}
-nav.navbar {
-  border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {

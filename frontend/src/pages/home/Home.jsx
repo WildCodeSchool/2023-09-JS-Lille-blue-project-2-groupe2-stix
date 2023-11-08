@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
+import PlanetSystem from "../../components/planetSystem/PlanetSystem";
 import HomeText from "../../components/homeText/homeText";
 import Navbar from "../../components/navbar/Navbar";
 
@@ -14,7 +15,8 @@ function Home() {
   return (
     <div>
       {systeme ? <SolarSystem systeme={systeme} /> : ""}
-      <HomeText />
+      {systeme ? <HomeText /> : ""}
+      {systeme ? <PlanetSystem systeme={systeme} /> : ""}
       <Navbar systeme={systeme} />
     </div>
   );

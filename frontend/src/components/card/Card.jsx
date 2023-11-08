@@ -23,7 +23,7 @@ function Card({ planet, closeCard }) {
             X
           </button>
           <button type="button" className="card__button__moreInfos">
-            More Infos
+            +
           </button>
         </section>
       </div>
