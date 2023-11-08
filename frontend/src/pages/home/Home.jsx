@@ -4,6 +4,15 @@ import HomeText from "../../components/homeText/homeText";
 
 function Home() {
   const [systeme, setSysteme] = useState();
+  const [choosePlanet, setChoosePlanet] = useState();
+  const foundPlanet = (id) => {
+    systeme.map((element) => {
+      if (element.id === id) {
+        setChoosePlanet(element);
+      }
+      return setChoosePlanet;
+    });
+  };
 
   useEffect(() => {
     fetch("http://localhost:3310/planets")
@@ -12,8 +21,15 @@ function Home() {
   }, []);
   return (
     <div>
-      {systeme ? <SolarSystem systeme={systeme} /> : ""}
-
+      {systeme ? (
+        <SolarSystem
+          systeme={systeme}
+          choosePlanet={choosePlanet}
+          foundPlanet={foundPlanet}
+        />
+      ) : (
+        ""
+      )}
       <HomeText />
     </div>
   );

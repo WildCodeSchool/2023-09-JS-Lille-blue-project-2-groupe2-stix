@@ -1,6 +1,6 @@
 import PropTypes, { shape } from "prop-types";
 
-function ButtonAndImg({ planet, setChoosePlanet, setShowCard }) {
+function ButtonAndImg({ planet, setShowCard, foundPlanet }) {
   return (
     <div key={planet.id}>
       <img
@@ -14,7 +14,7 @@ function ButtonAndImg({ planet, setChoosePlanet, setShowCard }) {
         className={`button__img__${planet.english_name}`}
         type="button"
         onClick={() => {
-          setChoosePlanet(planet.id);
+          foundPlanet(planet.id);
           setShowCard(true);
         }}
       >
@@ -35,7 +35,7 @@ ButtonAndImg.propTypes = {
     }).isRequired
   ).isRequired,
   setShowCard: PropTypes.func.isRequired,
-  setChoosePlanet: PropTypes.func.isRequired,
+  foundPlanet: PropTypes.func.isRequired,
 };
 
 export default ButtonAndImg;

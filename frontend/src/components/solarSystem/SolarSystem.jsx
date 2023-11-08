@@ -5,16 +5,22 @@ import { createPortal } from "react-dom";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
 
-function SolarSystem({ systeme }) {
+function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
   const [showCard, setShowCard] = useState(false);
-  const [choosePlanet, setChoosePlanet] = useState();
 
   return (
     <div className="sun">
+      {systeme.map((planet) => (
+        <ButtonAndImg
+          planet={planet}
+          setShowCard={setShowCard}
+          foundPlanet={foundPlanet}
+        />
+      ))}
       {showCard &&
         createPortal(
           <Card
-            planet={systeme[choosePlanet]}
+            choosePlanet={choosePlanet}
             closeCard={() => setShowCard(false)}
           />,
           document.body
@@ -30,14 +36,6 @@ function SolarSystem({ systeme }) {
           <path d="M -400,850 A 785 240 0 0 0 385,275" />
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
-
-        {systeme.map((planet) => (
-          <ButtonAndImg
-            planet={planet}
-            setChoosePlanet={setChoosePlanet}
-            setShowCard={setShowCard}
-          />
-        ))}
       </div>
     </div>
   );
@@ -53,5 +51,7 @@ SolarSystem.propTypes = {
       type_de_planete: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
+  foundPlanet: PropTypes.func.isRequired,
+  choosePlanet: PropTypes.func.isRequired,
 };
 export default SolarSystem;
