@@ -40,7 +40,7 @@ function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
       </div>
       <Navbar
         systeme={systeme}
-        setIndexPlanet={foundPlanet}
+        foundPlanet={foundPlanet}
         setShowCard={setShowCard}
       />
     </div>
