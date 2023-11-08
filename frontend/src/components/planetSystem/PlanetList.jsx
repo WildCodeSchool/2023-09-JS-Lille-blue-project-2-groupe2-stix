@@ -9,7 +9,6 @@ function PlanetList({ id, handleChange, planet }) {
         onFocus={() => handleChange(id)}
         className={planet.isHover ? "text listplacement" : "listplacement"}
       >
-        {" "}
         <strong className="nameplanet">{planet.french_name} : </strong>
         <p
           onMouseLeave={() => handleChange(id)}
@@ -19,7 +18,7 @@ function PlanetList({ id, handleChange, planet }) {
             planet.isHover ? "text textsecondairelist" : "textsecondairelist"
           }
         >
-          Periode de révolution : {planet.periode_de_revolution}
+          Période de révolution : {planet.periode_de_revolution}
           <p
             onMouseLeave={() => handleChange(id)}
             onMouseOver={() => handleChange(id)}
