@@ -4,6 +4,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
+import Navbar from "../navbar/Navbar";
 
 function SolarSystem({ systeme }) {
   const [showCard, setShowCard] = useState(false);
@@ -57,6 +58,11 @@ function SolarSystem({ systeme }) {
           />
         ))}
       </div>
+      <Navbar
+        systeme={systeme}
+        setIndexPlanet={setIndexPlanet}
+        setShowCard={setShowCard}
+      />
     </div>
   );
 }
