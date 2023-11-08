@@ -15,11 +15,16 @@ function Accueil() {
       {systeme ? (
         <>
           <h1>STYX</h1>
-          <img
-            className="terre"
-            src={`${import.meta.env.VITE_BACKEND_URL}${systeme[3].image}`}
-            alt=""
-          />
+
+          {systeme.map((planet) => {
+            return (
+              <img
+                className={planet.french_name}
+                src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
+                alt=""
+              />
+            );
+          })}
           <section className="presentation">
             <p className="textaccueil">
               Bienvenue sur "STYX" ! Notre site est votre passerelle vers les
@@ -47,11 +52,7 @@ function Accueil() {
               les secrets qui se cachent au-delà des étoiles.
             </p>
           </section>
-          <img
-            className="jupiter"
-            src={`${import.meta.env.VITE_BACKEND_URL}${systeme[5].image}`}
-            alt=""
-          />
+
           <h2>Envie d'en apprendre plus ?</h2>
           <Link to="/home" className="linkaccueil">
             {" "}

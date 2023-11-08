@@ -1,20 +1,122 @@
+@keyframes planete {
+  0% {
+    transform: translate(0vw, 0vh);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(30vw, 0vh);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(75vw, 0vh);
+    opacity: 0;
+  }
+}
+
 body {
   color: white;
-  background-color: black;
+  background-image: url("https://img2.wallspic.com/previews/6/7/2/3/4/143276/143276-espace_exterieur-nuit-voie_lactee-ciel-objet_astronomique-x750.jpg");
 }
 
-.terre {
+.Soleil {
   position: absolute;
-  top: 25vh;
+  top: 28vh;
+  left: 2vw;
+  height: 50vh;
+  animation: planete 10s linear;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Mercure {
+  position: absolute;
+  top: 28vh;
   left: 2vw;
   height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 9s;
+  z-index: 2;
+  opacity: 0;
 }
 
-.jupiter {
+.Vénus {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 18s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Terre {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 27s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Mars {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 36s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Saturne {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 45s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Jupiter {
   height: 40vh;
   position: absolute;
-  top: 25vh;
-  right: 2vw;
+  opacity: 0;
+  top: 28vh;
+  left: 2vw;
+  animation: planete 10s linear;
+  animation-delay: 54s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.Uranus {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 63s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.Neptune {
+  position: absolute;
+  top: 28vh;
+  left: 2vw;
+  height: 40vh;
+  animation: planete 10s linear;
+  animation-delay: 72s;
+  z-index: 2;
+  opacity: 0;
 }
 
 .textaccueil {
@@ -27,6 +129,9 @@ body {
   text-align: center;
   font-weight: bold;
   padding: 0.5vw;
+  position: absolute;
+  top: 5vw;
+  z-index: 15;
 }
 
 h1 {
@@ -39,7 +144,16 @@ h1 {
   align-items: center;
 }
 
+h2 {
+  z-index: 17;
+  position: absolute;
+  top: 83vh;
+}
+
 .linkaccueil {
   text-decoration: none;
   color: white;
+  position: absolute;
+  z-index: 16;
+  top: 91vh;
 }
