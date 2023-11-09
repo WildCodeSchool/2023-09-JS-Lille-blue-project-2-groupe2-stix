@@ -61,3 +61,67 @@
     }
   }
 }
+@media screen and (max-width: 360px) {
+  #card {
+    background-color: #171821;
+    display: flex;
+    position: static;
+    height: 87vh;
+    justify-content: center;
+    align-items: center;
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      border: solid 4px white;
+      color: white;
+      background-image: url(/src/assets/image/space.jpg);
+      height: 78vh;
+      width: 83vw;
+      border-radius: 16px;
+      justify-content: flex-end;
+      .card__img {
+        height: 11em;
+      }
+      .card__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: 55%;
+        align-self: center;
+        .card__description__h1 {
+          font-size: 7vw;
+        }
+        .card__description__p {
+          font-size: 1em;
+          text-align: left;
+          padding: 1em;
+        }
+      }
+      .card__button {
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        align-self: auto;
+        .card__button__closed {
+          display: none;
+        }
+
+        .card__button__moreInfos {
+          width: 10vw;
+          height: 4vh;
+          font-size: 2.5vw;
+          margin: 0 10px 10px 0;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+
+        .card__button__moreInfos:hover {
+          background-color: rgb(254, 128, 29);
+        }
+      }
+    }
+  }
+}
