@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Card.scss";
 import PropTypes, { shape } from "prop-types";
 
@@ -22,9 +23,12 @@ function Card({ planet, closeCard }) {
           >
             X
           </button>
-          <button type="button" className="card__button__moreInfos">
+          <Link
+            to={`/DescriptionPlus/${planet.id}`}
+            className="card__button__moreInfos"
+          >
             More Infos
-          </button>
+          </Link>
         </section>
       </div>
     </section>

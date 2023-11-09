@@ -1,0 +1,35 @@
+nav.navbar-plus {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button.btn {
+  margin: 20px;
+  background-color: #171821;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+button.btn:hover {
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+p.description {
+  display: flex;
+  justify-content: center;
+}
+.d-img {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+p.description .d-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
