@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Home.scss";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
 import PlanetSystem from "../../components/planetSystem/PlanetSystem";
 import HomeText from "../../components/homeText/homeText";
@@ -23,18 +25,23 @@ function Home() {
   }, []);
   return (
     <div>
-      {systeme ? (
-        <SolarSystem
-          systeme={systeme}
-          choosePlanet={choosePlanet}
-          foundPlanet={foundPlanet}
-        />
-      ) : (
-        ""
-      )}
-      {systeme ? <HomeText /> : ""}
-      {systeme ? <PlanetSystem systeme={systeme} /> : ""}
-      <Navbar systeme={systeme} />
+      <Link to="/otherstar" className="otherstar">
+        🢡 Click for see strange and other star 🢠
+      </Link>
+      <div>
+        {systeme ? (
+          <SolarSystem
+            systeme={systeme}
+            choosePlanet={choosePlanet}
+            foundPlanet={foundPlanet}
+          />
+        ) : (
+          ""
+        )}
+        {systeme ? <HomeText /> : ""}
+        {systeme ? <PlanetSystem systeme={systeme} /> : ""}
+        <Navbar systeme={systeme} />
+      </div>
     </div>
   );
 }
