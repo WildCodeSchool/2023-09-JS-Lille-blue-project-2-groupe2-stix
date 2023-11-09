@@ -1,38 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import "./SolarSystem.scss";
 import PropTypes, { shape } from "prop-types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createPortal } from "react-dom";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
 import Navbar from "../navbar/Navbar";
 
 function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
   const [showCard, setShowCard] = useState(false);
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  const slideInBottom = (elem, duration) => {
-    gsap.fromTo(
-      elem,
-      {
-        opacity: 1,
-      },
-      {
-        opacity: 0,
-        duration: duration || 0.2,
-        scrollTrigger: {
-          trigger: elem,
-          start: "top top",
-          end: "center center",
-        },
-      }
-    );
-  };
-
-  useEffect(() => slideInBottom("#navbar", 1, 1), []);
 
   return (
     <div className="sun">
