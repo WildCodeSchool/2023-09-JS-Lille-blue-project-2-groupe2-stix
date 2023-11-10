@@ -1,0 +1,236 @@
+@keyframes textotherstar {
+  0% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+  20% {
+    transform: translate(0vw, 0vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0vw, 0vh);
+    opacity: 0;
+  }
+}
+
+@keyframes styx {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, 0vh);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+
+  100% {
+    transform: translate(0vw, 0vh);
+    opacity: 1;
+  }
+}
+a.otherstar {
+  position: absolute;
+  z-index: 50;
+  right: 2vw;
+  top: 3vh;
+  text-decoration: none;
+  color: white;
+}
+.navstar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  max-width: 99vw;
+}
+
+section.sectiondesc {
+  margin-top: 19vh;
+}
+
+h2.styx {
+  opacity: 0;
+  animation: styx 20s linear;
+  animation-delay: 20s;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 42vh;
+  right: 25vw;
+}
+
+.Aldebaran {
+  position: absolute;
+  top: 11vh;
+  right: 2vw;
+  height: 89vh;
+}
+
+.Alpha.Canis.Majoris.\(Sirius\) {
+  position: absolute;
+  top: 23vh;
+  right: -3vw;
+  height: 67vh;
+}
+
+.Rigel {
+  position: absolute;
+  top: 22vh;
+  right: 0vw;
+  height: 67vh;
+}
+
+.Trou.noir.TON618 {
+  position: absolute;
+  top: 17vh;
+  right: 0vw;
+  height: 73vh;
+}
+
+.Piliers.de.la.Création {
+  position: absolute;
+  top: 8vh;
+  right: 5vw;
+  height: 85vh;
+}
+
+.PSR.J0952-0607 {
+  position: absolute;
+  top: 16vh;
+  right: 0vw;
+  height: 65vh;
+}
+
+.titlestar {
+  text-align: center;
+}
+
+body {
+  color: white;
+}
+
+.descriptionstar {
+  text-align: center;
+  width: 43vw;
+  margin-top: 8vh;
+  margin-left: 9vw;
+}
+
+.infosstar {
+  position: absolute;
+  top: 36vh;
+  right: 1vw;
+}
+
+.bodystar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.caracstar {
+  text-align: justify;
+}
+
+.sectioncarac {
+  margin-left: 9vw;
+  width: 43vw;
+}
+.présentationotherstar {
+  animation: textotherstar 100s linear;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 32vh;
+  font-size: 1.4rem;
+  line-height: 3.8vh;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    button {
+      height: 8vh;
+      width: 17vw;
+    }
+  }
+
+  .Aldebaran {
+    position: absolute;
+    top: 11vh;
+    right: 5vw;
+    height: 40vh;
+  }
+
+  .sectioncarac {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .descriptionstar {
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 34vh;
+  }
+  .caracstar {
+    text-align: center;
+  }
+
+  .Alpha.Canis.Majoris.\(Sirius\) {
+    position: absolute;
+    top: 16vh;
+    right: -3vw;
+    height: 30vh;
+  }
+  .Rigel {
+    position: absolute;
+    top: 18vh;
+    right: 8vw;
+    height: 27vh;
+  }
+
+  .Trou.noir.TON618 {
+    position: absolute;
+    top: 15vh;
+    right: -5vw;
+    height: 30vh;
+  }
+
+  .Piliers.de.la.Création {
+    position: absolute;
+    top: 12vh;
+    right: 10vw;
+    height: 34vh;
+  }
+  .PSR.J0952-0607 {
+    position: absolute;
+    top: 16vh;
+    right: -8vw;
+    height: 29vh;
+  }
+
+  .navstar {
+    margin-top: -2vh;
+  }
+  .présentationotherstar {
+    width: 100vw;
+    animation: textotherstar 100s linear;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 4.8vh;
+    margin-top: 20vh;
+  }
+  .styx {
+    opacity: 0;
+    animation: styx 20s linear;
+    animation-delay: 20s;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4vh;
+    position: absolute;
+    top: 44vh;
+  }
+}

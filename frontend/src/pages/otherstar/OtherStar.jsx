@@ -43,11 +43,23 @@ function OtherStar() {
         )}
       </section>
       <section>
-        <p className="présentationotherstar">
-          {newstars
-            ? null
-            : "Au sein de l'immensité cosmique, des corps célestes étranges éveillent notre curiosité et alimentent notre fascination. Au-delà des constellations familières et des planètes de notre propre système solaire, l'univers nous réserve une panoplie de phénomènes cosmiques mystérieux. Des pulsars pulsants aux quasars lumineux, en passant par les étoiles à neutrons énigmatiques, chaque coin de l'univers semble abriter des merveilles célestes qui dépassent notre compréhension.Parmi ces énigmes célestes, les trous noirs défient toute logique connue. Ces régions de l'espace où la gravité est si intense que rien, pas même la lumière, ne peut s'échapper, sont des portails vers l'inconnu. Leur présence soulève des questions fondamentales sur la nature même de l'espace-temps. Les trous noirs sont des objets cosmiques étranges et captivants, aspirant la matière et la lumière, pliant la réalité à des limites inimaginables.Naviguer à travers ce panorama céleste étrange nous invite à repousser les frontières de notre connaissance astronomique. Le cosmos se déploie devant nous, révélant des secrets cosmiques qui défient notre logique et élargissent notre vision de l'univers infini qui s'étend bien au-delà de notre coin galactique."}
-        </p>
+        {newstars ? null : (
+          <>
+            <h2 className="styx">
+              STYX <br />
+              Cliquez sur l'un des boutons pour afficher le corps céleste
+              correspondant.
+            </h2>
+
+            <p className="présentationotherstar">
+              "Au sein de l'immensité cosmique, des corps célestes étranges
+              éveillent notre curiosité et alimentent notre fascination. Au-delà
+              des constellations familières et des planètes de notre propre
+              système solaire, l'univers nous réserve une panoplie de phénomènes
+              cosmiques mystérieux.
+            </p>
+          </>
+        )}
       </section>
       <section className="sectiondesc">
         <p className="descriptionstar">{newstars && newstars.Description}</p>
