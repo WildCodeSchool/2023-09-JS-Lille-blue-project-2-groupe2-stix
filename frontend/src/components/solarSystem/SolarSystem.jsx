@@ -1,14 +1,16 @@
 import "./SolarSystem.scss";
 import PropTypes, { shape } from "prop-types";
-import { useState } from "react";
 import { createPortal } from "react-dom";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
-import Navbar from "../navbar/Navbar";
 
-function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
-  const [showCard, setShowCard] = useState(false);
-
+function SolarSystem({
+  systeme,
+  foundPlanet,
+  choosePlanet,
+  showCard,
+  setShowCard,
+}) {
   return (
     <div className="sun">
       {systeme.map((planet) => (
@@ -38,9 +40,6 @@ function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
       </div>
-      <section id="navbar">
-        <Navbar systeme={systeme} setShowCard={setShowCard} />
-      </section>
     </div>
   );
 }
@@ -57,5 +56,7 @@ SolarSystem.propTypes = {
   ).isRequired,
   foundPlanet: PropTypes.func.isRequired,
   choosePlanet: PropTypes.func.isRequired,
+  showCard: PropTypes.func.isRequired,
+  setShowCard: PropTypes.func.isRequired,
 };
 export default SolarSystem;
