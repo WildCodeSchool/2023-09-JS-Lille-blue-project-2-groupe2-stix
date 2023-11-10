@@ -4,39 +4,28 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import Card from "../card/Card";
 import ButtonAndImg from "../buttonAndImg/buttonAndImg";
+import Navbar from "../navbar/Navbar";
 
-function SolarSystem({ systeme }) {
+function SolarSystem({ systeme, foundPlanet, choosePlanet }) {
   const [showCard, setShowCard] = useState(false);
-  const [indexPlanet, setIndexPlanet] = useState(0);
-  const planets = systeme.slice(1);
 
   return (
-    <div className="soleil">
-      <img
-        id="0"
-        className="sun"
-        src={`${import.meta.env.VITE_BACKEND_URL}${systeme[0].image}`}
-        alt="Soleil"
-      />
-      <button
-        data-index="0"
-        aria-labelledby="sun"
-        className="button__img__sun"
-        type="button"
-        onClick={() => {
-          setIndexPlanet(systeme[0].id);
-          setShowCard(true);
-        }}
-      />
+    <div className="sun">
+      {systeme.map((planet) => (
+        <ButtonAndImg
+          planet={planet}
+          setShowCard={setShowCard}
+          foundPlanet={foundPlanet}
+        />
+      ))}
       {showCard &&
         createPortal(
           <Card
-            planet={systeme[indexPlanet]}
+            choosePlanet={choosePlanet}
             closeCard={() => setShowCard(false)}
           />,
           document.body
-        )}{" "}
-      */
+        )}
       <div className="imageSVG">
         <svg>
           <path d="M -300,450 A 900 110 0 0 0 393,300" />
@@ -48,15 +37,12 @@ function SolarSystem({ systeme }) {
           <path d="M -400,850 A 785 240 0 0 0 385,275" />
           <path d="M -460,1000 A 950 310 0 0 0 383,269" />
         </svg>
-
-        {planets.map((planet) => (
-          <ButtonAndImg
-            planets={planet}
-            setIndexPlanet={setIndexPlanet}
-            setShowCard={setShowCard}
-          />
-        ))}
       </div>
+      <Navbar
+        systeme={systeme}
+        foundPlanet={foundPlanet}
+        setShowCard={setShowCard}
+      />
     </div>
   );
 }
@@ -71,5 +57,7 @@ SolarSystem.propTypes = {
       type_de_planete: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
+  foundPlanet: PropTypes.func.isRequired,
+  choosePlanet: PropTypes.func.isRequired,
 };
 export default SolarSystem;

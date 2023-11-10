@@ -3,11 +3,12 @@
   background-color: rgba(227, 227, 227, 0.53);
   color: #fff;
   padding: 5px;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  position: absolute;
   text-align: center;
+  z-index: 10;
 }
 
 .planets {
@@ -41,23 +42,6 @@
 }
 
 .planet-img {
-  height: 5rem;
-}
-
-.Saturn {
-  height: 4rem;
-}
-.neptune-img {
-  height: 4rem;
-}
-.sun-navbar {
-  height: 5.1rem;
-}
-
-.planet-img {
-  height: 4rem;
-}
-.planet-img {
   height: 4rem;
 }
 
@@ -78,9 +62,6 @@
 .planet:hover p {
   display: block;
   background: rgba(141, 142, 166, 0.4);
-}
-nav.navbar {
-  border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {

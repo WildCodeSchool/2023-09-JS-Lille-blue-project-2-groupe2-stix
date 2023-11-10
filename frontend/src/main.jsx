@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
-import DescriptionPlus from "./components/DescriptionPlus/DescriptionPlus";
+import DescriptionPlus from "./components/descriptionPlus/DescriptionPlus";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +13,7 @@ const router = createBrowserRouter([
     element: <DescriptionPlus />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
