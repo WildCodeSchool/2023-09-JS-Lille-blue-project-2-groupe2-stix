@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { useState, useEffect } from "react";
 import SolarSystem from "../../components/solarSystem/SolarSystem";
 import PlanetSystem from "../../components/planetSystem/PlanetSystem";
@@ -38,11 +39,13 @@ function Home() {
       )}
       {systeme ? <HomeText /> : ""}
       {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-      <Navbar
-        systeme={systeme}
-        foundPlanet={foundPlanet}
-        setShowCard={setShowCard}
-      />
+      <section id="annimNav">
+        <Navbar
+          systeme={systeme}
+          foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+        />
+      </section>
     </div>
   );
 }
