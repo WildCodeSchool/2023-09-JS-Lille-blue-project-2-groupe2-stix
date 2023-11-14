@@ -4,7 +4,7 @@ import PlanetList from "./PlanetList";
 import "./PlanetSystem.scss";
 import PlanetTurn from "./PlanetTurn";
 
-function PlanetSystem({ systeme }) {
+function PlanetSystem({ systeme, setShowCard, foundPlanet }) {
   const [system, setSystem] = useState(systeme);
 
   const handleChange = (id) => {
@@ -21,7 +21,7 @@ function PlanetSystem({ systeme }) {
   };
 
   return (
-    <div>
+    <div className="rotatingSystem">
       {system &&
         system.map((planet) => (
           <article key={planet.id} className="solarlist">
@@ -30,6 +30,8 @@ function PlanetSystem({ systeme }) {
                 id={planet.id}
                 handleChange={handleChange}
                 planet={planet}
+                setShowCard={setShowCard}
+                foundPlanet={foundPlanet}
               />
             </section>
             <PlanetList
@@ -45,6 +47,8 @@ function PlanetSystem({ systeme }) {
 
 PlanetSystem.propTypes = {
   systeme: PropTypes.arrayOf().isRequired,
+  foundPlanet: PropTypes.func.isRequired,
+  setShowCard: PropTypes.func.isRequired,
 };
 
 export default PlanetSystem;
