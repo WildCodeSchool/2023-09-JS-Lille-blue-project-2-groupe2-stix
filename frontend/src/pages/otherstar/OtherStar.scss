@@ -215,7 +215,7 @@ body {
   }
   .présentationotherstar {
     width: 100vw;
-    animation: textotherstar 100s linear;
+    animation: textotherstar 60s linear;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -225,8 +225,8 @@ body {
   }
   .styx {
     opacity: 0;
-    animation: styx 20s linear;
-    animation-delay: 20s;
+    animation: styx 50s linear;
+    animation-delay: 2s;
     margin: 0 auto;
     text-align: center;
     line-height: 4vh;
