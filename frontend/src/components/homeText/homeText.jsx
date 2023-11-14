@@ -6,7 +6,7 @@ function HomeText() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="homeText">
+    <div className="homeTexts">
       <p
         className="resumGalaxy "
         ref={ref}
