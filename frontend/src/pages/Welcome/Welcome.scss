@@ -163,23 +163,22 @@ h2 {
 
 @media screen and (max-width: 500px) {
   .presentation {
-    width: 83vw;
-    line-height: 3.5vw;
+    width: 96vw;
+    line-height: 6vw;
     text-align: center;
     font-weight: bold;
     padding: 0.5vw;
     position: absolute;
-    top: 41vw;
+    top: 31vw;
   }
-
   .linkwelcome {
     text-decoration: none;
-    color: #5b4dda;
+    color: goldenrod;
     position: absolute;
     z-index: 16;
-    top: 80vh;
-    font-size: 1.7rem;
-    max-width: 99vw;
+    top: 93vh;
+    font-size: 1.6rem;
+    max-width: 114vw;
   }
 
   .welcometitle {
