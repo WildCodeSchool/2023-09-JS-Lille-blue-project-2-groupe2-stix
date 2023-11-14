@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Welcome from "./pages/Welcome/Welcome";
+import OtherStar from "./pages/otherstar/OtherStar";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/otherstar",
+    element: <OtherStar />,
   },
 ]);
 
