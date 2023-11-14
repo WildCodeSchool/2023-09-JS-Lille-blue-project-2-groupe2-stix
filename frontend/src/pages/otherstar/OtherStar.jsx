@@ -8,8 +8,8 @@ function OtherStar() {
   const [star, setStar] = useState(name);
   const newstars = newstar.find((el) => el.name === star);
 
-  const handleClick = (starid) => {
-    setStar(starid);
+  const handleClick = (starname) => {
+    setStar(starname);
   };
 
   return (
@@ -19,11 +19,12 @@ function OtherStar() {
           newstar.map((stars) => {
             return (
               <section>
-                <nav>
+                <nav className="navbar-plus">
                   <button
                     onClick={() => handleClick(stars.name)}
                     type="button"
                     key={stars.name}
+                    className="buttonstar"
                   >
                     {stars.name}
                   </button>

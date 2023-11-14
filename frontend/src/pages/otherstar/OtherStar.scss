@@ -40,8 +40,12 @@ a.otherstar {
 .navstar {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
-  max-width: 99vw;
+  margin: 1.5%;
+  margin-left: 15vw;
+  background-color: goldenrod;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 69vw;
 }
 
 section.sectiondesc {
@@ -69,7 +73,7 @@ h2.styx {
 .Alpha.Canis.Majoris.\(Sirius\) {
   position: absolute;
   top: 23vh;
-  right: -3vw;
+  right: 0vw;
   height: 67vh;
 }
 
@@ -82,7 +86,7 @@ h2.styx {
 
 .Trou.noir.TON618 {
   position: absolute;
-  top: 17vh;
+  top: 24vh;
   right: 0vw;
   height: 73vh;
 }
@@ -148,9 +152,24 @@ body {
   line-height: 3.8vh;
 }
 
+.buttonstar {
+  margin: 5px;
+  background-color: goldenrod;
+  color: white;
+  opacity: 0.9;
+  width: 10vw;
+  height: 6vh;
+  padding: 0.5rem;
+  border: none;
+}
+
+.buttonstar:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
 @media screen and (max-width: 500px) {
   nav {
-    button {
+    .buttonstar {
       height: 8vh;
       width: 17vw;
     }
@@ -171,38 +190,58 @@ body {
     text-align: center;
     width: 100vw;
     margin: 0 auto;
-    margin-top: 34vh;
+    margin-top: 31vh;
+    font-size: 0.9rem;
   }
   .caracstar {
     text-align: center;
   }
-
   .Alpha.Canis.Majoris.\(Sirius\) {
     position: absolute;
     top: 16vh;
-    right: -3vw;
+    right: -6vw;
     height: 30vh;
   }
   .Rigel {
     position: absolute;
-    top: 18vh;
-    right: 8vw;
+    top: 17vh;
+    right: 6vw;
     height: 27vh;
+  }
+
+  .navbar-plus {
+    width: 17vw;
   }
 
   .Trou.noir.TON618 {
     position: absolute;
-    top: 15vh;
+    top: 18vh;
     right: -5vw;
     height: 30vh;
   }
 
   .Piliers.de.la.Création {
     position: absolute;
-    top: 12vh;
+    top: 14vh;
     right: 10vw;
     height: 34vh;
   }
+
+  .buttonstar {
+    height: 10vh;
+    width: 1vw;
+  }
+
+  .navstar {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 101vw;
+    margin: -1vw;
+  }
+
   .PSR.J0952-0607 {
     position: absolute;
     top: 16vh;
@@ -210,12 +249,9 @@ body {
     height: 29vh;
   }
 
-  .navstar {
-    margin-top: -2vh;
-  }
   .présentationotherstar {
     width: 100vw;
-    animation: textotherstar 60s linear;
+    animation: textotherstar 50s linear;
     text-align: center;
     margin: 0 auto;
     display: flex;
