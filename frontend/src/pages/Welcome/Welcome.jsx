@@ -10,6 +10,7 @@ function Welcome() {
       .then((response) => response.json())
       .then((data) => setSysteme(data));
   }, []);
+
   return (
     <div className="welcomebackground">
       <section className="welcome">
@@ -20,6 +21,7 @@ function Welcome() {
               {systeme.map((planet) => {
                 return (
                   <img
+                    key={planet.id}
                     className={planet.french_name}
                     src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
                     alt=""

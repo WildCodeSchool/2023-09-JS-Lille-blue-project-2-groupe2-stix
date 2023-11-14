@@ -15,6 +15,7 @@ function SolarSystem({
     <div className="sun">
       {systeme.map((planet) => (
         <ButtonAndImg
+          key={planet.id}
           planet={planet}
           setShowCard={setShowCard}
           foundPlanet={foundPlanet}
@@ -47,6 +48,7 @@ function SolarSystem({
 SolarSystem.propTypes = {
   systeme: PropTypes.arrayOf(
     shape({
+      id: PropTypes.number.isRequired,
       french_name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       periode_de_revolution: PropTypes.string.isRequired,
@@ -55,8 +57,8 @@ SolarSystem.propTypes = {
     }).isRequired
   ).isRequired,
   foundPlanet: PropTypes.func.isRequired,
-  choosePlanet: PropTypes.func.isRequired,
-  showCard: PropTypes.func.isRequired,
+  choosePlanet: PropTypes.string.isRequired,
+  showCard: PropTypes.bool.isRequired,
   setShowCard: PropTypes.func.isRequired,
 };
 export default SolarSystem;

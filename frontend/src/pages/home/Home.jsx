@@ -8,7 +8,8 @@ import "./Home.scss";
 function Home() {
   const [showCard, setShowCard] = useState(false);
   const [systeme, setSysteme] = useState();
-  const [choosePlanet, setChoosePlanet] = useState();
+  const [choosePlanet, setChoosePlanet] = useState("");
+
   const foundPlanet = (id) => {
     systeme.map((element) => {
       if (element.id === id) {
@@ -25,7 +26,7 @@ function Home() {
   }, []);
   return (
     <div className="home">
-      {systeme ? (
+      {systeme && (
         <SolarSystem
           systeme={systeme}
           choosePlanet={choosePlanet}
@@ -33,16 +34,16 @@ function Home() {
           showCard={showCard}
           setShowCard={setShowCard}
         />
-      ) : (
-        ""
       )}
-      {systeme ? <HomeText /> : ""}
-      {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-      <Navbar
-        systeme={systeme}
-        foundPlanet={foundPlanet}
-        setShowCard={setShowCard}
-      />
+      {systeme && <HomeText />}
+      {systeme && <PlanetSystem systeme={systeme} Soleil />}
+      {systeme && (
+        <Navbar
+          systeme={systeme}
+          foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+        />
+      )}
     </div>
   );
 }
