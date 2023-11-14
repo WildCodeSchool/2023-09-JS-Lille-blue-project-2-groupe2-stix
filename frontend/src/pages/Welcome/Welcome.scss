@@ -154,9 +154,36 @@ h2 {
 
 .linkwelcome {
   text-decoration: none;
-  color: #5b4dda;
+  color: goldenrod;
   position: absolute;
   z-index: 16;
   top: 91vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .presentation {
+    line-height: 5vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5vw;
+    position: absolute;
+    top: 18vw;
+    z-index: 15;
+  }
+
+  .textwelcome {
+    width: 70vw;
+  }
+
+  .presentation {
+    line-height: 3.8vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5vw;
+    position: absolute;
+    top: 35vw;
+    z-index: 15;
+    width: auto;
+  }
 }
