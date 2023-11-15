@@ -28,8 +28,8 @@ function Home() {
   return (
     <div>
       <section>
-        <Link to="/otherstar" className="otherstar">
-          Voir d'autre particularité de notre univers !
+        <Link to="/otherstars" className="otherstar">
+          Voir d'autres particularités de notre univers !
         </Link>
       </section>
       <div className="home">
