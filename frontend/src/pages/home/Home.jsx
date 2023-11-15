@@ -6,6 +6,7 @@ import SolarSystem from "../../components/solarSystem/SolarSystem";
 import PlanetSystem from "../../components/planetSystem/PlanetSystem";
 import HomeText from "../../components/homeText/homeText";
 import Navbar from "../../components/navbar/Navbar";
+import Logo from "../../components/logo/logo";
 
 function Home() {
   const [showCard, setShowCard] = useState(false);
@@ -28,6 +29,7 @@ function Home() {
   return (
     <div>
       <section>
+        <Logo />
         <Link to="/otherstar" className="otherstar">
           🢡 Click for see strange and other star 🢠
         </Link>
