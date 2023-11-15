@@ -127,16 +127,15 @@ body {
 }
 .presentation {
   width: 42vw;
-  line-height: 2vw;
+  line-height: 3vw;
   text-align: center;
   font-weight: bold;
   padding: 0.5vw;
   position: absolute;
-  top: 5vw;
+  top: 6vw;
   z-index: 15;
-  background-color: #2b324286;
+  background-color: rgba(43, 50, 66, 0.5254901961);
   border-radius: 20px;
-  // box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.349);
 }
 
 .welcometitle {
@@ -165,4 +164,30 @@ h2 {
   background-color: #efb41b;
   border: solid 0.5em #efb41b;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .presentation {
+    width: 95vw;
+    line-height: 7vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5vw;
+    position: absolute;
+    top: 48vw;
+  }
+  .linkwelcome {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    z-index: 16;
+    top: 86vh;
+    font-size: 1.6rem;
+    max-width: 99vw;
+  }
+
+  .welcometitle {
+    font-size: 6rem;
+    margin-top: 6vh;
+  }
 }
