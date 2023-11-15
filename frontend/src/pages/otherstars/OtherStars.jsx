@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./OtherStar.scss";
+import "./OtherStars.scss";
 import newstar from "../../../../backend/src/star.json";
 
-function OtherStar() {
+function OtherStars() {
   const { name } = useParams();
   const [star, setStar] = useState(name);
   const newstars = newstar.find((el) => el.name === star);
@@ -92,4 +92,4 @@ function OtherStar() {
   );
 }
 
-export default OtherStar;
+export default OtherStars;

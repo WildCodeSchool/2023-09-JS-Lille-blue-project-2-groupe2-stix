@@ -1,7 +1,21 @@
 import PropTypes, { shape } from "prop-types";
 import "./Navbar.scss";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 function Navbar({ systeme, foundPlanet, setShowCard }) {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".navbar", {
+    scrollTrigger: {
+      trigger: ".navbar",
+      start: "top 80%",
+      end: "top 60%",
+      scrub: true,
+      // markers: true,
+    },
+    opacity: 0,
+    duration: 1,
+  });
   return (
     <nav className="navbar">
       <div className="planets">
