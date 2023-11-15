@@ -78,14 +78,11 @@
   }
 }
 
-.rotatingSystème {
-  position: absolute;
-}
 .système {
   position: absolute;
-  left: 26vw;
-  top: 98.3vw;
-  scale: 0.32;
+  left: 13vw;
+  top: 109vw;
+  scale: 0.27;
 }
 
 .solarlist {
@@ -289,9 +286,11 @@
 }
 
 .List {
-  margin-left: 70vw;
-  margin-bottom: -7vw;
-  line-height: 0.7;
+  margin-left: 69vw;
+  margin-top: 45vh;
+  margin-bottom: -17vw;
+  line-height: 0.5;
+  height: 0vh;
 }
 
 .solarlist {
@@ -309,7 +308,7 @@
 
 .listplacement {
   text-align: justify;
-  margin-left: 2vw;
+  margin: 0vw;
 }
 
 .systèmeinfos {

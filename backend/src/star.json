@@ -9,12 +9,12 @@
     "photo": "/assets/star/aldebaran.png"
   },
   {
-    "name": "Alpha Canis Majoris (Sirius)",
+    "name": "Sirius A",
     "emplacement": "Constellation du Grand Chien",
     "type": "Etoile blanche",
     "diametre_en_km": "Environ 4,3 millions de kilomètres",
-    "Distance_de_la_Terre": "Sirius est relativement proche de nous, à environ 8,6 années-lumière de la Terre",
-    "Description": "Sirius est la principale étoile du système stellaire Alpha Canis Majoris. Sirius est une étoile binaire, ce qui signifie qu'elle est composée de deux étoiles en orbite l'une autour de l'autre. La composante principale, Sirius A, est une étoile blanche de la séquence principale, tandis que Sirius B est une naine blanche, le reste d'une étoile qui a épuisé son combustible nucléaire. Sirius a une grande importance dans différentes cultures. Dans l'Égypte antique, son lever héliaque (quand elle devient visible juste avant le lever du soleil) était associé aux inondations annuelles du Nil, marquant le début de l'année égyptienne. Dans d'autres cultures, elle a également été associée à des significations symboliques. Son statut de l'étoile la plus brillante du ciel en fait une cible populaire pour les astronomes amateurs.",
+    "Distance_de_la_Terre": "Sirius A est relativement proche de nous, à environ 8,6 années-lumière de la Terre",
+    "Description": "Sirius A est la principale étoile du système stellaire Alpha Canis Majoris. Sirius est une étoile binaire, ce qui signifie qu'elle est composée de deux étoiles en orbite l'une autour de l'autre. La composante principale, Sirius A, est une étoile blanche de la séquence principale, tandis que Sirius B est une naine blanche, le reste d'une étoile qui a épuisé son combustible nucléaire. Sirius a une grande importance dans différentes cultures. Dans l'Égypte antique, son lever héliaque (quand elle devient visible juste avant le lever du soleil) était associé aux inondations annuelles du Nil, marquant le début de l'année égyptienne. Dans d'autres cultures, elle a également été associée à des significations symboliques. Son statut de l'étoile la plus brillante du ciel en fait une cible populaire pour les astronomes amateurs.",
     "photo": "/assets/star/sirius.png"
   },
   {
