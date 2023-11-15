@@ -10,6 +10,14 @@ function Welcome() {
       .then((response) => response.json())
       .then((data) => setSysteme(data));
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
     <div className="welcomebackground">
       <section className="welcome">
@@ -23,6 +31,7 @@ function Welcome() {
                     className={planet.french_name}
                     src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
                     alt="planet"
+                    key={planet.id}
                   />
                 );
               })}
