@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./OtherStar.scss";
 import newstar from "../../../../backend/src/star.json";
@@ -12,8 +12,15 @@ function OtherStar() {
     setStar(starsname);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
-    <>
+    <div className="bodystars">
       <div className="navstar">
         {newstar &&
           newstar.map((stars) => {
@@ -81,7 +88,7 @@ function OtherStar() {
           </section>
         </section>
       )}
-    </>
+    </div>
   );
 }
 

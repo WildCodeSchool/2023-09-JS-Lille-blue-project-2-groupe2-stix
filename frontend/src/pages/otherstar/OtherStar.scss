@@ -241,11 +241,6 @@
   animation: titleneutron 2s ease-in-out forwards;
 }
 
-:root {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 a.otherstar {
   position: absolute;
   z-index: 50;
@@ -259,6 +254,7 @@ a.otherstar {
   justify-content: center;
   margin: 1.5%;
   margin-left: 15vw;
+  margin-top: 0vh;
   background-color: goldenrod;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -331,26 +327,32 @@ a.otherstar {
 
 .Géante.rouge {
   animation: textgeanterouge 2s ease-in-out forwards;
+  height: 47vh;
 }
 
 .Etoile.blanche {
   animation: textetoileblanche 2s ease-in-out forwards;
+  height: 58vh;
 }
 
 .Supergéante.bleue {
   animation: textgeantebleu 2s ease-in-out forwards;
+  height: 47vh;
 }
 
 .Trou.noir.supermassif {
   animation: texttrounoir 2s ease-in-out forwards;
+  height: 47vh;
 }
 
 .Nébuleuse.d\'hydrogène {
   animation: textpilier 2s ease-in-out forwards;
+  height: 52vh;
 }
 
 .Etoile.a.neutron {
   animation: textneutron 2s ease-in-out forwards;
+  height: 47vh;
 }
 
 .bodystar h1 {
@@ -364,7 +366,7 @@ body {
 }
 
 .descriptionstar {
-  text-align: center;
+  text-align: justify;
   width: 43vw;
   margin-top: 8vh;
   margin-left: 9vw;
@@ -437,13 +439,12 @@ body {
     width: 100vw;
   }
   .descriptionstar {
-    text-align: center;
-    width: 103vw;
+    text-align: justify;
+    width: 99vw;
     margin: 0 auto;
-    font-size: 0.9rem;
   }
   .caracstar {
-    text-align: center;
+    text-align: justify;
   }
   .Alpha.Canis.Majoris.\(Sirius\) {
     position: absolute;
@@ -487,8 +488,8 @@ body {
     background-color: goldenrod;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 107vw;
-    margin: -1vw;
+    width: 100vw;
+    margin: 0vw;
   }
 
   .PSR.J0952-0607 {
@@ -507,7 +508,7 @@ body {
     line-height: 4.8vh;
     position: absolute;
     top: 39vh;
-    width: 104vw;
+    width: 99vw;
   }
 
   .styx {
@@ -553,7 +554,7 @@ body {
   .Etoile.blanche {
     animation: textetoileblanche 2s ease-in-out forwards;
     position: absolute;
-    bottom: 0vh;
+    bottom: -6vh;
   }
 
   .Constellation.d\'Orion {
@@ -596,7 +597,7 @@ body {
   .Nébuleuse.d\'hydrogène {
     animation: textpilier 2s ease-in-out forwards;
     position: absolute;
-    bottom: 1vh;
+    bottom: -1vh;
   }
 
   .Piliers.de.la.Création {

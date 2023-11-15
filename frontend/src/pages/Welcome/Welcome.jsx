@@ -10,6 +10,14 @@ function Welcome() {
       .then((response) => response.json())
       .then((data) => setSysteme(data));
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
     <div className="welcomebackground">
       <section className="welcome">
