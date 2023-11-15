@@ -25,10 +25,10 @@ function Card({ choosePlanet, closeCard }) {
           </button>
 
           <Link
-            to={`/DescriptionPlus/${choosePlanet.id}`}
+            to={`/descriptionplus/${choosePlanet.id}`}
             className="card__button__moreInfos"
           >
-            +
+            npm +
           </Link>
         </section>
       </div>

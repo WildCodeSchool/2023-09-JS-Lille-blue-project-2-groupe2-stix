@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/DescriptionPlus/:id",
+    path: "/descriptionplus/:id",
     element: <DescriptionPlus />,
   },
   {
