@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import "./Card.scss";
 import PropTypes, { shape } from "prop-types";
 
-function Card({ planet, closeCard }) {
+function Card({ choosePlanet, closeCard }) {
   return (
     <section id="card">
       <div className="card__body">
         <img
           className="card__img"
-          src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
-          alt={planet.french_name}
+          src={`${import.meta.env.VITE_BACKEND_URL}${choosePlanet.image}`}
+          alt={choosePlanet.french_name}
         />
         <div className="card__description">
-          <h1 className="card__description__h1">{planet.french_name} </h1>
-          <p className="card__description__p"> {planet.description} </p>
+          <h1 className="card__description__h1">{choosePlanet.french_name} </h1>
+          <p className="card__description__p"> {choosePlanet.description} </p>
         </div>
         <section className="card__button">
           <button
@@ -24,7 +24,7 @@ function Card({ planet, closeCard }) {
             X
           </button>
           <Link
-            to={`/DescriptionPlus/${planet.id}`}
+            to={`/DescriptionPlus/${choosePlanet.id}`}
             className="card__button__moreInfos"
           >
             More Infos
@@ -36,7 +36,7 @@ function Card({ planet, closeCard }) {
 }
 
 Card.propTypes = {
-  planet: PropTypes.objectOf(
+  choosePlanet: PropTypes.objectOf(
     shape({
       french_name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,

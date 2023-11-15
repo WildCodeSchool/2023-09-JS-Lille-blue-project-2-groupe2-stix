@@ -6,6 +6,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Logo from "../../components/logo/logo";
 
 function Home() {
+  const [showCard, setShowCard] = useState(false);
   const [systeme, setSysteme] = useState();
   const [choosePlanet, setChoosePlanet] = useState();
   const foundPlanet = (id) => {
@@ -29,6 +30,8 @@ function Home() {
           systeme={systeme}
           choosePlanet={choosePlanet}
           foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+          showCard={showCard}
         />
       ) : (
         ""
@@ -36,7 +39,11 @@ function Home() {
       {systeme ? <HomeText /> : ""}
       {systeme ? <PlanetSystem systeme={systeme} /> : ""}
       <Logo systeme={systeme} />
-      <Navbar systeme={systeme} />
+      <Navbar
+        systeme={systeme}
+        foundPlanet={foundPlanet}
+        setShowCard={setShowCard}
+      />
     </div>
   );
 }

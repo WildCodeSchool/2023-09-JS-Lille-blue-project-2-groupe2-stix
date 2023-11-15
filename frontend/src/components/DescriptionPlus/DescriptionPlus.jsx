@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import "./DescriptionPlus.scss";
 import systeme from "../../../../backend/src/data.json";
 
 function DescriptionPlus() {
@@ -13,9 +12,18 @@ function DescriptionPlus() {
   };
 
   return (
-    <div className="Description">
-      <nav className="navbar-plus">
+    <div className="content-bloc">
+      <nav className="navbar-more">
         <ul>
+          <li>
+            <a href="http://localhost:3000/">
+              <img
+                className="btn-home"
+                src="../../src/assets/image/boutonHome.png"
+                alt="bouton-home"
+              />
+            </a>
+          </li>
           {systeme &&
             systeme.map((planet) => (
               <button
@@ -29,17 +37,33 @@ function DescriptionPlus() {
             ))}
         </ul>
       </nav>
-      <p className="description ">{system.french_name}</p>
+      <p className="title ">{system.french_name}</p>
       <main className="content">
         {systeme && (
-          <div>
-            <img
-              className="d-img"
-              src={`${import.meta.env.VITE_BACKEND_URL}${system.image}`}
-              alt={system.french_name}
-            />
-            <p className="description">{system.description}</p>
-          </div>
+          <>
+            <div className="rotation">
+              <img
+                className="d-img"
+                src={`${import.meta.env.VITE_BACKEND_URL}${system.image}`}
+                alt={system.french_name}
+              />
+            </div>
+            <p className="description">
+              <h5 className="summary"> {system.description}</h5>{" "}
+              <h5>GRAVITE : {system.gravite}</h5>{" "}
+              <h5>DENSITE : {system.densite}</h5>{" "}
+              <h5>MASSE : {system.masse}</h5>{" "}
+              <h5>PERIODE DE REVOLUTION : {system.periode_de_revolution}</h5>{" "}
+              <h5>
+                NOMBRE D'HEURE DANS UNE JOURNEE : {system.nombre_heures_journee}
+              </h5>{" "}
+              <h5>VITESSE DE ROTATION : {system.vitesse_rotation_equateur}</h5>{" "}
+              <h5>TYPE DE PLANETE : {system.type_de_planete}</h5>{" "}
+              <h5>MINIMUM : {system.temperature_de_surface.min}</h5>{" "}
+              <h5>MAX : {system.temperature_de_surface.max}</h5>{" "}
+              <h5>MOYENNE : {system.temperature_de_surface.moyenne}</h5>
+            </p>
+          </>
         )}
       </main>
     </div>
