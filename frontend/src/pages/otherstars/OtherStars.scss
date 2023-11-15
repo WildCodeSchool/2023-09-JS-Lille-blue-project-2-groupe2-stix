@@ -1,0 +1,619 @@
+@keyframes textotherstar {
+  0% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+  100% {
+    transform: translate(0vw, 0vh);
+    opacity: 0;
+  }
+}
+
+@keyframes styx {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, 0vh);
+  }
+  100% {
+    transform: translate(0vw, 0vh);
+    opacity: 1;
+  }
+}
+@keyframes textgeanterouge {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes textetoileblanche {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes textgeantebleu {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes texttrounoir {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes textpilier {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes textneutron {
+  0% {
+    opacity: 0;
+    transform: translate(-55vw, 4vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 4vh);
+  }
+}
+
+@keyframes starsaldebaran {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+@keyframes starssirius {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+
+@keyframes starsrigel {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+
+@keyframes starstrounoir {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+
+@keyframes starspilier {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+
+@keyframes starsneutron {
+  0% {
+    opacity: 0;
+    transform: translate(60vw, 0vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(2vw, 0vh);
+  }
+}
+
+@keyframes titlealdebaran {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+@keyframes titlesirius {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+@keyframes titlerigel {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+@keyframes titletrounoir {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+@keyframes titlepilier {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+@keyframes titleneutron {
+  0% {
+    opacity: 0;
+    transform: translate(0vw, -60vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0vw, 0vh);
+  }
+}
+
+.Constellation.de.Taureau {
+  animation: titlealdebaran 2s ease-in-out forwards;
+}
+
+.Constellation.du.Grand.Chien {
+  animation: titlesirius 2s ease-in-out forwards;
+}
+
+.Constellation.d\'Orion {
+  animation: titlerigel 2s ease-in-out forwards;
+}
+
+.NGC.\36 166.\(Galaxie.elliptique\) {
+  animation: titletrounoir 2s ease-in-out forwards;
+}
+
+.Nébuleuse.de.l\'Aigle {
+  animation: titlepilier 2s ease-in-out forwards;
+}
+
+.Constellation.du.Sextant {
+  animation: titleneutron 2s ease-in-out forwards;
+}
+
+a.otherstar {
+  position: absolute;
+  z-index: 50;
+  top: 140vw;
+  right: 40%;
+  text-decoration: none;
+  color: white;
+  background-color: #efb41b;
+  border: solid 0.5em #efb41b;
+  border-radius: 20px;
+  margin: 20px;
+}
+.navstar {
+  display: flex;
+  justify-content: center;
+  margin: 1.5%;
+  margin-left: 15vw;
+  margin-top: 0vh;
+  background-color: goldenrod;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 69vw;
+}
+
+.sectiondesc {
+  animation: textpresentation 2s ease-in-out forwards;
+  margin-top: 19vh;
+}
+
+.styx {
+  opacity: 0;
+  animation: styx 2s linear forwards;
+  animation-delay: 17s;
+  text-align: center;
+  position: absolute;
+  width: 95vw;
+  top: 43vh;
+  right: 2vw;
+}
+
+.Aldebaran {
+  animation: starsaldebaran 2s ease-in-out forwards;
+  position: absolute;
+  top: 11vh;
+  right: 2vw;
+  height: 89vh;
+}
+
+.Alpha.Canis.Majoris.\(Sirius\) {
+  animation: starssirius 2s ease-in-out forwards;
+  position: absolute;
+  top: 23vh;
+  right: 0vw;
+  height: 67vh;
+}
+
+.Rigel {
+  animation: starsrigel 2s ease-in-out forwards;
+  position: absolute;
+  top: 22vh;
+  right: 0vw;
+  height: 67vh;
+}
+
+.Trou.noir.TON618 {
+  animation: starstrounoir 2s ease-in-out forwards;
+  position: absolute;
+  top: 16vh;
+  right: -13vw;
+  height: 84vh;
+}
+
+.Piliers.de.la.Création {
+  animation: starspilier 2s ease-in-out forwards;
+  position: absolute;
+  top: 8vh;
+  right: -1vw;
+  height: 96vh;
+}
+
+.PSR.J0952-0607 {
+  animation: starsneutron 2s ease-in-out forwards;
+  position: absolute;
+  top: 23vh;
+  right: -5vw;
+  height: 65vh;
+}
+
+.Géante.rouge {
+  animation: textgeanterouge 2s ease-in-out forwards;
+  height: 47vh;
+}
+
+.Etoile.blanche {
+  animation: textetoileblanche 2s ease-in-out forwards;
+  height: 58vh;
+}
+
+.Supergéante.bleue {
+  animation: textgeantebleu 2s ease-in-out forwards;
+  height: 47vh;
+}
+
+.Trou.noir.supermassif {
+  animation: texttrounoir 2s ease-in-out forwards;
+  height: 47vh;
+}
+
+.Nébuleuse.d\'hydrogène {
+  animation: textpilier 2s ease-in-out forwards;
+  height: 52vh;
+}
+
+.Etoile.a.neutron {
+  animation: textneutron 2s ease-in-out forwards;
+  height: 47vh;
+}
+
+.bodystar h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0vh;
+}
+
+body {
+  color: white;
+}
+
+.descriptionstar {
+  text-align: justify;
+  width: 43vw;
+  margin-top: 8vh;
+  margin-left: 9vw;
+}
+
+.infosstar {
+  position: absolute;
+  top: 36vh;
+  right: 1vw;
+}
+
+.bodystar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.caracstar {
+  text-align: justify;
+}
+
+.sectioncarac {
+  margin-left: 9vw;
+  width: 43vw;
+}
+.présentationotherstar {
+  animation: textotherstar 15s linear forwards;
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 32vh;
+  font-size: 1.4rem;
+  line-height: 3.8vh;
+}
+
+.buttonstar {
+  margin: 5px;
+  background-color: goldenrod;
+  color: white;
+  opacity: 0.9;
+  width: 10vw;
+  height: 6vh;
+  padding: 0.5rem;
+  border: none;
+}
+
+.buttonstar:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255);
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    .buttonstar {
+      height: 8vh;
+      width: 17vw;
+    }
+  }
+
+  .Aldebaran {
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    height: 40vh;
+  }
+
+  .sectioncarac {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .descriptionstar {
+    text-align: justify;
+    width: 99vw;
+    margin: 0 auto;
+  }
+  .caracstar {
+    text-align: justify;
+  }
+  .Alpha.Canis.Majoris.\(Sirius\) {
+    position: absolute;
+    top: 21vh;
+    right: -6vw;
+    height: 30vh;
+  }
+  .Rigel {
+    position: absolute;
+    top: 19vh;
+    right: 1vw;
+    height: 31vh;
+  }
+
+  .navbar-plus {
+    width: 18vw;
+  }
+
+  .Trou.noir.TON618 {
+    position: absolute;
+    top: 18vh;
+    right: -5vw;
+    height: 30vh;
+  }
+
+  .Piliers.de.la.Création {
+    position: absolute;
+    top: 14vh;
+    right: 10vw;
+    height: 34vh;
+  }
+
+  .buttonstar {
+    height: 10vh;
+    width: 1vw;
+  }
+
+  .navstar {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100vw;
+    margin: 0vw;
+  }
+
+  .PSR.J0952-0607 {
+    position: absolute;
+    top: 19vh;
+    right: -22vw;
+    height: 37vh;
+  }
+
+  .présentationotherstar {
+    animation: textotherstar 15s linear forwards;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 4.8vh;
+    position: absolute;
+    top: 39vh;
+    width: 99vw;
+  }
+
+  .styx {
+    opacity: 0;
+    animation: styx 3s linear forwards;
+    animation-delay: 15s;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    width: 91vw;
+    top: 50vh;
+  }
+
+  .Etoile.blanche {
+    animation: textetoileblanche 2s ease-in-out forwards;
+    margin-top: -6vh;
+  }
+
+  .Etoile.a.neutron {
+    animation: textneutron 2s ease-in-out forwards;
+    position: absolute;
+    top: 53vh;
+  }
+
+  .Constellation.de.Taureau {
+    animation: titlealdebaran 2s ease-in-out forwards;
+    position: absolute;
+    top: 10vh;
+  }
+
+  .Géante.rouge {
+    animation: textgeanterouge 2s ease-in-out forwards;
+    position: absolute;
+    bottom: 6vh;
+  }
+
+  .Constellation.du.Grand.Chien {
+    animation: titlesirius 2s ease-in-out forwards;
+    position: absolute;
+    top: 10vh;
+  }
+
+  .Etoile.blanche {
+    animation: textetoileblanche 2s ease-in-out forwards;
+    position: absolute;
+    bottom: -6vh;
+  }
+
+  .Constellation.d\'Orion {
+    position: absolute;
+    animation: titlerigel 2s ease-in-out forwards;
+    top: 10vh;
+  }
+
+  .Supergéante.bleue {
+    animation: textgeantebleu 2s ease-in-out forwards;
+    position: absolute;
+    bottom: 5vh;
+  }
+
+  .NGC.\36 166.\(Galaxie.elliptique\) {
+    animation: titletrounoir 2s ease-in-out forwards;
+    position: absolute;
+    top: 10vh;
+  }
+
+  .Trou.noir.supermassif {
+    animation: texttrounoir 2s ease-in-out forwards;
+    position: absolute;
+    bottom: 5vh;
+  }
+
+  .Trou.noir.TON618 {
+    position: absolute;
+    top: 18vh;
+    right: -20vw;
+    height: 36vh;
+  }
+
+  .Nébuleuse.de.l\'Aigle {
+    animation: titlepilier 2s ease-in-out forwards;
+    position: absolute;
+    top: 10vh;
+  }
+
+  .Nébuleuse.d\'hydrogène {
+    animation: textpilier 2s ease-in-out forwards;
+    position: absolute;
+    bottom: -1vh;
+  }
+
+  .Piliers.de.la.Création {
+    position: absolute;
+    top: 12vh;
+    right: 2vw;
+    height: 41vh;
+  }
+
+  .Constellation.du.Sextant {
+    animation: titleneutron 2s ease-in-out forwards;
+    position: absolute;
+    top: 10vh;
+  }
+}

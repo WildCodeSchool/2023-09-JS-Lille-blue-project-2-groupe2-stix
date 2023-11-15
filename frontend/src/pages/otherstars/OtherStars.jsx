@@ -1,24 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./OtherStar.scss";
+import "./OtherStars.scss";
 import newstar from "../../../../backend/src/star.json";
 
-function OtherStar() {
+function OtherStars() {
   const { name } = useParams();
   const [star, setStar] = useState(name);
   const newstars = newstar.find((el) => el.name === star);
 
-  const handleClick = (starname) => {
-    setStar(starname);
+  const handleClick = (starsname) => {
+    setStar(starsname);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
-    <>
+    <div className="bodystars">
       <div className="navstar">
         {newstar &&
           newstar.map((stars) => {
             return (
-              <section>
+              <section key={stars.name}>
                 <nav className="navbar-plus">
                   <button
                     onClick={() => handleClick(stars.name)}
@@ -33,16 +40,18 @@ function OtherStar() {
             );
           })}
       </div>
-      <h1 className="titlestar">{newstars && newstars.name}</h1>
-      <section className="bodystar">
-        {newstars && (
-          <img
-            className={newstars.name}
-            src={`${import.meta.env.VITE_BACKEND_URL}${newstars.photo}`}
-            alt=""
-          />
-        )}
-      </section>
+      {newstars && (
+        <section className="bodystar">
+          <h1 className={newstars.emplacement}>{newstars.name}</h1>
+          {newstars && (
+            <img
+              className={newstars.name}
+              src={`${import.meta.env.VITE_BACKEND_URL}${newstars.photo}`}
+              alt=""
+            />
+          )}
+        </section>
+      )}
       <section>
         {newstars ? null : (
           <>
@@ -62,9 +71,9 @@ function OtherStar() {
           </>
         )}
       </section>
-      <section className="sectiondesc">
-        <p className="descriptionstar">{newstars && newstars.Description}</p>
-        {newstars && (
+      {newstars && (
+        <section className={newstars.type}>
+          <p className="descriptionstar">{newstars && newstars.Description}</p>
           <section className="sectioncarac">
             <p className="caracstar">
               Diamètre en km : {newstars.diametre_en_km}
@@ -75,14 +84,12 @@ function OtherStar() {
             <p className="caracstar">
               Emplacement dans l'univers : {newstars.emplacement}{" "}
             </p>
-            <p className="caracstar">
-              type d'étoile : {newstars.type_d_etoile}{" "}
-            </p>
+            <p className="caracstar">Type d'étoile : {newstars.type} </p>
           </section>
-        )}
-      </section>
-    </>
+        </section>
+      )}
+    </div>
   );
 }
 
-export default OtherStar;
+export default OtherStars;

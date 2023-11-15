@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Welcome from "./pages/Welcome/Welcome";
-import OtherStar from "./pages/otherstar/OtherStar";
+import OtherStars from "./pages/otherstars/OtherStars";
 import DescriptionPlus from "./components/DescriptionPlus/DescriptionPlus";
 
 const router = createBrowserRouter([
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
     element: <DescriptionPlus />,
   },
   {
-    path: "/otherstar",
-    element: <OtherStar />,
+    path: "/otherstars",
+    element: <OtherStars />,
   },
 ]);
 

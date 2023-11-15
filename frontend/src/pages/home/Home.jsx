@@ -29,8 +29,8 @@ function Home() {
   return (
     <div>
       <section>
-        <Link to="/otherstar" className="otherstar">
-          🢡 Click for see strange and other star 🢠
+        <Link to="/otherstars" className="otherstar">
+          Voir d'autres particularités de notre univers !
         </Link>
       </section>
       <div className="home">
