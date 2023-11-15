@@ -10,7 +10,7 @@ import Navbar from "../../components/navbar/Navbar";
 function Home() {
   const [showCard, setShowCard] = useState(false);
   const [systeme, setSysteme] = useState();
-  const [choosePlanet, setChoosePlanet] = useState(null);
+  const [choosePlanet, setChoosePlanet] = useState();
 
   const foundPlanet = (id) => {
     systeme.map((planet) => {
@@ -49,11 +49,13 @@ function Home() {
         )}
         {systeme ? <HomeText /> : ""}
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-        <Navbar
-          systeme={systeme}
-          foundPlanet={foundPlanet}
-          setShowCard={setShowCard}
-        />
+        {systeme && (
+          <Navbar
+            systeme={systeme}
+            foundPlanet={foundPlanet}
+            setShowCard={setShowCard}
+          />
+        )}
       </div>
     </div>
   );

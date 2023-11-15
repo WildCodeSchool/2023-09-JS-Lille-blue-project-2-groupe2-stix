@@ -72,9 +72,21 @@ SolarSystem.propTypes = {
     }).isRequired
   ).isRequired,
   foundPlanet: PropTypes.func.isRequired,
-  choosePlanet: PropTypes.func.isRequired,
+  choosePlanet: PropTypes.objectOf(
+    shape({
+      id: PropTypes.number.isRequired,
+      french_name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      periode_de_revolution: PropTypes.string.isRequired,
+      vitesse_rotation_equateur: PropTypes.string.isRequired,
+      type_de_planete: PropTypes.string.isRequired,
+    }).isRequired
+  ),
   showCard: PropTypes.bool.isRequired,
   setShowCard: PropTypes.func.isRequired,
+};
+SolarSystem.defaultProps = {
+  choosePlanet: null,
 };
 
 export default SolarSystem;
