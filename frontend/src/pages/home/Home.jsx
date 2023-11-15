@@ -29,7 +29,7 @@ function Home() {
     <div>
       <section>
         <Link to="/otherstar" className="otherstar">
-          Voir d'autre particularité de notre univer
+          Voir d'autre particularité de notre univers !
         </Link>
       </section>
       <div className="home">
