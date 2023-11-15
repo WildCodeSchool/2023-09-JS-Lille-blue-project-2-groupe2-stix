@@ -36,7 +36,7 @@ function Home() {
         </Link>
       </section>
       <div className="home">
-        {systeme ? (
+        {systeme && (
           <SolarSystem
             systeme={systeme}
             choosePlanet={choosePlanet}
@@ -44,18 +44,14 @@ function Home() {
             showCard={showCard}
             setShowCard={setShowCard}
           />
-        ) : (
-          ""
         )}
-        {systeme ? <HomeText /> : ""}
+        <HomeText />
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-        {systeme && (
-          <Navbar
-            systeme={systeme}
-            foundPlanet={foundPlanet}
-            setShowCard={setShowCard}
-          />
-        )}
+        <Navbar
+          systeme={systeme}
+          foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+        />
       </div>
     </div>
   );
