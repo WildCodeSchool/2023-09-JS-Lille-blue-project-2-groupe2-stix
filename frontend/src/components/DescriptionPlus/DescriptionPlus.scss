@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-image: url(../../assets/image/space2.jpg);
   padding: 0;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 nav.navbar-more {
   display: flex;
@@ -35,6 +35,7 @@ p.description {
   text-align: center;
   text-align: left;
   padding-left: 8%;
+  animation: animPlanet 4s cubic-bezier(0, 0, 0, 0) 0s forwards;
 }
 
 .summary {
@@ -48,7 +49,7 @@ p.title {
   display: flex;
   justify-content: center;
   font-size: 220%;
-  margin: 0px;
+  margin: 20px;
 }
 
 .content {
@@ -59,6 +60,7 @@ p.title {
 img.d-img {
   padding: 10%;
   width: 60%;
+  animation: animPlanet 4s cubic-bezier(0, 0, 0, 0) 0s forwards;
 }
 img.btn-home {
   width: 35%;
@@ -99,8 +101,7 @@ li {
   nav.navbar-more {
     display: flex;
     justify-content: left;
-    overflow-x: hidden;
-    overflow: hidden;
+    overflow-x: auto;
   }
 
   h5.summary {

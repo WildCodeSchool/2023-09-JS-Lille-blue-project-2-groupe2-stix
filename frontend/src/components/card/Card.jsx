@@ -23,11 +23,12 @@ function Card({ choosePlanet, closeCard }) {
           >
             X
           </button>
+
           <Link
             to={`/DescriptionPlus/${choosePlanet.id}`}
             className="card__button__moreInfos"
           >
-            More Infos
+            +
           </Link>
         </section>
       </div>

@@ -1,16 +1,28 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
-import DescriptionPlus from "./components/descriptionPlus/DescriptionPlus";
+import Welcome from "./pages/Welcome/Welcome";
+import OtherStar from "./pages/otherstar/OtherStar";
+import DescriptionPlus from "./components/DescriptionPlus/DescriptionPlus";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Welcome />,
+  },
+
+  {
+    path: "/home",
     element: <Home />,
   },
+
   {
     path: "/DescriptionPlus/:id",
     element: <DescriptionPlus />,
+  },
+  {
+    path: "/otherstar",
+    element: <OtherStar />,
   },
 ]);
 

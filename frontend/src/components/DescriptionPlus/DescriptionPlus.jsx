@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import systeme from "../../../../backend/src/data.json";
+import "./DescriptionPlus.scss";
 
 function DescriptionPlus() {
   const { id } = useParams();
@@ -16,13 +17,13 @@ function DescriptionPlus() {
       <nav className="navbar-more">
         <ul>
           <li>
-            <a href="http://localhost:3000/">
+            <Link to="/home">
               <img
                 className="btn-home"
                 src="../../src/assets/image/boutonHome.png"
                 alt="bouton-home"
               />
-            </a>
+            </Link>
           </li>
           {systeme &&
             systeme.map((planet) => (
