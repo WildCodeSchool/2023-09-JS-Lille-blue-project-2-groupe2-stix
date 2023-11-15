@@ -25,7 +25,7 @@ function Card({ choosePlanet, closeCard }) {
           </button>
 
           <Link
-            to={`/descriptionplus/${choosePlanet.id}`}
+            to={`/moreinfos/${choosePlanet.id}`}
             className="card__button__moreInfos"
           >
             +
