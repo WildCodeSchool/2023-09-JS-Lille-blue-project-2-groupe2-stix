@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-image: url("https://img2.wallspic.com/previews/6/7/2/3/4/143276/143276-espace_exterieur-nuit-voie_lactee-ciel-objet_astronomique-x750.jpg");
 }
@@ -133,6 +134,9 @@ body {
   position: absolute;
   top: 5vw;
   z-index: 15;
+  background-color: #2b324286;
+  border-radius: 20px;
+  // box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.349);
 }
 
 .welcometitle {
@@ -153,9 +157,12 @@ h2 {
 
 .linkwelcome {
   text-decoration: none;
-  color: #5b4dda;
+  color: #ffffff;
   position: absolute;
   z-index: 16;
   top: 91vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  background-color: #efb41b;
+  border: solid 0.5em #efb41b;
+  border-radius: 20px;
 }

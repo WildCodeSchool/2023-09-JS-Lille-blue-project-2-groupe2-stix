@@ -24,7 +24,7 @@ function Welcome() {
                     key={planet.id}
                     className={planet.french_name}
                     src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
-                    alt=""
+                    alt="planet"
                   />
                 );
               })}
@@ -59,7 +59,7 @@ function Welcome() {
             </section>
 
             <Link to="/home" className="linkwelcome">
-              🢡 Clique ici pour en découvrir plus 🢠
+              En découvrir plus
             </Link>
           </>
         ) : null}

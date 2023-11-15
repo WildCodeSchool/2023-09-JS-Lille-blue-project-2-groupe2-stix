@@ -1,0 +1,44 @@
+[
+  {
+    "nom": "Aldebaran",
+    "emplacement": "Constellation de Taureau",
+    "type_d_etoile": "Géante rouge",
+    "diametre_en_km": "Environ 61,8 millions de kilomètres",
+    "photo": "."
+  },
+  {
+    "nom": "Alpha Canis Majoris (Sirius)",
+    "emplacement": "Constellation du Grand Chien",
+    "type_d_etoile": "Etoile blanche",
+    "diametre_en_km": "Environ 4,3 millions de kilomètres",
+    "photo": "URL_de_l_image_de_Sirius"
+  },
+  {
+    "nom": "Rigel",
+    "emplacement": "Constellation d'Orion",
+    "type_d_etoile": "Supergéante bleue",
+    "diametre_en_km": "Environ 110,2 millions de kilomètres",
+    "photo": "URL_de_l_image_de_Rigel"
+  },
+  {
+    "nom": "Trou noir TON618",
+    "emplacement": "NGC 6166 (Galaxie elliptique)",
+    "type_d_etoile": "Trou noir supermassif",
+    "diametre_en_km": "380 milliards de kilomètres",
+    "photo": "URL_de_l_image_du_trou_noir_de_NGC_6166"
+  },
+  {
+    "nom": "Piliers de la Création",
+    "emplacement": "Nébuleuse de l'Aigle",
+    "type_d_etoile": "Nébuleuse d'hydrogène",
+    "diametre_en_km": "4 à 5 années lumières, qui eux mêmes sont contenu dans une nébuleuse de 55 à 70 années lumières",
+    "photo": "URL_de_l_image_des_Piliers_de_la_Création"
+  },
+  {
+    "nom": "PSR J0952-0607",
+    "type_d_etoile": "Etoile a neutron",
+    "emplacement": "Constellation du Sextant",
+    "tour_seconde": "707 tours par seconde sur elle même",
+    "diametre_en_km": "20 kilomètres"
+  }
+]
