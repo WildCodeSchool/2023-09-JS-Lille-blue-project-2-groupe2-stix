@@ -150,7 +150,7 @@ body {
     left: 47vw;
 
     img {
-      animation: orbit_Mercure 2s linear infinite;
+      animation: orbit_Mercure 14s linear infinite;
       height: 2vw;
       position: absolute;
       margin-top: 10vw;
@@ -168,7 +168,7 @@ body {
     left: 42vw;
 
     img {
-      animation: orbit_Venus 5s linear infinite;
+      animation: orbit_Venus 35s linear infinite;
       height: 3vw;
       position: absolute;
       margin-top: 15vw;
@@ -188,7 +188,7 @@ body {
     img {
       position: absolute;
       height: 3.5vw;
-      animation: orbit_Earth 8s linear infinite;
+      animation: orbit_Earth 56s linear infinite;
       margin-top: 19vw;
       margin-left: 19vw;
     }
@@ -206,7 +206,7 @@ body {
     img {
       position: absolute;
       height: 2.5vw;
-      animation: orbit_Mars 14s linear infinite;
+      animation: orbit_Mars 101s linear infinite;
       margin-top: 26vw;
       margin-left: 26vw;
     }
@@ -224,7 +224,7 @@ body {
     img {
       position: absolute;
       height: 7vw;
-      animation: orbit_Jupiter 88s linear infinite;
+      animation: orbit_Jupiter 636s linear infinite;
       margin-top: 34vw;
       margin-left: 34vw;
     }
@@ -242,7 +242,7 @@ body {
     img {
       position: absolute;
       height: 6vw;
-      animation: orbit_Saturne 211s linear infinite;
+      animation: orbit_Saturne 1526s linear infinite;
       margin-top: 44vw;
       margin-left: 43vw;
     }
@@ -260,7 +260,7 @@ body {
     img {
       position: absolute;
       height: 4.5vw;
-      animation: orbit_Uranus 591s linear infinite;
+      animation: orbit_Uranus 4272s linear infinite;
       margin-top: 58vw;
       margin-left: 58vw;
     }
@@ -278,7 +278,7 @@ body {
     img {
       position: absolute;
       height: 4vw;
-      animation: orbit_Neptune 1158s linear infinite;
+      animation: orbit_Neptune 8245s linear infinite;
       margin-top: 72vw;
       margin-left: 72vw;
       z-index: 0;
@@ -286,7 +286,7 @@ body {
   }
 }
 .contour {
-  border: 4px solid orange;
+  border: 8px solid orange;
   border-radius: 50%;
 }
 
