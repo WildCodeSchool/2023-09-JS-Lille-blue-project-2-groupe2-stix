@@ -24,7 +24,7 @@ function SolarSystem({
       {showCard &&
         createPortal(
           <Card
-            choosePlanet={choosePlanet}
+            choosePlanet={choosePlanet || {}}
             closeCard={() => setShowCard(false)}
           />,
           document.body
@@ -57,8 +57,9 @@ SolarSystem.propTypes = {
     }).isRequired
   ).isRequired,
   foundPlanet: PropTypes.func.isRequired,
-  choosePlanet: PropTypes.string.isRequired,
+  choosePlanet: PropTypes.func.isRequired,
   showCard: PropTypes.bool.isRequired,
   setShowCard: PropTypes.func.isRequired,
 };
+
 export default SolarSystem;

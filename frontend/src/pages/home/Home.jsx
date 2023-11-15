@@ -8,16 +8,18 @@ import "./Home.scss";
 function Home() {
   const [showCard, setShowCard] = useState(false);
   const [systeme, setSysteme] = useState();
-  const [choosePlanet, setChoosePlanet] = useState("");
+  const [choosePlanet, setChoosePlanet] = useState(null);
 
   const foundPlanet = (id) => {
-    systeme.map((element) => {
-      if (element.id === id) {
-        setChoosePlanet(element);
+    systeme.map((planet) => {
+      if (planet.id === id) {
+        setChoosePlanet(planet);
       }
       return setChoosePlanet;
     });
   };
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     fetch("http://localhost:3310/planets")
