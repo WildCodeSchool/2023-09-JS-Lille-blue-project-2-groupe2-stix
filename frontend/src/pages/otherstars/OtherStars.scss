@@ -263,9 +263,9 @@ a.otherstar {
   margin: 1.5%;
   margin-left: 15vw;
   margin-top: 0vh;
-  background-color: goldenrod;
+  background-color: #efb41b;
   border-radius: 0px 0px 10px 10px;
-  border-bottom: solid 0.5em goldenrod;
+  border-bottom: solid 0.5em#efb41b;
   width: 69vw;
 }
 
@@ -422,7 +422,7 @@ body {
 
 .buttonstar {
   margin: 5px;
-  background-color: goldenrod;
+  background-color: #efb41b;
   color: white;
   opacity: 0.9;
   width: 10vw;
@@ -442,6 +442,7 @@ body {
     .buttonstar {
       height: 8vh;
       width: 17vw;
+      background-color: #efb41b;
     }
   }
 
@@ -504,9 +505,11 @@ body {
     display: flex;
     justify-content: center;
     background-color: #efb41b;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 100vw;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    margin: 0;
+    font-size: 0.9em;
+    border: solid 0.5em #efb41b;
   }
 
   .PSR.J0952-0607 {
