@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import systeme from "../../../../backend/src/data.json";
+import "./DescriptionPlus.scss";
 
 function DescriptionPlus() {
   const { id } = useParams();
