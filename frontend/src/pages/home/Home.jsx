@@ -30,7 +30,7 @@ function Home() {
   }, []);
   return (
     <div>
-      <section>
+      <section className="otherStar__section">
         <Link to="/otherstars" className="otherstar">
           Voir d'autres particularités de notre univers !
         </Link>

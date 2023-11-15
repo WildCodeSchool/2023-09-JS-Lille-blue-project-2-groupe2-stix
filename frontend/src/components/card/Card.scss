@@ -63,18 +63,18 @@
 }
 @media screen and (max-width: 500px) {
   #card {
-    background-color: #171821;
+    background-image: "../../assets/image/space.jpg";
     display: flex;
     position: static;
-    height: 87vh;
+    height: 81vh;
     justify-content: center;
     align-items: center;
     .card__body {
       display: flex;
       flex-direction: column;
-      border: solid 4px white;
+      border: none;
       color: white;
-      background-image: url(/src/assets/image/space.jpg);
+      background-color: rgba(0, 255, 255, 0);
       height: 78vh;
       width: 83vw;
       border-radius: 16px;
