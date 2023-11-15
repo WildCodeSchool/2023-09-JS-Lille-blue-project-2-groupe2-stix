@@ -25,7 +25,7 @@ function OtherStar() {
         {newstar &&
           newstar.map((stars) => {
             return (
-              <section>
+              <section key={stars.name}>
                 <nav className="navbar-plus">
                   <button
                     onClick={() => handleClick(stars.name)}

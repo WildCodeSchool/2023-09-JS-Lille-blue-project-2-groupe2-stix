@@ -31,6 +31,7 @@ function Welcome() {
                     className={planet.french_name}
                     src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
                     alt="planet"
+                    key={planet.id}
                   />
                 );
               })}
