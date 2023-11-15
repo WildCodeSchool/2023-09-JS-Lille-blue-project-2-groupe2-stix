@@ -244,10 +244,14 @@
 a.otherstar {
   position: absolute;
   z-index: 50;
-  right: 2vw;
-  top: 3vh;
+  top: 140vw;
+  right: 40%;
   text-decoration: none;
   color: white;
+  background-color: #efb41b;
+  border: solid 0.5em #efb41b;
+  border-radius: 20px;
+  margin: 20px;
 }
 .navstar {
   display: flex;
