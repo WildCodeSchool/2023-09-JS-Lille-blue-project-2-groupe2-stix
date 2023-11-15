@@ -99,7 +99,8 @@ li {
   nav.navbar-more {
     display: flex;
     justify-content: left;
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow: hidden;
   }
 
   h5.summary {
