@@ -28,7 +28,7 @@ function Card({ choosePlanet, closeCard }) {
             to={`/descriptionplus/${choosePlanet.id}`}
             className="card__button__moreInfos"
           >
-            npm +
+            +
           </Link>
         </section>
       </div>
