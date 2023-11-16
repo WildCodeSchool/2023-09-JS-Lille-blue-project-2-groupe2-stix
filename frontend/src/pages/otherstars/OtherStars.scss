@@ -244,10 +244,14 @@
 a.otherstar {
   position: absolute;
   z-index: 50;
-  right: 2vw;
-  top: 3vh;
+  top: 140vw;
+  right: 40%;
   text-decoration: none;
   color: white;
+  background-color: #efb41b;
+  border: solid 0.5em #efb41b;
+  border-radius: 20px;
+  margin: 20px;
 }
 .navstar {
   display: flex;
@@ -273,8 +277,23 @@ a.otherstar {
   text-align: center;
   position: absolute;
   width: 95vw;
-  top: 43vh;
-  right: 2vw;
+  top: 45vh;
+  right: 34vw;
+
+  h3 {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: end;
+    top: 10%;
+    color: white;
+    font-size: 600%;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+  }
 }
 
 .Aldebaran {

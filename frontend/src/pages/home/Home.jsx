@@ -30,8 +30,8 @@ function Home() {
     <div>
       <section>
         <Logo />
-        <Link to="/otherstar" className="otherstar">
-          🢡 Click for see strange and other star 🢠
+        <Link to="/otherstars" className="otherstar">
+          Voir d'autres particularités de notre univers !
         </Link>
       </section>
       <div className="home">
@@ -40,14 +40,19 @@ function Home() {
             systeme={systeme}
             choosePlanet={choosePlanet}
             foundPlanet={foundPlanet}
-            showCard={showCard}
             setShowCard={setShowCard}
+            showCard={showCard}
           />
         ) : (
           ""
         )}
         {systeme ? <HomeText /> : ""}
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
+        <Logo
+          systeme={systeme}
+          foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+        />
         <Navbar
           systeme={systeme}
           foundPlanet={foundPlanet}

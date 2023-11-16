@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./OtherStar.scss";
+import "./OtherStars.scss";
 import newstar from "../../../../backend/src/star.json";
+import Logo from "../../components/logo/logo";
 
-function OtherStar() {
+function OtherStars() {
   const { name } = useParams();
   const [star, setStar] = useState(name);
   const newstars = newstar.find((el) => el.name === star);
@@ -56,9 +57,7 @@ function OtherStar() {
         {newstars ? null : (
           <>
             <h2 className="styx">
-              STYX <br />
-              Cliquez sur l'un des boutons pour afficher le corps céleste
-              correspondant.
+              <Logo />
             </h2>
 
             <p className="présentationotherstar">
@@ -92,4 +91,4 @@ function OtherStar() {
   );
 }
 
-export default OtherStar;
+export default OtherStars;
