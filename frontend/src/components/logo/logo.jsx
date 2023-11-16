@@ -3,7 +3,7 @@ import "./logo.scss";
 
 function Logo() {
   return (
-    <section>
+    <section className="logo">
       <h3>
         <span>S</span>
         <span>T</span>
