@@ -39,6 +39,9 @@ button:hover {
   align-items: start;
   margin: 2em;
   animation: animPlanet 4s cubic-bezier(0, 0, 0, 0) 0s forwards;
+  background-color: #14151c94;
+  border: solid 5px rgba(20, 21, 28, 0.176);
+  border-radius: 10px;
 }
 
 .summary {
@@ -87,41 +90,33 @@ li {
   margin: 0.3em;
 }
 
-@media (max-width: 1230px) {
-  p.description {
-    align-items: center;
-    overflow-wrap: normal;
-  }
-
+@media (max-width: 500px) {
   .content {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .description {
+    overflow-wrap: normal;
+    width: 28em;
   }
   img.d-img {
-    width: 30vh;
-    margin: 10%;
+    width: 45%;
+    margin: 5%;
   }
   .btn .btn-home {
     width: 100%;
     flex-shrink: 0;
   }
+
   nav.navbar-more {
     display: flex;
     justify-content: left;
     overflow-x: auto;
   }
 
-  h5.summary {
-    letter-spacing: 1px;
-    margin: 10%;
-    font-size: 14px;
-    padding-left: 0%;
-    margin-right: 25%;
-  }
-  h5 {
-    letter-spacing: 1px;
-    margin: 10%;
-    font-size: 14px;
-    padding-left: 0%;
-    margin-right: 25%;
+  .summary {
+    font-size: 1.4em;
   }
 }
