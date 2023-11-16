@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./OtherStars.scss";
+import home from "../../assets/image/buttonblanc.png";
 import newstar from "../../../../backend/src/star.json";
 import Logo from "../../components/logo/logo";
 
@@ -23,6 +24,10 @@ function OtherStars() {
   return (
     <div className="bodystars">
       <div className="navstar">
+        <Link to="/home">
+          {" "}
+          <img src={home} alt="" className="boutonHome" />{" "}
+        </Link>
         {newstar &&
           newstar.map((stars) => {
             return (
@@ -61,7 +66,7 @@ function OtherStars() {
             </h2>
 
             <p className="présentationotherstar">
-              "Au sein de l'immensité cosmique, des corps célestes étranges
+              Au sein de l'immensité cosmique, des corps célestes étranges
               éveillent notre curiosité et alimentent notre fascination. Au-delà
               des constellations familières et des planètes de notre propre
               système solaire, l'univers nous réserve une panoplie de phénomènes
@@ -75,15 +80,23 @@ function OtherStars() {
           <p className="descriptionstar">{newstars && newstars.Description}</p>
           <section className="sectioncarac">
             <p className="caracstar">
-              Diamètre en km : {newstars.diametre_en_km}
+              <span className="Particularites">Diamètre en km :</span>{" "}
+              {newstars.diametre_en_km}
             </p>
             <p className="caracstar">
-              Distance de la Terre : {newstars.Distance_de_la_Terre}
+              <span className="Particularites">Distance de la Terre :</span>{" "}
+              {newstars.Distance_de_la_Terre}
             </p>
             <p className="caracstar">
-              Emplacement dans l'univers : {newstars.emplacement}{" "}
+              <span className="Particularites">
+                Emplacement dans l'univers :
+              </span>{" "}
+              {newstars.emplacement}{" "}
             </p>
-            <p className="caracstar">Type d'étoile : {newstars.type} </p>
+            <p className="caracstar">
+              <span className="Particularites">Type d'étoile :</span>{" "}
+              {newstars.type}{" "}
+            </p>
           </section>
         </section>
       )}
