@@ -127,19 +127,20 @@ body {
 }
 .presentation {
   width: 42vw;
-  line-height: 3vw;
+  line-height: 2vw;
   text-align: center;
-  font-weight: bold;
+
   padding: 0.5vw;
   position: absolute;
-  top: 6vw;
+  top: 10vw;
   z-index: 15;
-  background-color: rgba(43, 50, 66, 0.5254901961);
+  background-color: rgba(43, 50, 66, 0.733);
   border-radius: 20px;
 }
 
 .welcometitle {
-  font-size: 2rem;
+  font-size: 4rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255);
 }
 
 .welcome {

@@ -11,6 +11,7 @@
 @keyframes animOrbit {
   0% {
     opacity: 0;
+    transform: translate(-35px) rotate(-22deg);
   }
 
   100% {
@@ -35,28 +36,28 @@ svg {
     opacity: 0;
   }
   .path_Mercury {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3s forwards;
   }
   .path_Venus {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.1s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.1s forwards;
   }
   .path_Earth {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.2s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.2s forwards;
   }
   .path_Mars {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.3s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.3s forwards;
   }
   .path_Jupiter {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.4s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.4s forwards;
   }
   .path_Saturn {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.5s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.5s forwards;
   }
   .path_Uranus {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.6s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.6s forwards;
   }
   .path_Neptune {
-    animation: animOrbit 1s cubic-bezier(0.06, 0.01, 0, 1) 4.7s forwards;
+    animation: animOrbit 2s cubic-bezier(0.06, 0.01, 0, 1) 3.7s forwards;
   }
 }
 

@@ -24,6 +24,7 @@ function Welcome() {
         {systeme ? (
           <>
             <h1 className="welcometitle">STYX</h1>
+
             <div className="welcomeplanet">
               {systeme.map((planet) => {
                 return (
