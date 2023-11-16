@@ -1,0 +1,68 @@
+h3 {
+  text-shadow: 0 0 10px rgba(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 99%;
+  text-align: end;
+  top: 10%;
+  color: white;
+  font-size: 300%;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+}
+
+h3 span {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1.5s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rototeY(0deg);
+    filter: blur(0);
+  }
+}
+
+h3 span:nth-child(1) {
+  animation-delay: 5s;
+}
+
+h3 span:nth-child(2) {
+  animation-delay: 5.1s;
+}
+
+h3 span:nth-child(3) {
+  animation-delay: 5.2s;
+}
+
+h3 span:nth-child(4) {
+  animation-delay: 5.3s;
+}
+
+h3 span:nth-child(5) {
+  animation-delay: 5.3s;
+}
+
+h3 span:nth-child(6) {
+  animation-delay: 5.4s;
+}
+
+h3 span:nth-child(7) {
+  animation-delay: 5.5s;
+}
+
+h3 span:nth-child(8) {
+  animation-delay: 5.6s;
+}
+
+@media screen and (max-width: 500px) {
+}

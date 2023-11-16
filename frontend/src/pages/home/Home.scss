@@ -1,0 +1,36 @@
+@media screen and (max-width: 500px) {
+  .planet {
+    width: 40%;
+    flex-shrink: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .homeText {
+    display: none;
+  }
+  .List {
+    display: none;
+  }
+
+  .rotatingSystem {
+    position: absolute;
+    top: 275px;
+    margin-bottom: 0;
+    z-index: 0;
+  }
+  .navbar {
+    background-color: rgba(227, 227, 227, 0.53);
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 0;
+  }
+  .sun {
+    display: none;
+  }
+}

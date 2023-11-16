@@ -1,0 +1,135 @@
+#card {
+  position: fixed;
+  bottom: 11em;
+  left: 3.5em;
+  z-index: 10;
+  .card__body {
+    display: flex;
+    border: solid 4px white;
+    color: white;
+    background-color: #0e0f16;
+    height: 70vh;
+    width: 90vw;
+    justify-content: space-between;
+    border-radius: 16px;
+    .card__img {
+      height: 50%;
+      align-self: center;
+      margin: 5%;
+    }
+
+    .card__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      .card__description__h1 {
+        font-size: 5vw;
+      }
+      .card__description__p {
+        font-size: 1.5em;
+        text-align: left;
+      }
+    }
+    .card__button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .card__button__closed {
+        align-self: flex-end;
+        width: 20px;
+        height: 20px;
+        background-color: #828080;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        border: none;
+      }
+
+      .card__button__moreInfos {
+        margin: 10px;
+        color: white;
+        background-color: #efb41b;
+        border-radius: 5px;
+        width: 3vw;
+        height: 3vw;
+        font-size: 2.8vw;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .card__button__moreInfos:hover {
+        animation: hoverPlus 1s;
+      }
+    }
+  }
+}
+@keyframes hoverPlus {
+  0% {
+    rotate: 90deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@media screen and (max-width: 500px) {
+  #card {
+    background-image: "../../assets/image/space.jpg";
+    display: flex;
+    position: static;
+    height: 81vh;
+    justify-content: center;
+    align-items: center;
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      border: solid 2px white;
+      color: white;
+      height: 78vh;
+      width: 83vw;
+      border-radius: 16px;
+      justify-content: flex-end;
+      z-index: 10;
+      .card__img {
+        height: 11em;
+      }
+      .card__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: 55%;
+        align-self: center;
+        .card__description__h1 {
+          font-size: 7vw;
+        }
+        .card__description__p {
+          font-size: 1em;
+          text-align: left;
+          padding: 1em;
+        }
+      }
+      .card__button {
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        align-self: auto;
+        .card__button__closed {
+          position: absolute;
+          top: 60px;
+        }
+
+        .card__button__moreInfos {
+          width: 10vw;
+          height: 4vh;
+          font-size: 2.5vw;
+          margin: 0 10px 10px 0;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+}
