@@ -51,49 +51,47 @@ function DescriptionPlus() {
             <ul className="description">
               <li className="summary"> {system.description}</li>{" "}
               <li>
-                <span className="specificitesPlanet">GRAVITE :</span>{" "}
+                <span className="specificityPlanet">GRAVITE :</span>{" "}
                 {system.gravite}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">DENSITE :</span>{" "}
+                <span className="specificityPlanet">DENSITE :</span>{" "}
                 {system.densite}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">MASSE :</span>{" "}
+                <span className="specificityPlanet">MASSE :</span>{" "}
                 {system.masse}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">
+                <span className="specificityPlanet">
                   PERIODE DE REVOLUTION :
                 </span>{" "}
                 {system.periode_de_revolution}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">
+                <span className="specificityPlanet">
                   NOMBRE D'HEURE DANS UNE JOURNEE :
                 </span>{" "}
                 {system.nombre_heures_journee}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">
-                  VITESSE DE ROTATION :
-                </span>{" "}
+                <span className="specificityPlanet">VITESSE DE ROTATION :</span>{" "}
                 {system.vitesse_rotation_equateur}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">TYPE DE PLANETE :</span>{" "}
+                <span className="specificityPlanet">TYPE DE PLANETE :</span>{" "}
                 {system.type_de_planete}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">MINIMUM :</span>{" "}
+                <span className="specificityPlanet">MINIMUM :</span>{" "}
                 {system.temperature_de_surface.min}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">MAX :</span>{" "}
+                <span className="specificityPlanet">MAX :</span>{" "}
                 {system.temperature_de_surface.max}
               </li>{" "}
               <li>
-                <span className="specificitesPlanet">MOYENNE :</span>{" "}
+                <span className="specificityPlanet">MOYENNE :</span>{" "}
                 {system.temperature_de_surface.moyenne}
               </li>
             </ul>
