@@ -17,7 +17,6 @@ function HomeText() {
       opacity: 1,
       duration: 1,
       x: -20,
-      // markers: true,
     }
   );
   gsap.fromTo(
