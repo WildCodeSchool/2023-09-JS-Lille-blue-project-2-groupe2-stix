@@ -7,7 +7,7 @@
     display: flex;
     border: solid 4px white;
     color: white;
-    background-color: black;
+    background-color: #0e0f16;
     height: 70vh;
     width: 90vw;
     justify-content: space-between;
@@ -37,18 +37,19 @@
       justify-content: space-between;
       .card__button__closed {
         align-self: flex-end;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         background-color: #828080;
         color: white;
         border-radius: 5px;
         margin: 10px;
+        border: none;
       }
 
       .card__button__moreInfos {
         margin: 10px;
         color: white;
-        background-color: rgb(243, 166, 12);
+        background-color: #efb41b;
         border-radius: 5px;
         width: 3vw;
         height: 3vw;
@@ -58,9 +59,17 @@
       }
 
       .card__button__moreInfos:hover {
-        background-color: rgb(254, 128, 29);
+        animation: hoverPlus 1s;
       }
     }
+  }
+}
+@keyframes hoverPlus {
+  0% {
+    rotate: 90deg;
+  }
+  100% {
+    rotate: 360deg;
   }
 }
 @media screen and (max-width: 500px) {
@@ -118,10 +127,6 @@
           justify-content: center;
           align-items: center;
           display: flex;
-        }
-
-        .card__button__moreInfos:hover {
-          background-color: rgb(254, 128, 29);
         }
       }
     }

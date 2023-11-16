@@ -7,14 +7,14 @@ body {
 nav.navbar-more {
   display: flex;
   justify-content: center;
-  background-color: goldenrod;
+  background-color: #efb41b;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   align-items: center;
 }
 button.btn {
   margin: 5px;
-  background-color: goldenrod;
+  background-color: #efb41b;
   color: white;
   opacity: 0.9;
   width: 8rem;
@@ -50,7 +50,7 @@ button:hover {
 }
 
 .specificitesPlanet {
-  color: goldenrod;
+  color: #efb41b;
 }
 h1.title {
   display: flex;

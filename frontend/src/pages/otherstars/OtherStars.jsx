@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./OtherStars.scss";
-import home from "../../assets/image/buttonblanc.png";
+import home from "../../assets/image/boutonHome.png";
 import newstar from "../../../../backend/src/star.json";
 import Logo from "../../components/logo/logo";
 
