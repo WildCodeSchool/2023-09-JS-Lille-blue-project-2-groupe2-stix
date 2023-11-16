@@ -15,13 +15,7 @@ function Navbar({ systeme, foundPlanet, setShowCard }) {
     opacity: 0,
     duration: 1,
   });
-  gsap.fromTo(
-    "#nav",
-    {
-      opacity: 0,
-    },
-    { opacity: 1, duration: 2, delay: 4 }
-  );
+
   return (
     <nav className="navbar" id="nav">
       <div className="planets">
