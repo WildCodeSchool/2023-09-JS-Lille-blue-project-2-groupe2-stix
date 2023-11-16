@@ -45,7 +45,7 @@ function Home() {
         ) : (
           ""
         )}
-        {systeme ? <HomeText /> : ""}
+        <HomeText />
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
         <Logo
           systeme={systeme}

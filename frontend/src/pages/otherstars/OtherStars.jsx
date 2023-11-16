@@ -76,15 +76,23 @@ function OtherStars() {
           <p className="descriptionstar">{newstars && newstars.Description}</p>
           <section className="sectioncarac">
             <p className="caracstar">
-              Diamètre en km : {newstars.diametre_en_km}
+              <span className="Particularites">Diamètre en km :</span>{" "}
+              {newstars.diametre_en_km}
             </p>
             <p className="caracstar">
-              Distance de la Terre : {newstars.Distance_de_la_Terre}
+              <span className="Particularites">Distance de la Terre :</span>{" "}
+              {newstars.Distance_de_la_Terre}
             </p>
             <p className="caracstar">
-              Emplacement dans l'univers : {newstars.emplacement}{" "}
+              <span className="Particularites">
+                Emplacement dans l'univers :
+              </span>{" "}
+              {newstars.emplacement}{" "}
             </p>
-            <p className="caracstar">Type d'étoile : {newstars.type} </p>
+            <p className="caracstar">
+              <span className="Particularites">Type d'étoile :</span>{" "}
+              {newstars.type}{" "}
+            </p>
           </section>
         </section>
       )}
