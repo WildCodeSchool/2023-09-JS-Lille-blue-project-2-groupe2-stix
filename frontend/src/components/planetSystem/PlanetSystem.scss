@@ -77,16 +77,12 @@
     transform: rotate(-180deg) translateY(74.5vw);
   }
 }
+
 .système {
   position: absolute;
-  left: 26vw;
-  top: 98.3vw;
-  scale: 0.32;
-}
-
-body {
-  background-color: black;
-  color: white;
+  left: 13vw;
+  top: 109vw;
+  scale: 0.27;
 }
 
 .solarlist {
@@ -126,6 +122,8 @@ body {
   }
 }
 .planetturn {
+  margin: 2vw;
+  position: absolute;
   .Soleil {
     position: absolute;
     top: 24.3vw;
@@ -283,14 +281,16 @@ body {
   }
 }
 .contour {
-  border: 8px solid orange;
+  border: 15px solid rgb(243, 166, 12);
   border-radius: 50%;
 }
 
 .List {
-  margin-left: 70vw;
-  margin-bottom: -7vw;
-  line-height: 0.7;
+  margin-left: 69vw;
+  margin-top: 45vh;
+  margin-bottom: -17vw;
+  line-height: 0.5;
+  height: 0vh;
 }
 
 .solarlist {
@@ -308,7 +308,7 @@ body {
 
 .listplacement {
   text-align: justify;
-  margin-left: 7vw;
+  margin: 0vw;
 }
 
 .systèmeinfos {
@@ -321,7 +321,7 @@ body {
 }
 
 .text {
-  color: orange;
+  color: rgb(243, 166, 12);
   width: 21.5vw;
 }
 
@@ -340,7 +340,7 @@ body {
   .système {
     position: absolute;
     left: 15vw;
-    top: 145vw;
+    top: 15vw;
     scale: 0.6;
   }
 }
