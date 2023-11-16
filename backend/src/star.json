@@ -2,56 +2,56 @@
   {
     "name": "Aldebaran",
     "emplacement": "Constellation de Taureau",
-    "type_d_etoile": "Géante rouge",
+    "type": "Géante rouge",
     "diametre_en_km": "Environ 61,8 millions de kilomètres",
     "Distance_de_la_Terre": "Aldebaran est située à environ 65 années-lumière de la Terre",
-    "Description": " Aldebaran est une étoile de type spectral K5 III, ce qui signifie qu'elle est une géante rouge. Cela indique qu'elle a épuisé l'hydrogène dans son noyau et a commencé à gonfler et à refroidir. Avec un diamètre estimé d'environ 44 fois celui du Soleil, Aldebaran est considérée comme une géante rouge évoluée. Elle est beaucoup plus grande et plus froide que notre étoile, le Soleil.Le nom Aldebaran vient de l'arabe et signifie le suiveur ou le disciple. Il fait référence à sa position apparente dans le ciel, suivant les Pléiades. Dans différentes cultures, Aldebaran a été associée à des significations et des mythes variés.Aldebaran est une étoile notable pour les astronomes amateurs en raison de sa luminosité et de sa position facilement reconnaissable dans la constellation du Taureau",
+    "Description": " Aldebaran est une étoile de type géante rouge. Cela indique qu'elle a épuisé l'hydrogène dans son noyau et a commencé à gonfler et à refroidir. Avec un diamètre estimé d'environ 44 fois celui du Soleil, Aldebaran est considérée comme une géante rouge évoluée. Elle est beaucoup plus grande et plus froide que notre étoile, le Soleil.",
     "photo": "/assets/star/aldebaran.png"
   },
   {
-    "name": "Alpha Canis Majoris (Sirius)",
+    "name": "Sirius A",
     "emplacement": "Constellation du Grand Chien",
-    "type_d_etoile": "Etoile blanche",
+    "type": "Etoile blanche",
     "diametre_en_km": "Environ 4,3 millions de kilomètres",
-    "Distance_de_la_Terre": "Sirius est relativement proche de nous, à environ 8,6 années-lumière de la Terre",
-    "Description": "Sirius est une étoile de type spectral A1V, ce qui signifie qu'elle est une étoile blanche de la séquence principale. C'est la principale étoile du système stellaire Alpha Canis Majoris. Sirius est une étoile binaire, ce qui signifie qu'elle est composée de deux étoiles en orbite l'une autour de l'autre. La composante principale, Sirius A, est une étoile blanche de la séquence principale, tandis que Sirius B est une naine blanche, le reste d'une étoile qui a épuisé son combustible nucléaire. Sirius a une grande importance dans différentes cultures. Dans l'Égypte antique, son lever héliaque (quand elle devient visible juste avant le lever du soleil) était associé aux inondations annuelles du Nil, marquant le début de l'année égyptienne. Dans d'autres cultures, elle a également été associée à des significations symboliques. Sirius est une étoile fascinante et a été étudiée de près en raison de sa proximité et de son éclat. Son statut de l'étoile la plus brillante du ciel en fait une cible populaire pour les astronomes amateurs.",
+    "Distance_de_la_Terre": "Sirius A est relativement proche de nous, à environ 8,6 années-lumière de la Terre",
+    "Description": "Sirius A est la principale étoile du système stellaire Alpha Canis Majoris. Sirius est une étoile binaire, ce qui signifie qu'elle est composée de deux étoiles en orbite l'une autour de l'autre. La composante principale, Sirius A, est une étoile blanche de la séquence principale, tandis que Sirius B est une naine blanche, le reste d'une étoile qui a épuisé son combustible nucléaire. Sirius a une grande importance dans différentes cultures.",
     "photo": "/assets/star/sirius.png"
   },
   {
     "name": "Rigel",
     "emplacement": "Constellation d'Orion",
-    "type_d_etoile": "Supergéante bleue",
+    "type": "Supergéante bleue",
     "diametre_en_km": "Environ 110,2 millions de kilomètres",
     "Distance_de_la_Terre": "Rigel est située à environ 860 années-lumière de la Terre",
-    "Description": "Rigel est une étoile de type spectral B8, ce qui signifie qu'elle est une étoile bleue de la séquence principale. C'est une supergéante bleue. Rigel est une étoile massive, estimée à environ 17 fois la masse du Soleil. Elle est également très lumineuse, avec une luminosité qui dépasse 120 000 fois celle du Soleil. En tant que supergéante bleue, Rigel est une étoile en fin de vie, épuisant rapidement son combustible nucléaire. Dans la mythologie grecque, Orion est un chasseur géant, et Rigel est souvent associée à son pied. Orion est également associé à plusieurs mythes et légendes à travers différentes cultures.Rigel est une étoile très étudiée en raison de sa luminosité et de ses caractéristiques inhabituelles. Elle joue un rôle important dans la constellation d'Orion, l'une des plus reconnaissables dans le ciel nocturne.",
+    "Description": "Rigel est une étoile de type spectral B8, ce qui signifie qu'elle est une étoile bleue de la séquence principale. C'est une supergéante bleue. Rigel est une étoile massive, estimée à environ 17 fois la masse du Soleil. Elle est également très lumineuse, avec une luminosité qui dépasse 120 000 fois celle du Soleil. En tant que supergéante bleue, Rigel est une étoile en fin de vie, épuisant rapidement son combustible nucléaire.",
     "photo": "/assets/star/Rigel.png"
   },
   {
     "name": "Trou noir TON618",
     "emplacement": "NGC 6166 (Galaxie elliptique)",
-    "type_d_etoile": "Trou noir supermassif",
+    "type": "Trou noir supermassif",
     "diametre_en_km": "380 milliards de kilomètres",
     "Distance_de_la_Terre": "TON 618 est situé à une distance d'environ 10,37 milliards d'années-lumière de la Terre",
-    "Description": "TON 618 est un trou noir supermassif. Ce type de trou noir est situé au centre de la plupart des grandes galaxies, y compris la nôtre, la Voie lactée. La masse de TON 618 est estimée à environ 66 milliards de fois la masse de notre soleil (66 milliards de masses solaires). Cela en fait l'un des trous noirs les plus massifs jamais observés. En raison de sa masse exceptionnellement élevée, TON 618 est un objet céleste d'un intérêt particulier pour les astronomes et astrophysiciens. Les trous noirs de cette magnitude peuvent influencer considérablement leur environnement galactique et sont cruciaux pour notre compréhension de l'évolution des galaxies.",
+    "Description": "TON 618 est un trou noir supermassif. Ce type de trou noir est situé au centre de la plupart des grandes galaxies, y compris la nôtre, la Voie lactée. La masse de TON 618 est estimée à environ 66 milliards de fois la masse de notre soleil (66 milliards de masses solaires). Cela en fait l'un des trous noirs les plus massifs jamais observés.",
     "photo": "/assets/star/TrouNoir.png"
   },
   {
     "name": "Piliers de la Création",
     "emplacement": "Nébuleuse de l'Aigle",
-    "type_d_etoile": "Nébuleuse d'hydrogène",
+    "type": "Nébuleuse d'hydrogène",
     "diametre_en_km": "4 à 5 années lumières, qui eux mêmes sont contenu dans une nébuleuse de 55 à 70 années lumières",
     "Distance_de_la_Terre": "Les Piliers de la Création sont situés à environ 7 000 années-lumière de la Terre, dans la constellation du Serpentaire (Serpens)",
-    "Description": " Les Piliers de la Création sont une formation emblématique de colonnes de gaz et de poussière à l'intérieur de la nébuleuse de l'Aigle. Ces piliers sont composés de gaz et de poussière densément concentrés, où de nouvelles étoiles sont en train de se former.Les Piliers de la Création sont des régions où le gaz et la poussière s'effondrent sous l'influence de la gravité pour former de nouvelles étoiles. Les colonnes protègent les régions internes de l'érosion causée par le rayonnement intense des étoiles nouvellement formées. Bien que les Piliers de la Création soient des structures remarquables, ils sont également éphémères. L'intense radiation des étoiles massives voisines a un impact sur la nébuleuse, érodant lentement et détruisant les colonnes au fil du temps.",
+    "Description": " Les Piliers de la Création sont une formation emblématique de colonnes de gaz et de poussière à l'intérieur de la nébuleuse de l'Aigle.Les Piliers de la Création sont des régions où le gaz et la poussière s'effondrent sous l'influence de la gravité pour former de nouvelles étoiles. Les colonnes protègent les régions internes de l'érosion causée par le rayonnement intense des étoiles nouvellement formées.",
     "photo": "/assets/star/pilliersdelacréation.png"
   },
   {
     "name": "PSR J0952-0607",
-    "type_d_etoile": "Etoile a neutron",
+    "type": "Etoile a neutron",
     "emplacement": "Constellation du Sextant",
     "tour_seconde": "707 tours par seconde sur elle même",
     "diametre_en_km": "20 kilomètres",
     "Distance_de_la_Terre": "PSR J0952-0607 est situé à une distance d'environ 5000 années-lumière de la Terre",
-    "Description": "PSR J0952-0607 est un pulsar, une étoile à neutrons en rotation rapide formée à partir des restes d'une étoile massive qui a explosé en supernova. Les pulsars sont des étoiles à neutrons qui émettent des faisceaux de rayonnement électromagnétique depuis leurs pôles magnétiques. Lorsque ces faisceaux sont alignés avec la ligne de vision de la Terre, nous détectons des impulsions périodiques de rayonnement, créant l'effet de pulsation. Les scientifiques étudient les pulsars pour comprendre les propriétés de la matière ultra-dense à l'intérieur des étoiles à neutrons, ainsi que pour tester les prédictions de la théorie de la relativité générale d'Albert Einstein.",
+    "Description": "PSR J0952-0607 est un pulsar, une étoile à neutrons en rotation rapide formée à partir des restes d'une étoile massive qui a explosé en supernova. Les pulsars sont des étoiles à neutrons qui émettent des faisceaux de rayonnement électromagnétique depuis leurs pôles magnétiques. Lorsque ces faisceaux sont alignés avec la ligne de vision de la Terre, nous détectons des impulsions périodiques de rayonnement, créant l'effet de pulsation. ",
     "photo": "/assets/star/étoileaneutron.png"
   }
 ]

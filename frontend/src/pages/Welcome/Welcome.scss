@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-image: url("https://img2.wallspic.com/previews/6/7/2/3/4/143276/143276-espace_exterieur-nuit-voie_lactee-ciel-objet_astronomique-x750.jpg");
 }
@@ -123,17 +124,18 @@ body {
 
 .textwelcome {
   text-align: center;
-  text-shadow: 3px 3px 10px white;
 }
 .presentation {
   width: 42vw;
-  line-height: 2vw;
+  line-height: 3vw;
   text-align: center;
   font-weight: bold;
   padding: 0.5vw;
   position: absolute;
-  top: 5vw;
+  top: 6vw;
   z-index: 15;
+  background-color: rgba(43, 50, 66, 0.5254901961);
+  border-radius: 20px;
 }
 
 .welcometitle {
@@ -154,36 +156,38 @@ h2 {
 
 .linkwelcome {
   text-decoration: none;
-  color: goldenrod;
+  color: #ffffff;
   position: absolute;
   z-index: 16;
   top: 91vh;
   font-size: 1.5rem;
+  background-color: #efb41b;
+  border: solid 0.5em #efb41b;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 500px) {
   .presentation {
-    line-height: 5vw;
+    width: 95vw;
+    line-height: 7vw;
     text-align: center;
     font-weight: bold;
     padding: 0.5vw;
     position: absolute;
-    top: 18vw;
-    z-index: 15;
+    top: 48vw;
   }
-
-  .textwelcome {
-    width: 70vw;
-  }
-
-  .presentation {
-    line-height: 3.8vw;
-    text-align: center;
-    font-weight: bold;
-    padding: 0.5vw;
+  .linkwelcome {
+    text-decoration: none;
+    color: white;
     position: absolute;
-    top: 35vw;
-    z-index: 15;
-    width: auto;
+    z-index: 16;
+    top: 86vh;
+    font-size: 1.6rem;
+    max-width: 99vw;
+  }
+
+  .welcometitle {
+    font-size: 6rem;
+    margin-top: 6vh;
   }
 }

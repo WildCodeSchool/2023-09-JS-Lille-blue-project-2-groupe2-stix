@@ -10,6 +10,14 @@ function Welcome() {
       .then((response) => response.json())
       .then((data) => setSysteme(data));
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
   return (
     <div className="welcomebackground">
       <section className="welcome">
@@ -22,7 +30,8 @@ function Welcome() {
                   <img
                     className={planet.french_name}
                     src={`${import.meta.env.VITE_BACKEND_URL}${planet.image}`}
-                    alt=""
+                    alt="planet"
+                    key={planet.id}
                   />
                 );
               })}
@@ -38,15 +47,6 @@ function Welcome() {
                 cosmiques.
               </p>
               <p className="textwelcome">
-                Que vous soyez passionné par les tempêtes cosmique sur Jupiter,
-                les lunes glacées d'Encelade, les mystères de Mars, ou les
-                dernières découvertes sur les exoplanètes, "STYX" vous offre une
-                fenêtre unique sur le monde de l'astronomie. Explorez avec nous
-                les énigmes de l'espace, plongez dans les récits d'exploration
-                spatiale, et émerveillez-vous devant la beauté et la grandeur de
-                notre système solaire.
-              </p>
-              <p className="textwelcome">
                 Rejoignez-nous dans cette aventure et partons ensemble à la
                 découverte des merveilles du système solaire. Vous êtes invités
                 à explorer, apprendre, partager et participer à cette quête
@@ -57,7 +57,7 @@ function Welcome() {
             </section>
 
             <Link to="/home" className="linkwelcome">
-              🢡 Clique ici pour en découvrir plus 🢠
+              En découvrir plus
             </Link>
           </>
         ) : null}

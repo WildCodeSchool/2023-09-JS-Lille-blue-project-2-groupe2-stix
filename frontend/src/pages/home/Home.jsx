@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.scss";
@@ -5,6 +6,7 @@ import SolarSystem from "../../components/solarSystem/SolarSystem";
 import PlanetSystem from "../../components/planetSystem/PlanetSystem";
 import HomeText from "../../components/homeText/homeText";
 import Navbar from "../../components/navbar/Navbar";
+import Logo from "../../components/logo/logo";
 
 function Home() {
   const [showCard, setShowCard] = useState(false);
@@ -27,8 +29,8 @@ function Home() {
   return (
     <div>
       <section>
-        <Link to="/otherstar" className="otherstar">
-          🢡 Click for see strange and other star 🢠
+        <Link to="/otherstars" className="otherstar">
+          Voir d'autres particularités de notre univers !
         </Link>
       </section>
       <div className="home">
@@ -37,14 +39,19 @@ function Home() {
             systeme={systeme}
             choosePlanet={choosePlanet}
             foundPlanet={foundPlanet}
-            showCard={showCard}
             setShowCard={setShowCard}
+            showCard={showCard}
           />
         ) : (
           ""
         )}
-        {systeme ? <HomeText /> : ""}
+        <HomeText />
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
+        <Logo
+          systeme={systeme}
+          foundPlanet={foundPlanet}
+          setShowCard={setShowCard}
+        />
         <Navbar
           systeme={systeme}
           foundPlanet={foundPlanet}
