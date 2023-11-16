@@ -413,12 +413,13 @@ body {
 
 .boutonHome {
   height: 6vh;
-  position: absolute;
-  z-index: 50;
-  left: 16vw;
-  top: 0.5vh;
+  padding: 0.2em;
 }
 
+.boutonHome:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+  border-radius: 10px;
+}
 .caracstar {
   text-align: justify;
 }
@@ -670,10 +671,6 @@ body {
 
   .boutonHome {
     height: 3vh;
-    position: absolute;
-    z-index: 50;
-    left: 3vw;
-    top: 11.5vh;
   }
   .otherStar__section {
     width: 100%;
