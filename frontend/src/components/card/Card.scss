@@ -83,13 +83,13 @@
     .card__body {
       display: flex;
       flex-direction: column;
-      border: none;
+      border: solid 2px white;
       color: white;
-      background-color: rgba(0, 255, 255, 0);
       height: 78vh;
       width: 83vw;
       border-radius: 16px;
       justify-content: flex-end;
+      z-index: 10;
       .card__img {
         height: 11em;
       }
@@ -116,7 +116,8 @@
         align-items: end;
         align-self: auto;
         .card__button__closed {
-          display: none;
+          position: absolute;
+          top: 60px;
         }
 
         .card__button__moreInfos {

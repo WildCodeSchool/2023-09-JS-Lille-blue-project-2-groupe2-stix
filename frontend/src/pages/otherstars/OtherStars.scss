@@ -457,6 +457,7 @@ body {
       height: 8vh;
       width: 17vw;
       background-color: #efb41b;
+      border-bottom: 20px;
     }
   }
 
@@ -678,11 +679,15 @@ body {
     color: white;
     background-color: #efb41b;
     border: solid 0.5em #efb41b;
-    border-radius: 0;
+    border-radius: 0 0 20px 20px;
     margin: 0;
     display: inline-block;
-    width: 100%;
+    width: 96%;
     height: 60%;
     font-size: 1em;
+    text-align: center;
+  }
+  a.otherstar:hover {
+    scale: 1;
   }
 }

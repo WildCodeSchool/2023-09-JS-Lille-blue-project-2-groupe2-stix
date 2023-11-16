@@ -3,6 +3,9 @@
     width: 40%;
     flex-shrink: 0;
   }
+  .logo {
+    display: none;
+  }
   .homeText {
     display: none;
   }
@@ -11,7 +14,10 @@
   }
 
   .rotatingSystem {
-    display: none;
+    position: absolute;
+    top: 275px;
+    margin-bottom: 0;
+    z-index: 0;
   }
   .navbar {
     background-color: rgba(227, 227, 227, 0.53);
