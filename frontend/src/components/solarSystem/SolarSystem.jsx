@@ -15,6 +15,7 @@ function SolarSystem({
     <div className="sun">
       {systeme.map((planet) => (
         <ButtonAndImg
+          key={planet.id}
           planet={planet}
           setShowCard={setShowCard}
           foundPlanet={foundPlanet}
@@ -23,7 +24,7 @@ function SolarSystem({
       {showCard &&
         createPortal(
           <Card
-            choosePlanet={choosePlanet}
+            choosePlanet={choosePlanet || {}}
             closeCard={() => setShowCard(false)}
           />,
           document.body
@@ -62,6 +63,7 @@ function SolarSystem({
 SolarSystem.propTypes = {
   systeme: PropTypes.arrayOf(
     shape({
+      id: PropTypes.number.isRequired,
       french_name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       periode_de_revolution: PropTypes.string.isRequired,
@@ -70,8 +72,21 @@ SolarSystem.propTypes = {
     }).isRequired
   ).isRequired,
   foundPlanet: PropTypes.func.isRequired,
-  choosePlanet: PropTypes.func.isRequired,
-  showCard: PropTypes.func.isRequired,
+  choosePlanet: PropTypes.objectOf(
+    shape({
+      id: PropTypes.number.isRequired,
+      french_name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      periode_de_revolution: PropTypes.string.isRequired,
+      vitesse_rotation_equateur: PropTypes.string.isRequired,
+      type_de_planete: PropTypes.string.isRequired,
+    }).isRequired
+  ),
+  showCard: PropTypes.bool.isRequired,
   setShowCard: PropTypes.func.isRequired,
 };
+SolarSystem.defaultProps = {
+  choosePlanet: null,
+};
+
 export default SolarSystem;

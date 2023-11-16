@@ -25,9 +25,10 @@ function ButtonAndImg({ planet, setShowCard, foundPlanet }) {
 }
 
 ButtonAndImg.propTypes = {
-  planet: PropTypes.arrayOf(
+  planet: PropTypes.objectOf(
     shape({
       french_name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       image: PropTypes.string.isRequired,
       periode_de_revolution: PropTypes.string.isRequired,
       vitesse_rotation_equateur: PropTypes.string.isRequired,

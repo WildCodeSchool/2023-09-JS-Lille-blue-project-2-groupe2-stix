@@ -35,3 +35,9 @@ p {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .homeTexts {
+    display: none;
+  }
+}

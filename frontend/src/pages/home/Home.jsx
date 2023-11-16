@@ -12,10 +12,11 @@ function Home() {
   const [showCard, setShowCard] = useState(false);
   const [systeme, setSysteme] = useState();
   const [choosePlanet, setChoosePlanet] = useState();
+
   const foundPlanet = (id) => {
-    systeme.map((element) => {
-      if (element.id === id) {
-        setChoosePlanet(element);
+    systeme.map((planet) => {
+      if (planet.id === id) {
+        setChoosePlanet(planet);
       }
       return setChoosePlanet;
     });
@@ -28,13 +29,13 @@ function Home() {
   }, []);
   return (
     <div>
-      <section>
+      <section className="otherStar__section">
         <Link to="/otherstars" className="otherstar">
           🢡 Click for see strange and other star 🢠
         </Link>
       </section>
       <div className="home">
-        {systeme ? (
+        {systeme && (
           <SolarSystem
             systeme={systeme}
             choosePlanet={choosePlanet}
@@ -42,16 +43,10 @@ function Home() {
             setShowCard={setShowCard}
             showCard={showCard}
           />
-        ) : (
-          ""
         )}
         <HomeText />
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-        <Logo
-          systeme={systeme}
-          foundPlanet={foundPlanet}
-          setShowCard={setShowCard}
-        />
+        <Logo />
         <Navbar
           systeme={systeme}
           foundPlanet={foundPlanet}
