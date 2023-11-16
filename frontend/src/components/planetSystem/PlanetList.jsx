@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 function PlanetList({ id, handleChange, planet }) {
   return (
     <div className="List">
-      <p
+      <div
         onMouseLeave={() => handleChange(id)}
         onMouseOver={() => handleChange(id)}
         onFocus={() => handleChange(id)}
         className={planet.isHover ? "text listplacement" : "listplacement"}
       >
         <strong className="nameplanet">{planet.french_name} : </strong>
-        <p
+        <div
           onMouseLeave={() => handleChange(id)}
           onMouseOver={() => handleChange(id)}
           onFocus={() => handleChange(id)}
@@ -19,7 +19,7 @@ function PlanetList({ id, handleChange, planet }) {
           }
         >
           Période de révolution : {planet.periode_de_revolution}
-          <p
+          <div
             onMouseLeave={() => handleChange(id)}
             onMouseOver={() => handleChange(id)}
             onFocus={() => handleChange(id)}
@@ -29,9 +29,9 @@ function PlanetList({ id, handleChange, planet }) {
           >
             vitesse de rotation à l'équateur :{" "}
             {planet.vitesse_rotation_equateur}
-          </p>
-        </p>
-      </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
