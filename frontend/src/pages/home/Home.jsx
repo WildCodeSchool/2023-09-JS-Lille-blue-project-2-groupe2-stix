@@ -22,8 +22,6 @@ function Home() {
     });
   };
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     fetch("http://localhost:3310/planets")
       .then((response) => response.json())
@@ -48,11 +46,7 @@ function Home() {
         )}
         <HomeText />
         {systeme ? <PlanetSystem systeme={systeme} Soleil /> : ""}
-        <Logo
-          systeme={systeme}
-          foundPlanet={foundPlanet}
-          setShowCard={setShowCard}
-        />
+        <Logo />
         <Navbar
           systeme={systeme}
           foundPlanet={foundPlanet}
