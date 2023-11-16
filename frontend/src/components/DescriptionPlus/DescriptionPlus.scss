@@ -21,31 +21,35 @@ button.btn {
   padding: 0.5rem;
   border: none;
   margin-right: 5%;
+  font-size: 1em;
 }
 
-button.btn:hover {
+button:hover {
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255);
 }
 
-p.description {
+.description {
+  width: 50em;
   letter-spacing: 1px;
-  width: 480px;
-  text-align: left;
+
   font-size: 14px;
-  text-align: center;
-  text-align: left;
-  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 2em;
   animation: animPlanet 4s cubic-bezier(0, 0, 0, 0) 0s forwards;
 }
 
 .summary {
   color: white;
+  font-size: 1.5em;
 }
 
-h5 {
+.specificitesPlanet {
   color: goldenrod;
 }
-p.title {
+h1.title {
   display: flex;
   justify-content: center;
   font-size: 220%;
@@ -54,19 +58,21 @@ p.title {
 
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 img.d-img {
-  padding: 10%;
-  width: 60%;
+  width: 35%;
   animation: animPlanet 4s cubic-bezier(0, 0, 0, 0) 0s forwards;
 }
 img.btn-home {
+  padding: 0.5rem;
   width: 35%;
 }
 
 img.btn-home:hover {
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255);
 }
 ul {
@@ -78,7 +84,7 @@ ul {
 }
 
 li {
-  margin: 15px;
+  margin: 0.3em;
 }
 
 @media (max-width: 1230px) {

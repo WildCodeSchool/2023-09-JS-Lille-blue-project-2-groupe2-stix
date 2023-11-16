@@ -38,32 +38,65 @@ function DescriptionPlus() {
             ))}
         </ul>
       </nav>
-      <p className="title ">{system.french_name}</p>
+      <h1 className="title ">{system.french_name}</h1>
       <main className="content">
         {systeme && (
           <>
-            <div className="rotation">
-              <img
-                className="d-img"
-                src={`${import.meta.env.VITE_BACKEND_URL}${system.image}`}
-                alt={system.french_name}
-              />
-            </div>
-            <p className="description">
-              <h5 className="summary"> {system.description}</h5>{" "}
-              <h5>GRAVITE : {system.gravite}</h5>{" "}
-              <h5>DENSITE : {system.densite}</h5>{" "}
-              <h5>MASSE : {system.masse}</h5>{" "}
-              <h5>PERIODE DE REVOLUTION : {system.periode_de_revolution}</h5>{" "}
-              <h5>
-                NOMBRE D'HEURE DANS UNE JOURNEE : {system.nombre_heures_journee}
-              </h5>{" "}
-              <h5>VITESSE DE ROTATION : {system.vitesse_rotation_equateur}</h5>{" "}
-              <h5>TYPE DE PLANETE : {system.type_de_planete}</h5>{" "}
-              <h5>MINIMUM : {system.temperature_de_surface.min}</h5>{" "}
-              <h5>MAX : {system.temperature_de_surface.max}</h5>{" "}
-              <h5>MOYENNE : {system.temperature_de_surface.moyenne}</h5>
-            </p>
+            <img
+              className="d-img"
+              src={`${import.meta.env.VITE_BACKEND_URL}${system.image}`}
+              alt={system.french_name}
+            />
+
+            <ul className="description">
+              <li className="summary"> {system.description}</li>{" "}
+              <li>
+                <span className="specificitesPlanet">GRAVITE :</span>{" "}
+                {system.gravite}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">DENSITE :</span>{" "}
+                {system.densite}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">MASSE :</span>{" "}
+                {system.masse}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">
+                  PERIODE DE REVOLUTION :
+                </span>{" "}
+                {system.periode_de_revolution}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">
+                  NOMBRE D'HEURE DANS UNE JOURNEE :
+                </span>{" "}
+                {system.nombre_heures_journee}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">
+                  VITESSE DE ROTATION :
+                </span>{" "}
+                {system.vitesse_rotation_equateur}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">TYPE DE PLANETE :</span>{" "}
+                {system.type_de_planete}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">MINIMUM :</span>{" "}
+                {system.temperature_de_surface.min}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">MAX :</span>{" "}
+                {system.temperature_de_surface.max}
+              </li>{" "}
+              <li>
+                <span className="specificitesPlanet">MOYENNE :</span>{" "}
+                {system.temperature_de_surface.moyenne}
+              </li>
+            </ul>
           </>
         )}
       </main>
