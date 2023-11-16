@@ -23,29 +23,33 @@ function OtherStars() {
 
   return (
     <div className="bodystars">
-      <div className="navstar">
-        <Link to="/home">
-          {" "}
-          <img src={home} alt="" className="boutonHome" />{" "}
-        </Link>
-        {newstar &&
-          newstar.map((stars) => {
-            return (
-              <section key={stars.name}>
-                <nav className="navbar-plus">
-                  <button
-                    onClick={() => handleClick(stars.name)}
-                    type="button"
-                    key={stars.name}
-                    className="buttonstar"
-                  >
-                    {stars.name}
-                  </button>
-                </nav>
-              </section>
-            );
-          })}
-      </div>
+      <nav className="navstar">
+        <ul>
+          <li>
+            <Link to="/home">
+              <img src={home} alt="" className="boutonHome" />
+            </Link>
+          </li>
+
+          {newstar &&
+            newstar.map((stars) => {
+              return (
+                <section key={stars.name}>
+                  <nav className="navbar-plus">
+                    <button
+                      onClick={() => handleClick(stars.name)}
+                      type="button"
+                      key={stars.name}
+                      className="buttonstar"
+                    >
+                      {stars.name}
+                    </button>
+                  </nav>
+                </section>
+              );
+            })}
+        </ul>
+      </nav>
       {newstars && (
         <section className="bodystar">
           <h1 className={newstars.emplacement}>{newstars.name}</h1>

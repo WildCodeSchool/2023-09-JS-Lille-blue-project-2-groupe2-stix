@@ -457,6 +457,7 @@ body {
       height: 8vh;
       width: 17vw;
       background-color: #efb41b;
+      border-bottom: 20px;
     }
   }
 
@@ -514,11 +515,19 @@ body {
   .buttonstar {
     height: 10vh;
     width: 1vw;
+    margin: 5px;
+    background-color: #efb41b;
+    color: white;
+    opacity: 0.9;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1em;
   }
 
   .navstar {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    overflow-x: auto;
     background-color: #efb41b;
     border-radius: 0 0 10px 10px;
     width: 106%;
@@ -660,10 +669,10 @@ body {
   }
 
   .boutonHome {
-    height: 6vh;
+    height: 3vh;
     position: absolute;
     z-index: 50;
-    left: 95vw;
+    left: 3vw;
     top: 11.5vh;
   }
   .otherStar__section {
@@ -678,11 +687,15 @@ body {
     color: white;
     background-color: #efb41b;
     border: solid 0.5em #efb41b;
-    border-radius: 0;
+    border-radius: 0 0 20px 20px;
     margin: 0;
     display: inline-block;
-    width: 100%;
+    width: 96%;
     height: 60%;
     font-size: 1em;
+    text-align: center;
+  }
+  a.otherstar:hover {
+    scale: 1;
   }
 }
