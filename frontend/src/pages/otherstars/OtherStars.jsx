@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./OtherStars.scss";
+import home from "../../assets/image/buttonblanc.png";
 import newstar from "../../../../backend/src/star.json";
+import Logo from "../../components/logo/logo";
 
 function OtherStars() {
   const { name } = useParams();
@@ -22,6 +24,10 @@ function OtherStars() {
   return (
     <div className="bodystars">
       <div className="navstar">
+        <Link to="/home">
+          {" "}
+          <img src={home} alt="" className="boutonHome" />{" "}
+        </Link>
         {newstar &&
           newstar.map((stars) => {
             return (
@@ -56,13 +62,11 @@ function OtherStars() {
         {newstars ? null : (
           <>
             <h2 className="styx">
-              STYX <br />
-              Cliquez sur l'un des boutons pour afficher le corps céleste
-              correspondant.
+              <Logo />
             </h2>
 
             <p className="présentationotherstar">
-              "Au sein de l'immensité cosmique, des corps célestes étranges
+              Au sein de l'immensité cosmique, des corps célestes étranges
               éveillent notre curiosité et alimentent notre fascination. Au-delà
               des constellations familières et des planètes de notre propre
               système solaire, l'univers nous réserve une panoplie de phénomènes
